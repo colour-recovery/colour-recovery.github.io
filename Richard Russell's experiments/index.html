@@ -690,7 +690,7 @@ As the developer of the hardware Transform PAL Decoder I do have considerable ex
 <br />
 Given the extremely short time that I have been working on it I'm not too disappointed with the first results:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:0:&lt;img src=&quot;/file/view/totp750_rtr.jpg/33936337/totp750_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp750_rtr.jpg/33936337/totp750_rtr.jpg" alt="totp750_rtr.jpg" title="totp750_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:0 --><br />
+<!-- ws:start:WikiTextLocalImageRule:0:&lt;img src=&quot;../files/totp750_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp750_rtr.jpg" alt="totp750_rtr.jpg" title="totp750_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:0 --><br />
 <br />
 There has been no special tweaking to produce this image; the U and V gains are the same. I think it is slightly less saturated than Andrew's, but I've only set that by eye.<br />
 <br />
@@ -712,7 +712,7 @@ The FIRs are optimised using the Parks-McClellan algorithm, not simply windowed.
 <br />
 Here's the Jimmy Savile frame as processed using my algorithm; there may be a little more cross-colour than Andrew's version (or is it just in different places?):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:1:&lt;img src=&quot;/file/view/totp36_rtr.jpg/33947307/totp36_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp36_rtr.jpg/33947307/totp36_rtr.jpg" alt="totp36_rtr.jpg" title="totp36_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:1 --><br />
+<!-- ws:start:WikiTextLocalImageRule:1:&lt;img src=&quot;../files/totp36_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp36_rtr.jpg" alt="totp36_rtr.jpg" title="totp36_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:1 --><br />
 [ Andrew says: it looks like your chroma bandwidth is a bit higher than mine (you claim 2MHz): you've decoded the colour further to the left on the orange square, but naturally you've also got more red fringing on the &quot;Edison Lighthouse&quot; text. My presently-used filters are 48-taps horizontally, but not optimised - they're simple raised-cosine windows. I'd have to look a few things up to quote strict 3dB or 6dB points etc. &quot;Engineering&quot; rather than detailed theory is the order-of-the-day at the moment! -- Correction 30/04/2008 Actually my filter has 47 taps - and it uses symmetry to simplify calculation, and the end-most taps will have very little significance anyway. ]<br />
 <br />
 <br />
@@ -720,7 +720,7 @@ Here's the Jimmy Savile frame as processed using my algorithm; there may be a li
 <br />
 I tried increasing the number of taps to 47 (I prefer odd numbers because of the desirability of zero group-delay) but it didn't seem to make a significant difference. I initially thought it had, but I'd forgotten to compensate for the extra delay through the filter so what I was seeing was a misregistration of luminance and chrominance! This was the chroma bandpass filter I used:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:2:&lt;img src=&quot;/file/view/cscbpf47.gif/33957677/cscbpf47.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/cscbpf47.gif/33957677/cscbpf47.gif" alt="cscbpf47.gif" title="cscbpf47.gif" /><!-- ws:end:WikiTextLocalImageRule:2 --><br />
+<!-- ws:start:WikiTextLocalImageRule:2:&lt;img src=&quot;../files/cscbpf47.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/cscbpf47.gif" alt="cscbpf47.gif" title="cscbpf47.gif" /><!-- ws:end:WikiTextLocalImageRule:2 --><br />
 <br />
 Random thought: My algorithm is (as far as possible given the characteristics of the film recording) intra-field, that is the vertical filtering looks only at lines in the same field. This is a requirement if it is to work successfully with fast-moving material, when the two fields may be significantly different. Andrew Steer's <em>Thoughts on the detail of the chroma and line-structure</em> refers to &quot;treating the combined image as if a single-field&quot; so I wonder how that might be affected by motion.<br />
 <br />
@@ -732,11 +732,11 @@ If there was sufficient movement on highly multicoloured subjects then I suppose
 <br />
 A brief diversion from my <a class="wiki_link" href="/Full%20gamut%20colour%20recovery">full gamut</a> work to investigate an anomaly.  Here are two consecutive frames (383 and 384) from the <strong>JS lights</strong> sequence, using the -U+V quadrant:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:3:&lt;img src=&quot;/file/view/jsl383.jpg/34324119/jsl383.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl383.jpg/34324119/jsl383.jpg" alt="jsl383.jpg" title="jsl383.jpg" /><!-- ws:end:WikiTextLocalImageRule:3 --> <!-- ws:start:WikiTextLocalImageRule:4:&lt;img src=&quot;/file/view/jsl384.jpg/34324137/jsl384.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl384.jpg/34324137/jsl384.jpg" alt="jsl384.jpg" title="jsl384.jpg" /><!-- ws:end:WikiTextLocalImageRule:4 --><br />
+<!-- ws:start:WikiTextLocalImageRule:3:&lt;img src=&quot;../files/jsl383.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl383.jpg" alt="jsl383.jpg" title="jsl383.jpg" /><!-- ws:end:WikiTextLocalImageRule:3 --> <!-- ws:start:WikiTextLocalImageRule:4:&lt;img src=&quot;../files/jsl384.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl384.jpg" alt="jsl384.jpg" title="jsl384.jpg" /><!-- ws:end:WikiTextLocalImageRule:4 --><br />
 <br />
 It's apparent that the hue of Jimmy's face is very different between these frames: too magenta in the first and too green in the second.  But why?  Looking closely at the subcarrier dot patterns, these are very different too:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:5:&lt;img src=&quot;/file/view/dots383.jpg/34324339/dots383.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/dots383.jpg/34324339/dots383.jpg" alt="dots383.jpg" title="dots383.jpg" /><!-- ws:end:WikiTextLocalImageRule:5 --> <!-- ws:start:WikiTextLocalImageRule:6:&lt;img src=&quot;/file/view/dots384.jpg/34324343/dots384.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/dots384.jpg/34324343/dots384.jpg" alt="dots384.jpg" title="dots384.jpg" /><!-- ws:end:WikiTextLocalImageRule:6 --><br />
+<!-- ws:start:WikiTextLocalImageRule:5:&lt;img src=&quot;../files/dots383.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/dots383.jpg" alt="dots383.jpg" title="dots383.jpg" /><!-- ws:end:WikiTextLocalImageRule:5 --> <!-- ws:start:WikiTextLocalImageRule:6:&lt;img src=&quot;../files/dots384.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/dots384.jpg" alt="dots384.jpg" title="dots384.jpg" /><!-- ws:end:WikiTextLocalImageRule:6 --><br />
 <br />
 I'm not too sure what's going on here, but it won't make colour recovery any easier!<br />
 <br />
@@ -746,25 +746,25 @@ Triggered to some extent by Andrew Steer's <a class="wiki_link" href="/Towards%2
 <br />
 However once the two fields are combined to form a frame and upconverted to a higher vertical resolution, as in the 1080-line film recordings, the chrominance patterning is more complicated.  Here for example is what the U colour subcarrier theoretically looks like:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:7:&lt;img src=&quot;/file/view/ucarrier.gif/34385209/ucarrier.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/ucarrier.gif/34385209/ucarrier.gif" alt="ucarrier.gif" title="ucarrier.gif" /><!-- ws:end:WikiTextLocalImageRule:7 --><br />
+<!-- ws:start:WikiTextLocalImageRule:7:&lt;img src=&quot;../files/ucarrier.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/ucarrier.gif" alt="ucarrier.gif" title="ucarrier.gif" /><!-- ws:end:WikiTextLocalImageRule:7 --><br />
 <br />
 There is still a dominant pattern sloping down to the right, but there is another pattern sloping down (at a shallower angle) to the left.  Here is the 2D spectrum of that same U subcarrier (1024x1024 FFT with Hanning window):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;/file/view/ufft.gif/34385059/ufft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/ufft.gif/34385059/ufft.gif" alt="ufft.gif" title="ufft.gif" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
+<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;../files/ufft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/ufft.gif" alt="ufft.gif" title="ufft.gif" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
 <br />
 The blue lines are at horizontal frequencies of ±4.433 MHz and vertical frequencies of ±72 c/aph and ±216 c/aph.  The two diagonal components (and their reflections about the origin) can be clearly seen as small white dots.  The corresponding spectrum for V is as follows, showing the diagonals sloping in the opposite directions:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;/file/view/vfft.gif/34385063/vfft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/vfft.gif/34385063/vfft.gif" alt="vfft.gif" title="vfft.gif" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
+<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;../files/vfft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/vfft.gif" alt="vfft.gif" title="vfft.gif" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
 <br />
 Here is the actual 2D spectrum of the chrominance in one of the more colourful film-recorded frames (frame 214 of the JS Lights sequence), showing the presence of both U and V components:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;/file/view/jslfft.gif/34385061/jslfft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jslfft.gif/34385061/jslfft.gif" alt="jslfft.gif" title="jslfft.gif" /><!-- ws:end:WikiTextLocalImageRule:10 --><br />
+<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;../files/jslfft.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jslfft.gif" alt="jslfft.gif" title="jslfft.gif" /><!-- ws:end:WikiTextLocalImageRule:10 --><br />
 <br />
 So, a 2D filter that will discriminate between the U and V chrominance in the film recordings, without throwing anything away, needs to be more complicated than a simple diagonal filter.<br />
 <br />
 In the light of this investigation I have redesigned the chroma filter used in my Full Gamut Colour Recovery process.  This is the result when fed with a zone plate:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;/file/view/uvfilt_rtr.jpg/34386909/uvfilt_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/uvfilt_rtr.jpg/34386909/uvfilt_rtr.jpg" alt="uvfilt_rtr.jpg" title="uvfilt_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
+<!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;../files/uvfilt_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/uvfilt_rtr.jpg" alt="uvfilt_rtr.jpg" title="uvfilt_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
 <br />
 The coloured blobs (forced +U+V quadrant) are centered on the ±4.433 MHz, ±72 c/aph and ±216 c/aph spectral components identified in the above FFTs.<br />
 <br />
@@ -774,7 +774,7 @@ The aliasing evident in the luminance is because the down-conversion filters (fr
 <br />
 For completeness, here are the U, V and Y zoneplate outputs separately.  These allow the degree of crosstalk between the outputs to be judged more accurately:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;/file/view/ufilt2d_rtr.jpg/34416155/ufilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/ufilt2d_rtr.jpg/34416155/ufilt2d_rtr.jpg" alt="ufilt2d_rtr.jpg" title="ufilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:12 --> <!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;/file/view/vfilt2d_rtr.jpg/34416153/vfilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/vfilt2d_rtr.jpg/34416153/vfilt2d_rtr.jpg" alt="vfilt2d_rtr.jpg" title="vfilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --> <!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;/file/view/yfilt2d_rtr.jpg/34416157/yfilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/yfilt2d_rtr.jpg/34416157/yfilt2d_rtr.jpg" alt="yfilt2d_rtr.jpg" title="yfilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
+<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;../files/ufilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/ufilt2d_rtr.jpg" alt="ufilt2d_rtr.jpg" title="ufilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:12 --> <!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;../files/vfilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/vfilt2d_rtr.jpg" alt="vfilt2d_rtr.jpg" title="vfilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --> <!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;../files/yfilt2d_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/yfilt2d_rtr.jpg" alt="yfilt2d_rtr.jpg" title="yfilt2d_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
 <br />
 Note that I <em>didn't</em> reduce the system gain from the value used for normal pictures, so the U and V outputs are quite heavily clipped, and the effective depth of the luminance subcarrier notches is probably affected by internal clipping.
   </div>

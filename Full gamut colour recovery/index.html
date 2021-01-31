@@ -694,7 +694,7 @@ Extracting absolute phase information from the film recordings is likely to be v
 <br />
 It's very early days, but I present here the first primitive results from my attempts to do that.  Here is a small part of the TOTP picture which has had the full range of colours recovered (approximately!), shown alongside a reference picture taken from the colour videotape:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:43:&lt;img src=&quot;/file/view/minigamut.jpg/34033013/minigamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/minigamut.jpg/34033013/minigamut.jpg" alt="minigamut.jpg" title="minigamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:43 --> <!-- ws:start:WikiTextLocalImageRule:44:&lt;img src=&quot;/file/view/miniorig.jpg/34032909/miniorig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/miniorig.jpg/34032909/miniorig.jpg" alt="miniorig.jpg" title="miniorig.jpg" /><!-- ws:end:WikiTextLocalImageRule:44 --><br />
+<!-- ws:start:WikiTextLocalImageRule:43:&lt;img src=&quot;../files/minigamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/minigamut.jpg" alt="minigamut.jpg" title="minigamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:43 --> <!-- ws:start:WikiTextLocalImageRule:44:&lt;img src=&quot;../files/miniorig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/miniorig.jpg" alt="miniorig.jpg" title="miniorig.jpg" /><!-- ws:end:WikiTextLocalImageRule:44 --><br />
 <br />
 The good news is that the recovered image contains some blues, greens and purples, but it has many flaws.  In particular the phase detection is very noisy and blocky.  I also have to confess that I've chosen to show only this small part of the image for a very good reason!<br />
 <br />
@@ -720,7 +720,7 @@ If I can't work around the sub-Nyquist sampling it might require a 2K scan for m
 <br />
 I did find a minor bug in my code, which when fixed slightly improved the results:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:45:&lt;img src=&quot;/file/view/minigamut2.jpg/34053163/minigamut2.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/minigamut2.jpg/34053163/minigamut2.jpg" alt="minigamut2.jpg" title="minigamut2.jpg" /><!-- ws:end:WikiTextLocalImageRule:45 --><br />
+<!-- ws:start:WikiTextLocalImageRule:45:&lt;img src=&quot;../files/minigamut2.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/minigamut2.jpg" alt="minigamut2.jpg" title="minigamut2.jpg" /><!-- ws:end:WikiTextLocalImageRule:45 --><br />
 <br />
 You can see that the yellow sleeve is slightly less blocky than before.  I've also included a little more of the pink shirt at the left edge.  However the problem with V-phase reversal is still apparent, especially at the very top.  I'm trying to find a way to fix this whilst continuing to use the 1080-line scans.<br />
 <br />
@@ -728,7 +728,7 @@ You can see that the yellow sleeve is slightly less blocky than before.  I've al
 <br />
 Getting better (original on the right, just in case you can't tell!):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:46:&lt;img src=&quot;/file/view/midigamut.jpg/34059803/midigamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/midigamut.jpg/34059803/midigamut.jpg" alt="midigamut.jpg" title="midigamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:46 -->  <!-- ws:start:WikiTextLocalImageRule:47:&lt;img src=&quot;/file/view/midiorig.jpg/34059797/midiorig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/midiorig.jpg/34059797/midiorig.jpg" alt="midiorig.jpg" title="midiorig.jpg" /><!-- ws:end:WikiTextLocalImageRule:47 --><br />
+<!-- ws:start:WikiTextLocalImageRule:46:&lt;img src=&quot;../files/midigamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/midigamut.jpg" alt="midigamut.jpg" title="midigamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:46 -->  <!-- ws:start:WikiTextLocalImageRule:47:&lt;img src=&quot;../files/midiorig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/midiorig.jpg" alt="midiorig.jpg" title="midiorig.jpg" /><!-- ws:end:WikiTextLocalImageRule:47 --><br />
 <br />
 I found a way to fix the earlier problem, by replacing the 2D correlation with two separate 1D correlations (vertical and horizontal).  This allowed me to optimise them independently and make them more tolerant of imperfections in the source material.  The sample image above now covers the full height of the frame.<br />
 <br />
@@ -736,7 +736,7 @@ There are still difficulties in getting the full frame to come out right (you ca
 <br />
 As a side effect of the process I am getting a feel for the geometric distortions in the source material.  The false-colour image below gives a measure of the vertical linearity:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:48:&lt;img src=&quot;/file/view/geometry.jpg/34060045/geometry.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/geometry.jpg/34060045/geometry.jpg" alt="geometry.jpg" title="geometry.jpg" /><!-- ws:end:WikiTextLocalImageRule:48 --><br />
+<!-- ws:start:WikiTextLocalImageRule:48:&lt;img src=&quot;../files/geometry.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/geometry.jpg" alt="geometry.jpg" title="geometry.jpg" /><!-- ws:end:WikiTextLocalImageRule:48 --><br />
 <br />
 Each coloured band corresponds to a vertical displacement of one line in the 1080-line source material.<br />
 <br />
@@ -744,7 +744,7 @@ Each coloured band corresponds to a vertical displacement of one line in the 108
 <br />
 Nearly there.  To plagiarise Andrew Steer: who would believe that this came off a piece of black-and-white 16mm film, tele-recorded 30-odd years ago?  But it did:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:49:&lt;img src=&quot;/file/view/totp750_full_rtr.jpg/34069813/totp750_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp750_full_rtr.jpg/34069813/totp750_full_rtr.jpg" alt="totp750_full_rtr.jpg" title="totp750_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:49 -->  <!-- ws:start:WikiTextLocalImageRule:50:&lt;img src=&quot;/file/view/bp1970.jpg/33791329/bp1970.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/bp1970.jpg/33791329/bp1970.jpg" alt="bp1970.jpg" title="bp1970.jpg" /><!-- ws:end:WikiTextLocalImageRule:50 --><br />
+<!-- ws:start:WikiTextLocalImageRule:49:&lt;img src=&quot;../files/totp750_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp750_full_rtr.jpg" alt="totp750_full_rtr.jpg" title="totp750_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:49 -->  <!-- ws:start:WikiTextLocalImageRule:50:&lt;img src=&quot;../files/bp1970.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/bp1970.jpg" alt="bp1970.jpg" title="bp1970.jpg" /><!-- ws:end:WikiTextLocalImageRule:50 --><br />
 <br />
 Not quite perfect (there are some blue fingers in there if you look carefully) but a lot better than I've managed before, and at least now I can reveal the entire frame without embarrassment (still all intra-frame processing).<br />
 <br />
@@ -765,7 +765,7 @@ My next step is to tidy up my code to a state where I could use it to process a 
 <br />
 Before anybody gets too excited, here's the best I have managed so far with the Jimmy image (which doesn't really benefit from the full-gamut colour anyway):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:51:&lt;img src=&quot;/file/view/totp36_full_rtr.jpg/34077213/totp36_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp36_full_rtr.jpg/34077213/totp36_full_rtr.jpg" alt="totp36_full_rtr.jpg" title="totp36_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:51 --><br />
+<!-- ws:start:WikiTextLocalImageRule:51:&lt;img src=&quot;../files/totp36_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp36_full_rtr.jpg" alt="totp36_full_rtr.jpg" title="totp36_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:51 --><br />
 <br />
 This far-from-perfect result was obtained using very different 'tuning' parameters from those needed on the other image, so there's a fair way to go before the process could be fully automated (if indeed that's ever possible).  The chroma in the top-left corner is so poor that my process struggles to pull out the necessary information.<br />
 <br />
@@ -801,7 +801,7 @@ I found a way to reduce the number of faulty frames, and have uploaded a slightl
 <br />
 Andrew Steer has queried the colour accuracy of the greeny-yellow T-shirt towards the end of the TOTP sequence (see <a class="wiki_link_ext" href="http://colour-recovery.github.io/message/view/Full+gamut+colour+recovery/4207963" rel="nofollow">Discussions</a>).  Here is a direct comparison between my colour-recovered version and the original:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:52:&lt;img src=&quot;/file/view/totp800_full_rtr.jpg/34186519/totp800_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp800_full_rtr.jpg/34186519/totp800_full_rtr.jpg" alt="totp800_full_rtr.jpg" title="totp800_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:52 -->  <!-- ws:start:WikiTextLocalImageRule:53:&lt;img src=&quot;/file/view/totp800_orig.jpg/34186525/totp800_orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp800_orig.jpg/34186525/totp800_orig.jpg" alt="totp800_orig.jpg" title="totp800_orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:53 --><br />
+<!-- ws:start:WikiTextLocalImageRule:52:&lt;img src=&quot;../files/totp800_full_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp800_full_rtr.jpg" alt="totp800_full_rtr.jpg" title="totp800_full_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:52 -->  <!-- ws:start:WikiTextLocalImageRule:53:&lt;img src=&quot;../files/totp800_orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp800_orig.jpg" alt="totp800_orig.jpg" title="totp800_orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:53 --><br />
 <br />
 Apart from the inevitable 'blotchiness' of my version (because of the low-resolution quadrant map) I reckon they're pretty similar.<br />
 <br />
@@ -809,13 +809,13 @@ Apart from the inevitable 'blotchiness' of my version (because of the low-resolu
 <br />
 One of the potential issues with my colour recovery method is the low resolution of the quadrant map, and how acceptable that will be.  As a test, I created an artificial 'film recording' of Test Card J (by PAL coding and scaling to 1920 x 1080) and then ran that through my process.  This is the result for the well-known central picture:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:54:&lt;img src=&quot;/file/view/carole.jpg/34246377/carole.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/carole.jpg/34246377/carole.jpg" alt="carole.jpg" title="carole.jpg" /><!-- ws:end:WikiTextLocalImageRule:54 --><br />
+<!-- ws:start:WikiTextLocalImageRule:54:&lt;img src=&quot;../files/carole.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/carole.jpg" alt="carole.jpg" title="carole.jpg" /><!-- ws:end:WikiTextLocalImageRule:54 --><br />
 <br />
 Although the low resolution of the chroma is apparent, it doesn't seem too bad to me.  It's also interesting to see the cross-colour on the transitions between the frequency gratings, and the effect of the subcarrier notch in the luminance channel.  Apologies for the incorrect aspect ratio: I've now adapted my process to output (non-square) Rec.601 pixels.<br />
 <br />
 Here is the quadrant map for the above image:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:55:&lt;img src=&quot;/file/view/carole_quadrant.gif/34249547/carole_quadrant.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/carole_quadrant.gif/34249547/carole_quadrant.gif" alt="carole_quadrant.gif" title="carole_quadrant.gif" /><!-- ws:end:WikiTextLocalImageRule:55 --><br />
+<!-- ws:start:WikiTextLocalImageRule:55:&lt;img src=&quot;../files/carole_quadrant.gif&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/carole_quadrant.gif" alt="carole_quadrant.gif" title="carole_quadrant.gif" /><!-- ws:end:WikiTextLocalImageRule:55 --><br />
 <br />
 Colour key: Red = +U +V, Yellow = -U +V, Green = -U -V, Blue = +U -V; I am still forcing the -U +V state to areas where my process hasn't assigned a quadrant.  Note that, as an experiment, I am currently using 16 pixel x 15 line blocks, i.e. 120 blocks across the full width rather than 96.<br />
 <br />
@@ -829,7 +829,7 @@ This represents the best I can do at the moment.  There are only a couple of bad
 <br />
 I've started work on the 'JS lights' sequence received from Jonathan today, and it's certainly going to be challenging!  As a taster, here's what I've managed so far with just one frame from that sequence:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:56:&lt;img src=&quot;/file/view/jsl315_rtr.jpg/34275665/jsl315_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl315_rtr.jpg/34275665/jsl315_rtr.jpg" alt="jsl315_rtr.jpg" title="jsl315_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:56 --><br />
+<!-- ws:start:WikiTextLocalImageRule:56:&lt;img src=&quot;../files/jsl315_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl315_rtr.jpg" alt="jsl315_rtr.jpg" title="jsl315_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:56 --><br />
 <br />
 I haven't any idea whether the background colour is right, since I've not seen the original, but this is what my process reckons it to be.  There are obvious problems, such as the green fingers, and this is one of the better frames.  However, it's a good example of where a full-gamut approach is essential, because simply forcing the -U+V quadrant makes the background red!<br />
 <br />
@@ -837,7 +837,7 @@ I haven't any idea whether the background colour is right, since I've not seen t
 <br />
 Seems my process got it right!  Jonathan has kindly provided the original for comparison:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:57:&lt;img src=&quot;/file/view/js1green.jpg/34297375/js1green.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/js1green.jpg/34297375/js1green.jpg" alt="js1green.jpg" title="js1green.jpg" /><!-- ws:end:WikiTextLocalImageRule:57 --><br />
+<!-- ws:start:WikiTextLocalImageRule:57:&lt;img src=&quot;../files/js1green.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/js1green.jpg" alt="js1green.jpg" title="js1green.jpg" /><!-- ws:end:WikiTextLocalImageRule:57 --><br />
 <br />
 I'm particularly pleased that I managed to tease out the bluish regions above Jimmy's shoulders (which are in a different quadrant from the green).  My version is considerably darker, but Jonathan comments &quot;It does seem that the FR transfer is darker at this point&quot;.<br />
 <br />
@@ -845,9 +845,9 @@ I'm particularly pleased that I managed to tease out the bluish regions above Ji
 <br />
 Here are some more comparisons between colour-recovered frames and the originals:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:58:&lt;img src=&quot;/file/view/jsl442.jpg/34346313/jsl442.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl442.jpg/34346313/jsl442.jpg" alt="jsl442.jpg" title="jsl442.jpg" /><!-- ws:end:WikiTextLocalImageRule:58 --> <!-- ws:start:WikiTextLocalImageRule:59:&lt;img src=&quot;/file/view/js3orig.jpg/34346319/js3orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/js3orig.jpg/34346319/js3orig.jpg" alt="js3orig.jpg" title="js3orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:59 --><br />
-<!-- ws:start:WikiTextLocalImageRule:60:&lt;img src=&quot;/file/view/jsl488.jpg/34346311/jsl488.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl488.jpg/34346311/jsl488.jpg" alt="jsl488.jpg" title="jsl488.jpg" /><!-- ws:end:WikiTextLocalImageRule:60 --> <!-- ws:start:WikiTextLocalImageRule:61:&lt;img src=&quot;/file/view/js4orig.jpg/34346317/js4orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/js4orig.jpg/34346317/js4orig.jpg" alt="js4orig.jpg" title="js4orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:61 --><br />
-<!-- ws:start:WikiTextLocalImageRule:62:&lt;img src=&quot;/file/view/jsl517.jpg/34346321/jsl517.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jsl517.jpg/34346321/jsl517.jpg" alt="jsl517.jpg" title="jsl517.jpg" /><!-- ws:end:WikiTextLocalImageRule:62 --> <!-- ws:start:WikiTextLocalImageRule:63:&lt;img src=&quot;/file/view/js5orig.jpg/34346315/js5orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/js5orig.jpg/34346315/js5orig.jpg" alt="js5orig.jpg" title="js5orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:63 --><br />
+<!-- ws:start:WikiTextLocalImageRule:58:&lt;img src=&quot;../files/jsl442.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl442.jpg" alt="jsl442.jpg" title="jsl442.jpg" /><!-- ws:end:WikiTextLocalImageRule:58 --> <!-- ws:start:WikiTextLocalImageRule:59:&lt;img src=&quot;../files/js3orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/js3orig.jpg" alt="js3orig.jpg" title="js3orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:59 --><br />
+<!-- ws:start:WikiTextLocalImageRule:60:&lt;img src=&quot;../files/jsl488.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl488.jpg" alt="jsl488.jpg" title="jsl488.jpg" /><!-- ws:end:WikiTextLocalImageRule:60 --> <!-- ws:start:WikiTextLocalImageRule:61:&lt;img src=&quot;../files/js4orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/js4orig.jpg" alt="js4orig.jpg" title="js4orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:61 --><br />
+<!-- ws:start:WikiTextLocalImageRule:62:&lt;img src=&quot;../files/jsl517.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jsl517.jpg" alt="jsl517.jpg" title="jsl517.jpg" /><!-- ws:end:WikiTextLocalImageRule:62 --> <!-- ws:start:WikiTextLocalImageRule:63:&lt;img src=&quot;../files/js5orig.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/js5orig.jpg" alt="js5orig.jpg" title="js5orig.jpg" /><!-- ws:end:WikiTextLocalImageRule:63 --><br />
 <br />
 These are some of the better frames from the <strong>JS lights</strong> sequence.  It is my opinion that it will never be possible to get good results from the sequence because the rapid changes in background illumination (often taking place between the two fields of a frame), in conjunction with what is suspected to be a small degree of 'EHT breathing' affecting the Film Recording CRT, distorts the subcarrier-dot pattern too much.  See <a class="wiki_link" href="/Richard%20Russell%27s%20experiments">this article</a> for an example of what can happen.<br />
 <br />

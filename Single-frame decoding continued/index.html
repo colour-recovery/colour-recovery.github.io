@@ -698,11 +698,11 @@ I made some tiny changes to my colour-recovery program as very early steps towar
 The strange thing is that I don't quite understand why the improvement - I suspect it's to do with the way the C/C++ compiler manages different data-types within an expression, and by splitting the expression into two parts I've helped things.<br />
 I've also realised a possible reason that might contribute to my U/V gain-offset (but Andrew Browne should not be affected).<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:6:&lt;img src=&quot;/file/view/col36_19AprCU.jpg/33773821/col36_19AprCU.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/col36_19AprCU.jpg/33773821/col36_19AprCU.jpg" alt="col36_19AprCU.jpg" title="col36_19AprCU.jpg" /><!-- ws:end:WikiTextLocalImageRule:6 --><br />
+<!-- ws:start:WikiTextLocalImageRule:6:&lt;img src=&quot;../files/col36_19AprCU.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/col36_19AprCU.jpg" alt="col36_19AprCU.jpg" title="col36_19AprCU.jpg" /><!-- ws:end:WikiTextLocalImageRule:6 --><br />
 Latest 1:1 pixel image (of same original film-scan), now showing less colour-banding.<br />
 I've also adjusted the U/V ratio fixup to compensate for algorithmic improvements.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:7:&lt;img src=&quot;/file/view/col36_19AprOA.jpg/33773823/col36_19AprOA.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/col36_19AprOA.jpg/33773823/col36_19AprOA.jpg" alt="col36_19AprOA.jpg" title="col36_19AprOA.jpg" /><!-- ws:end:WikiTextLocalImageRule:7 --><br />
+<!-- ws:start:WikiTextLocalImageRule:7:&lt;img src=&quot;../files/col36_19AprOA.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/col36_19AprOA.jpg" alt="col36_19AprOA.jpg" title="col36_19AprOA.jpg" /><!-- ws:end:WikiTextLocalImageRule:7 --><br />
 Another impression of the whole-image, to show progress - again from the same source file as I used on the previous page.<br />
 Oops I squashed the vertical height a bit much. Should have been 360 pixels, but I typed 320. Never mind!<br />
 <br />
@@ -713,13 +713,13 @@ Oops I squashed the vertical height a bit much. Should have been 360 pixels, but
 [I have a slight suspicion that the chromadots are slightly &quot;cleaner&quot; in the UYVY file than in the .BMP files James supplied before.]<br />
 <br />
 Here's frame 750 from the UYVY clip:<br />
-<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;/file/view/fr750_2MHzLnotch_sat300_v10.jpg/33773999/fr750_2MHzLnotch_sat300_v10.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/fr750_2MHzLnotch_sat300_v10.jpg/33773999/fr750_2MHzLnotch_sat300_v10.jpg" alt="fr750_2MHzLnotch_sat300_v10.jpg" title="fr750_2MHzLnotch_sat300_v10.jpg" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
+<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;../files/fr750_2MHzLnotch_sat300_v10.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/fr750_2MHzLnotch_sat300_v10.jpg" alt="fr750_2MHzLnotch_sat300_v10.jpg" title="fr750_2MHzLnotch_sat300_v10.jpg" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
 Who would believe that this came off a piece of black-and-white 16mm film, tele-recorded 30-odd years ago? But it did.<br />
 <br />
 Remarkably the -U / +V trick still seems to work quite well. I have no idea what the original colours looked like though!<br />
 <br />
 (edit to add frame from VT - J.Wood 21/4/08)<br />
-<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;/file/view/bp1970.jpg/33791329/bp1970.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/bp1970.jpg/33791329/bp1970.jpg" alt="bp1970.jpg" title="bp1970.jpg" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
+<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;../files/bp1970.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/bp1970.jpg" alt="bp1970.jpg" title="bp1970.jpg" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
 <br />
 <br />
 After a bit more tidying up (and speeding up) of my program code, maybe I can think about doing the U and V polarity properly.<br />
@@ -736,7 +736,7 @@ Andrew Steer - 20 April 2008<br />
 <br />
 <strong>Analysis of what my Colour Recovery software-program is actually doing</strong><br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;/file/view/colzoneplateSML.jpg/33777443/colzoneplateSML.jpg&quot; alt=&quot;Colour-recovery on a zoneplate-image&quot; title=&quot;Colour-recovery on a zoneplate-image&quot; /&gt; --><table class="captionBox"><tr><td class="captionedImage"><img src="/file/view/colzoneplateSML.jpg/33777443/colzoneplateSML.jpg" alt="colzoneplateSML.jpg" title="colzoneplateSML.jpg" /></td></tr><tr><td class="imageCaption">Colour-recovery on a zoneplate-image</td></tr></table><!-- ws:end:WikiTextLocalImageRule:10 --><br />
+<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;../files/colzoneplateSML.jpg&quot; alt=&quot;Colour-recovery on a zoneplate-image&quot; title=&quot;Colour-recovery on a zoneplate-image&quot; /&gt; --><table class="captionBox"><tr><td class="captionedImage"><img src="../files/colzoneplateSML.jpg" alt="colzoneplateSML.jpg" title="colzoneplateSML.jpg" /></td></tr><tr><td class="imageCaption">Colour-recovery on a zoneplate-image</td></tr></table><!-- ws:end:WikiTextLocalImageRule:10 --><br />
 The above plot shows the decoding behaviour of my present program on a zoneplate (still fixed -U,+V decoding).<br />
 <br />
 <ul><li>The U-blobs (greeny-yellow) appear slightly larger than the V-blobs (orange-red) owing to the slight extra gain I'm still giving U at the moment.</li><li>The magenta stripe through the orange-red region is a bit surprising, and indicates that something is probably slightly wrong. I'm not going to worry about it now, but keep an eye on it - hope it will sort itself out as I tidy up the program.</li></ul><br />
@@ -745,7 +745,7 @@ I could probably afford to reduce the vertical bandwidth of my filter (if it pro
 The plot also reminds me that at the moment in my colour-recovery program I'm finding the &quot;maximum&quot; phase of U and V <em>independently of each other</em>. In reality of course they are always in quadrature (90 degrees apart). This extra constraint ought to be added to my program and would probably reduce chroma noise, and would be a useful step towards proper phase-locking.<br />
 <br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;/file/view/randombarscol.jpg/33777211/randombarscol.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/randombarscol.jpg/33777211/randombarscol.jpg" alt="randombarscol.jpg" title="randombarscol.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
+<!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;../files/randombarscol.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/randombarscol.jpg" alt="randombarscol.jpg" title="randombarscol.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
 This image shows the effect of the colour-decoding on some white bars (aligned at angles close to the U and V axes). Shown at 50% of original size. The source-image was band-limited.<br />
 In a proper phase-sensitive PAL decoder you would get both +ve and -ve U and V colours on the edges. They would typically alternate polarity as you go up and down the image (and across frames). With my present program which forces -U,+V, all the cross-colour (false colour) goes the same way. Similarly all chroma-noise is biased the same way.<br />
 <br />
@@ -784,7 +784,7 @@ Andrew Steer - 21 April 2008<br />
 A diagram showing UV colour space can be found on the Wikipedia article at<br />
 <!-- ws:start:WikiTextUrlRule:439:http://en.wikipedia.org/wiki/YUV --><a class="wiki_link_ext" href="http://en.wikipedia.org/wiki/YUV" rel="nofollow">http://en.wikipedia.org/wiki/YUV</a><!-- ws:end:WikiTextUrlRule:439 --><br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;/file/view/YUV_UV_planeSML.png/33803387/YUV_UV_planeSML.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/YUV_UV_planeSML.png/33803387/YUV_UV_planeSML.png" alt="YUV_UV_planeSML.png" title="YUV_UV_planeSML.png" /><!-- ws:end:WikiTextLocalImageRule:12 --><br />
+<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;../files/YUV_UV_planeSML.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/YUV_UV_planeSML.png" alt="YUV_UV_planeSML.png" title="YUV_UV_planeSML.png" /><!-- ws:end:WikiTextLocalImageRule:12 --><br />
 Graphic showing U/V colour axis (from Wikipedia)<br />
 <br />
 The -U +V quadrant is the most &quot;useful&quot; containing red-orange-yellow to olive-green, and red with a magenta tinge. Includes skin-tones.<br />
@@ -792,7 +792,7 @@ The -U -V quadrant is all greens, a bit &quot;olive-green&quot; close to the V=0
 The +U -V quadrant is blues, mostly sky-blue; a bit turquoisy near U=0, and erring slightly purply near V=0.<br />
 The +U +V quadrant is magenta becoming progressively more purply-blue as you move downwards towards the V=0 axis.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;/file/view/fr750_221pcColBal_selection.jpg/33803407/fr750_221pcColBal_selection.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/fr750_221pcColBal_selection.jpg/33803407/fr750_221pcColBal_selection.jpg" alt="fr750_221pcColBal_selection.jpg" title="fr750_221pcColBal_selection.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --><br />
+<!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;../files/fr750_221pcColBal_selection.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/fr750_221pcColBal_selection.jpg" alt="fr750_221pcColBal_selection.jpg" title="fr750_221pcColBal_selection.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --><br />
 This shows the test-image rendered with all four permutations of fixed U and V polarity.<br />
 <br />
 Oddly, the blue shirt, blue denim, blue waistcoats haven't really come through very well on any of the renditions.<br />
@@ -809,7 +809,7 @@ Bear in mind that we still don't fully understand the detail of the line-by-line
 In the shorter term, proper phase-locking may help, but it's still going to be a tall order!<br />
 <br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;/file/view/fr750_221pcColBal_mergedcol.jpg/33804565/fr750_221pcColBal_mergedcol.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/fr750_221pcColBal_mergedcol.jpg/33804565/fr750_221pcColBal_mergedcol.jpg" alt="fr750_221pcColBal_mergedcol.jpg" title="fr750_221pcColBal_mergedcol.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
+<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;../files/fr750_221pcColBal_mergedcol.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/fr750_221pcColBal_mergedcol.jpg" alt="fr750_221pcColBal_mergedcol.jpg" title="fr750_221pcColBal_mergedcol.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
 This is an experiment - the basic -U/+V image, but with key denim blue areas manually pasted in from +U/-V image.<br />
 The blue frame doesn't look much, but when set against the red/yellow, it might be passable.<br />
 Do bear in mind this is cheating somewhat because the random noise will have gained a blue bias in the &quot;blue&quot; corner anyway.<br />
@@ -846,10 +846,10 @@ In coloured areas where the chroma from adjacent scanlines in mis-aligned this e
 <br />
 Nothing especially new or clever, but here's a couple more recent images, after processing with tighter bandwidth filters to improve sharpness and reduce cross-colour. On the Blodwyn image I've applied a 1.3 gamma correction before processing. The Jimmy image has a 1.15 gamma correction.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:15:&lt;img src=&quot;/file/view/jimmy_15line1MHz_24Apr.jpg/33866863/jimmy_15line1MHz_24Apr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15line1MHz_24Apr.jpg/33866863/jimmy_15line1MHz_24Apr.jpg" alt="jimmy_15line1MHz_24Apr.jpg" title="jimmy_15line1MHz_24Apr.jpg" /><!-- ws:end:WikiTextLocalImageRule:15 --><br />
+<!-- ws:start:WikiTextLocalImageRule:15:&lt;img src=&quot;../files/jimmy_15line1MHz_24Apr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15line1MHz_24Apr.jpg" alt="jimmy_15line1MHz_24Apr.jpg" title="jimmy_15line1MHz_24Apr.jpg" /><!-- ws:end:WikiTextLocalImageRule:15 --><br />
 <br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:16:&lt;img src=&quot;/file/view/blodwyn_15line1MHz_24Apr.jpg/33866861/blodwyn_15line1MHz_24Apr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/blodwyn_15line1MHz_24Apr.jpg/33866861/blodwyn_15line1MHz_24Apr.jpg" alt="blodwyn_15line1MHz_24Apr.jpg" title="blodwyn_15line1MHz_24Apr.jpg" /><!-- ws:end:WikiTextLocalImageRule:16 --><br />
+<!-- ws:start:WikiTextLocalImageRule:16:&lt;img src=&quot;../files/blodwyn_15line1MHz_24Apr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/blodwyn_15line1MHz_24Apr.jpg" alt="blodwyn_15line1MHz_24Apr.jpg" title="blodwyn_15line1MHz_24Apr.jpg" /><!-- ws:end:WikiTextLocalImageRule:16 --><br />
 Both images still with forced -U / +V. Other colours to follow ... all in good time!<br />
 <br />
 That's it for now.<br />
@@ -873,7 +873,7 @@ write a simple loop to step through 857 frames, opening/decoding/saving.<br />
 <br />
 It's all fairly straightforward.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:17:&lt;img src=&quot;/file/view/colzoneplate_1p5MHzBW_15lin.jpg/33888277/colzoneplate_1p5MHzBW_15lin.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/colzoneplate_1p5MHzBW_15lin.jpg/33888277/colzoneplate_1p5MHzBW_15lin.jpg" alt="colzoneplate_1p5MHzBW_15lin.jpg" title="colzoneplate_1p5MHzBW_15lin.jpg" /><!-- ws:end:WikiTextLocalImageRule:17 --><br />
+<!-- ws:start:WikiTextLocalImageRule:17:&lt;img src=&quot;../files/colzoneplate_1p5MHzBW_15lin.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/colzoneplate_1p5MHzBW_15lin.jpg" alt="colzoneplate_1p5MHzBW_15lin.jpg" title="colzoneplate_1p5MHzBW_15lin.jpg" /><!-- ws:end:WikiTextLocalImageRule:17 --><br />
 For reference: latest chroma-filter characteristics.<br />
 <br />
 <br />
@@ -945,7 +945,7 @@ I can think of lots of steps towards doing a really nice technically perfect job
 <br />
 Simple hack to highlight out-of-gamut (-ve blue):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:18:&lt;img src=&quot;/file/view/blodwyn_gamut.jpg/33948325/blodwyn_gamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/blodwyn_gamut.jpg/33948325/blodwyn_gamut.jpg" alt="blodwyn_gamut.jpg" title="blodwyn_gamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:18 --><br />
+<!-- ws:start:WikiTextLocalImageRule:18:&lt;img src=&quot;../files/blodwyn_gamut.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/blodwyn_gamut.jpg" alt="blodwyn_gamut.jpg" title="blodwyn_gamut.jpg" /><!-- ws:end:WikiTextLocalImageRule:18 --><br />
 In this image I've simply highlighted the colours which decode to negative-blue components when interpreted as -U/+V.<br />
 <br />
 This shows marginal detection on the denim, but a strong reading on the purples in the mirrors at the extreme right/top of the image.<br />
@@ -959,7 +959,7 @@ The file you supplied from the VT begins with colour-bars (I need to write a sma
 <br />
 For Richard's benefit, here's a closeup 1:1 crop of the Jimmy image processed as per my movie demo (native 16...235 luminance):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:19:&lt;img src=&quot;/file/view/jimmy_15lineCORRECT_1MHz5.jpg/33948833/jimmy_15lineCORRECT_1MHz5.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15lineCORRECT_1MHz5.jpg/33948833/jimmy_15lineCORRECT_1MHz5.jpg" alt="jimmy_15lineCORRECT_1MHz5.jpg" title="jimmy_15lineCORRECT_1MHz5.jpg" /><!-- ws:end:WikiTextLocalImageRule:19 --><br />
+<!-- ws:start:WikiTextLocalImageRule:19:&lt;img src=&quot;../files/jimmy_15lineCORRECT_1MHz5.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15lineCORRECT_1MHz5.jpg" alt="jimmy_15lineCORRECT_1MHz5.jpg" title="jimmy_15lineCORRECT_1MHz5.jpg" /><!-- ws:end:WikiTextLocalImageRule:19 --><br />
 <br />
 <br />
 Andrew Steer - 30 April 2008<br />
@@ -981,11 +981,11 @@ Andrew Steer - 1st May 2008<br />
 No new work today. Other things cropped up.<br />
 Instead you get a picture of things I was visuallising yesterday...<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:20:&lt;img src=&quot;/file/view/frame50_V.jpg/33985551/frame50_V.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/frame50_V.jpg/33985551/frame50_V.jpg" alt="frame50_V.jpg" title="frame50_V.jpg" /><!-- ws:end:WikiTextLocalImageRule:20 --><br />
+<!-- ws:start:WikiTextLocalImageRule:20:&lt;img src=&quot;../files/frame50_V.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/frame50_V.jpg" alt="frame50_V.jpg" title="frame50_V.jpg" /><!-- ws:end:WikiTextLocalImageRule:20 --><br />
 Image showing the filtered V carrier, from a Jimmy image. The original luminance is overlaid faintly in blue for reference.<br />
 Easy on the solid orange block, but it'll take some more work to establish the colour phasing from the whole area of the picture from a mix of typical image-content... note also how the filter is &quot;banged&quot; by luminance edges. :-)<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:21:&lt;img src=&quot;/file/view/frame50_U.jpg/33985639/frame50_U.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/frame50_U.jpg/33985639/frame50_U.jpg" alt="frame50_U.jpg" title="frame50_U.jpg" /><!-- ws:end:WikiTextLocalImageRule:21 --><br />
+<!-- ws:start:WikiTextLocalImageRule:21:&lt;img src=&quot;../files/frame50_U.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/frame50_U.jpg" alt="frame50_U.jpg" title="frame50_U.jpg" /><!-- ws:end:WikiTextLocalImageRule:21 --><br />
 Image showing U-filter (1:2 scale).<br />
 <br />
 In general, there will be gaps and glitches to smooth over. If the opposite phase colours crop up then an antiphase signal will appear. Owing to cross-colour artificial / false patterns also appear.<br />
@@ -1000,15 +1000,15 @@ Andrew Steer - 3 May 2008<br />
 <br />
 Just a brief experiment to test an idea...<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:22:&lt;img src=&quot;/file/view/frame50_U_th1p5_special.jpg/34009925/frame50_U_th1p5_special.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/frame50_U_th1p5_special.jpg/34009925/frame50_U_th1p5_special.jpg" alt="frame50_U_th1p5_special.jpg" title="frame50_U_th1p5_special.jpg" /><!-- ws:end:WikiTextLocalImageRule:22 --><br />
+<!-- ws:start:WikiTextLocalImageRule:22:&lt;img src=&quot;../files/frame50_U_th1p5_special.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/frame50_U_th1p5_special.jpg" alt="frame50_U_th1p5_special.jpg" title="frame50_U_th1p5_special.jpg" /><!-- ws:end:WikiTextLocalImageRule:22 --><br />
 <br />
 Yes. It's a crude implementation, but I've verified that my previously-alluded-to anti-cross-colour idea basically works.<br />
 With a bit of refinement, I'm hoping I can get similar results to the Transform Decoder ... without infringing the patent ;-)<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:23:&lt;img src=&quot;/file/view/jimmy_15lineCORRECT_1MHz5_a.jpg/34010011/jimmy_15lineCORRECT_1MHz5_a.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15lineCORRECT_1MHz5_a.jpg/34010011/jimmy_15lineCORRECT_1MHz5_a.jpg" alt="jimmy_15lineCORRECT_1MHz5_a.jpg" title="jimmy_15lineCORRECT_1MHz5_a.jpg" /><!-- ws:end:WikiTextLocalImageRule:23 --><br />
+<!-- ws:start:WikiTextLocalImageRule:23:&lt;img src=&quot;../files/jimmy_15lineCORRECT_1MHz5_a.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15lineCORRECT_1MHz5_a.jpg" alt="jimmy_15lineCORRECT_1MHz5_a.jpg" title="jimmy_15lineCORRECT_1MHz5_a.jpg" /><!-- ws:end:WikiTextLocalImageRule:23 --><br />
 Jimmy, with my new anti-cross-colour (ACC) beta. Compare with the ordinarily filtered image earlier on this page. :-)<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:24:&lt;img src=&quot;/file/view/jimmy_15LV_1MHz5_antiCC.jpg/34010143/jimmy_15LV_1MHz5_antiCC.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15LV_1MHz5_antiCC.jpg/34010143/jimmy_15LV_1MHz5_antiCC.jpg" alt="jimmy_15LV_1MHz5_antiCC.jpg" title="jimmy_15LV_1MHz5_antiCC.jpg" /><!-- ws:end:WikiTextLocalImageRule:24 --><br />
+<!-- ws:start:WikiTextLocalImageRule:24:&lt;img src=&quot;../files/jimmy_15LV_1MHz5_antiCC.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15LV_1MHz5_antiCC.jpg" alt="jimmy_15LV_1MHz5_antiCC.jpg" title="jimmy_15LV_1MHz5_antiCC.jpg" /><!-- ws:end:WikiTextLocalImageRule:24 --><br />
 Crop from 768x576 rescaled Jimmy, with ACC. It's still quite a crude version of my intended algorithm, but quite effective nonetheless.<br />
 I can't really optimise it further until I've made the implementation more rigorous.<br />
 This is still processed as a stand-alone frame.<br />
@@ -1017,7 +1017,7 @@ To clarify: at the moment the luma is still decoded with a simple 1D 4.43MHz not
 <br />
 <br />
 Normal version for comparison:<br />
-<!-- ws:start:WikiTextLocalImageRule:25:&lt;img src=&quot;/file/view/jimmy_15LV_1MHz5_norm.jpg/34010269/jimmy_15LV_1MHz5_norm.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15LV_1MHz5_norm.jpg/34010269/jimmy_15LV_1MHz5_norm.jpg" alt="jimmy_15LV_1MHz5_norm.jpg" title="jimmy_15LV_1MHz5_norm.jpg" /><!-- ws:end:WikiTextLocalImageRule:25 --><br />
+<!-- ws:start:WikiTextLocalImageRule:25:&lt;img src=&quot;../files/jimmy_15LV_1MHz5_norm.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15LV_1MHz5_norm.jpg" alt="jimmy_15LV_1MHz5_norm.jpg" title="jimmy_15LV_1MHz5_norm.jpg" /><!-- ws:end:WikiTextLocalImageRule:25 --><br />
 As previous image, but without anti-cross-colour processing. The image processing should be identical in all other respects (they're both nominally the same c. 1.5MHz bandwidth colour filters).<br />
 <br />
 <br />
@@ -1062,11 +1062,11 @@ Andrew Steer - 5 May 2008<br />
 <br />
 When looking at the ACC images, I couldn't help but get annoyed by the luminance filter ringing, causing the &quot;shadowing&quot; around Jimmy's sleeve, Jimmy's hair, and on the &quot;Edison Lighthouse&quot; lettering. So I copied and pasted and modified the ACC code to do much the same trick with the luminance. Voila:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:26:&lt;img src=&quot;/file/view/jimmy_15LV_1MHz5_antiCCLR.jpg/34017955/jimmy_15LV_1MHz5_antiCCLR.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15LV_1MHz5_antiCCLR.jpg/34017955/jimmy_15LV_1MHz5_antiCCLR.jpg" alt="jimmy_15LV_1MHz5_antiCCLR.jpg" title="jimmy_15LV_1MHz5_antiCCLR.jpg" /><!-- ws:end:WikiTextLocalImageRule:26 --><br />
+<!-- ws:start:WikiTextLocalImageRule:26:&lt;img src=&quot;../files/jimmy_15LV_1MHz5_antiCCLR.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15LV_1MHz5_antiCCLR.jpg" alt="jimmy_15LV_1MHz5_antiCCLR.jpg" title="jimmy_15LV_1MHz5_antiCCLR.jpg" /><!-- ws:end:WikiTextLocalImageRule:26 --><br />
 <br />
 This is still a simplified version of the idea, but (IMHO) it looks rather good.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:27:&lt;img src=&quot;/file/view/jimmy_15LV_antiCCLR_sml.jpg/34018033/jimmy_15LV_antiCCLR_sml.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/jimmy_15LV_antiCCLR_sml.jpg/34018033/jimmy_15LV_antiCCLR_sml.jpg" alt="jimmy_15LV_antiCCLR_sml.jpg" title="jimmy_15LV_antiCCLR_sml.jpg" /><!-- ws:end:WikiTextLocalImageRule:27 --><br />
+<!-- ws:start:WikiTextLocalImageRule:27:&lt;img src=&quot;../files/jimmy_15LV_antiCCLR_sml.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/jimmy_15LV_antiCCLR_sml.jpg" alt="jimmy_15LV_antiCCLR_sml.jpg" title="jimmy_15LV_antiCCLR_sml.jpg" /><!-- ws:end:WikiTextLocalImageRule:27 --><br />
 Here's a 768x576 scaled copy of the whole frame. This is the raw output from todays version of my code, apart from a final pre-resize vertical filter to tame the raster structure.<br />
 <br />
 Further good news: the new processing is computationally fairly lightweight, and hasn't affected the runtime too adversely.<br />
@@ -1081,7 +1081,7 @@ Am I procrastinating?<br />
 <br />
 [Insert from Jonathan Wood]<br />
 <strong>Comparison of graded recovered colour</strong> (before the last few enhancements) :-<br />
-<!-- ws:start:WikiTextLocalImageRule:28:&lt;img src=&quot;/file/view/VTfilmcomp.jpg/34028129/VTfilmcomp.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/VTfilmcomp.jpg/34028129/VTfilmcomp.jpg" alt="VTfilmcomp.jpg" title="VTfilmcomp.jpg" /><!-- ws:end:WikiTextLocalImageRule:28 --><br />
+<!-- ws:start:WikiTextLocalImageRule:28:&lt;img src=&quot;../files/VTfilmcomp.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/VTfilmcomp.jpg" alt="VTfilmcomp.jpg" title="VTfilmcomp.jpg" /><!-- ws:end:WikiTextLocalImageRule:28 --><br />
 <br />
 Jonathan Wood - 5 May 2008<br />
 <br />

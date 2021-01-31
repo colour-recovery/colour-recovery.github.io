@@ -753,7 +753,7 @@ The downside is that soon I'll probably realise I can't remember what half of it
 <br />
 Anyway first result:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;/file/view/totp_hd_36_4M43notched.jpg/33591669/totp_hd_36_4M43notched.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp_hd_36_4M43notched.jpg/33591669/totp_hd_36_4M43notched.jpg" alt="totp_hd_36_4M43notched.jpg" title="totp_hd_36_4M43notched.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
+<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;../files/totp_hd_36_4M43notched.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/totp_hd_36_4M43notched.jpg" alt="totp_hd_36_4M43notched.jpg" title="totp_hd_36_4M43notched.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
 ©BBC - Simple 1D horizontal 4.43MHz notch-filtered section of the HD-scanned sample film image (1:1 pixels)<br />
 [Edit to add: owing to a historical coding oversight this turned out to be a 2MHz bandwidth notch rather than the standard 1.1MHz - the resulting image is softer than it needs to be.]<br />
 <br />
@@ -779,7 +779,7 @@ Andrew Steer 10th April 2008<br />
 <br />
 <strong>Further quick software hacks</strong><br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:15:&lt;img src=&quot;/file/view/crudemess400pc.jpg/33631469/crudemess400pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/crudemess400pc.jpg/33631469/crudemess400pc.jpg" alt="crudemess400pc.jpg" title="crudemess400pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:15 --><br />
+<!-- ws:start:WikiTextLocalImageRule:15:&lt;img src=&quot;../files/crudemess400pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/crudemess400pc.jpg" alt="crudemess400pc.jpg" title="crudemess400pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:15 --><br />
 ©BBC<br />
 <br />
 Taking the film image, appending an (incorrect) burst sequence, and whacking the contrast control in my PALcolour up to 400% ... !<br />
@@ -788,7 +788,7 @@ Taking the film image, appending an (incorrect) burst sequence, and whacking the
 I know that my burst-sequence is wrong, and that with the geometric distortions the phase won't be preserved, so the rainbow mess is not unexpected ;-)<br />
 Not much practical use, I know, but roughly what I was expecting - so good in that sense.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:16:&lt;img src=&quot;/file/view/crudemess300pc.jpg/33632319/crudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/crudemess300pc.jpg/33632319/crudemess300pc.jpg" alt="crudemess300pc.jpg" title="crudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:16 --><br />
+<!-- ws:start:WikiTextLocalImageRule:16:&lt;img src=&quot;../files/crudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/crudemess300pc.jpg" alt="crudemess300pc.jpg" title="crudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:16 --><br />
 ©BBC - This version with a hard-coded fixed phase reference (rather than relying on a cut-n-pasted graphic burst)<br />
 This is giving a bit more saturation &quot;out of the box&quot;.<br />
 <br />
@@ -801,7 +801,7 @@ Andrew Steer 11th April 2008<br />
 <br />
 <strong>U/V isolation<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:17:&lt;img src=&quot;/file/view/lesscrudemess300pc.jpg/33649745/lesscrudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrudemess300pc.jpg/33649745/lesscrudemess300pc.jpg" alt="lesscrudemess300pc.jpg" title="lesscrudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:17 --></strong><br />
+<!-- ws:start:WikiTextLocalImageRule:17:&lt;img src=&quot;../files/lesscrudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/lesscrudemess300pc.jpg" alt="lesscrudemess300pc.jpg" title="lesscrudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:17 --></strong><br />
 <br />
 It's still fairly crude, but I've now introduced a simple 2D filter which separates U and V, preventing them mixing. Naturally enough it also much suppresses horizontal colour-banding.<br />
 The phasing is still not locked, which means that you can get inverse colours (probably U and V can invert independently) and a loss of saturation.<br />
@@ -810,7 +810,7 @@ You will however note that some of the colours are now getting closer... in some
 There's still worse cross-colour (ie coloured stripes on luminance edges) than there should be because I'm not using the filtering properly and am instead relying merely on the stronger (brighter) field dominating the weaker one and then cranking up the saturation. This also leads to worse colour SNR than should be possible.<br />
 My aim at this stage is proof-of-principle - i.e. can we get the <em><strong>correct colours</strong></em>, not perfection in terms of optimal image-quality!<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:18:&lt;img src=&quot;/file/view/lesscrudemess330pc_1g3.jpg/33649999/lesscrudemess330pc_1g3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrudemess330pc_1g3.jpg/33649999/lesscrudemess330pc_1g3.jpg" alt="lesscrudemess330pc_1g3.jpg" title="lesscrudemess330pc_1g3.jpg" /><!-- ws:end:WikiTextLocalImageRule:18 --><br />
+<!-- ws:start:WikiTextLocalImageRule:18:&lt;img src=&quot;../files/lesscrudemess330pc_1g3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/lesscrudemess330pc_1g3.jpg" alt="lesscrudemess330pc_1g3.jpg" title="lesscrudemess330pc_1g3.jpg" /><!-- ws:end:WikiTextLocalImageRule:18 --><br />
 As above, but applying a gamma-1.3 &quot;correction&quot; to the black-and-white source before colour-recovery.<br />
 I might have slightly over-done it, but I think it looks a bit more &quot;TV&quot; and a bit less &quot;film&quot; that way.<br />
 <br />
@@ -821,7 +821,7 @@ Andrew Steer 12th April 2008<br />
 <br />
 <strong>A further quick hack... as an example, ditch the phase-information</strong><br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:19:&lt;img src=&quot;/file/view/lesscrude_posVnegU.jpg/33652211/lesscrude_posVnegU.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrude_posVnegU.jpg/33652211/lesscrude_posVnegU.jpg" alt="lesscrude_posVnegU.jpg" title="lesscrude_posVnegU.jpg" /><!-- ws:end:WikiTextLocalImageRule:19 --><br />
+<!-- ws:start:WikiTextLocalImageRule:19:&lt;img src=&quot;../files/lesscrude_posVnegU.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/lesscrude_posVnegU.jpg" alt="lesscrude_posVnegU.jpg" title="lesscrude_posVnegU.jpg" /><!-- ws:end:WikiTextLocalImageRule:19 --><br />
 In this case, I've forced +V and -U phase throughout. This is a trick that Andrew Browne has also used with this series of images - successful in this instance, but of course only gives access to one quarter of the total colour palette(!). It is proof however that if we could get phase-locking then there is good hope for colour recovery.<br />
 To clarify - this result is from <strong>decoding a single frame in isolation</strong>.<br />
 <br />
@@ -832,7 +832,7 @@ As on the previous images, cross-colour (luminance edges being interpreted as co
 [ For reference, a colour videotape original of this frame can be found on this page of the wiki <a class="wiki_link" href="/Experiments%20in%20recreation%20of%20line-structure%20through%20%20block-matching">Experiments in recreation of line-structure through block-matching</a> ]<br />
 <br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:20:&lt;img src=&quot;/file/view/scratch_nUpV.jpg/33652717/scratch_nUpV.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/scratch_nUpV.jpg/33652717/scratch_nUpV.jpg" alt="scratch_nUpV.jpg" title="scratch_nUpV.jpg" /><!-- ws:end:WikiTextLocalImageRule:20 --><br />
+<!-- ws:start:WikiTextLocalImageRule:20:&lt;img src=&quot;../files/scratch_nUpV.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/scratch_nUpV.jpg" alt="scratch_nUpV.jpg" title="scratch_nUpV.jpg" /><!-- ws:end:WikiTextLocalImageRule:20 --><br />
 1:1 pixel sample of image above<br />
 <br />
 My present routine is essentially a single-pass local-decoder, and for decoding the chroma of any one pixel within the image considers nothing more than the data within a surrounding block of 8 lines high by 33 pixels wide (HD-scan lines/pixels). It rides roughshod over the interleaved fields, and probably only works because one field is stronger than the other. For extracting the luminance, at the moment it is using a simple 1D horizontal 4.43MHz notch filter (with 2MHz bandwidth - it should be 1MHz bw, so throwing away sharpness unnecessarily!).<br />
@@ -853,7 +853,7 @@ What have I learned, what does this tell us about the prospects for largely-auto
 In discussions with Andrew Browne, I noticed that both our images have extra-saturated reds and skin-tones when the saturation on the olive-green jacket was about right.<br />
 I hypothesised that the V signal is being accentuated relative to the U. Tried knocking back the V-gain, and the result is a big improvement... making the skin less saturated and the &quot;orange&quot; square a bit more orangey.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:21:&lt;img src=&quot;/file/view/lesscrude_pos0p50VnegU300_L.jpg/33654273/lesscrude_pos0p50VnegU300_L.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrude_pos0p50VnegU300_L.jpg/33654273/lesscrude_pos0p50VnegU300_L.jpg" alt="lesscrude_pos0p50VnegU300_L.jpg" title="lesscrude_pos0p50VnegU300_L.jpg" /><!-- ws:end:WikiTextLocalImageRule:21 --><br />
+<!-- ws:start:WikiTextLocalImageRule:21:&lt;img src=&quot;../files/lesscrude_pos0p50VnegU300_L.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/lesscrude_pos0p50VnegU300_L.jpg" alt="lesscrude_pos0p50VnegU300_L.jpg" title="lesscrude_pos0p50VnegU300_L.jpg" /><!-- ws:end:WikiTextLocalImageRule:21 --><br />
 <strong>Yes, this colour <em>really is</em> obtained from the film-scan!</strong> <strong>:-)</strong><br />
 <br />
 [In this version I also tried a 1MHz notch for the luminance - has given greater sharpness, but predicatably in the top-left of the image where the geometric distortion is worse this has also coupled more residual subcarrier into the luminance.]<br />
@@ -863,7 +863,7 @@ The question remains of <em>why</em> the V-gain is higher than U. (My basic deco
 It could be due to something like mild diagonal film-blur or an oval spot or something on the telerecorder (certainly the image is blurred that way in the top-left corner)... or perhaps more-likely may be an artifact of &quot;riding roughshod&quot; over the two interleaved video fields in the processing if something else has introduced an asymmetry of some sort. If the latter, I wonder if this can lead us to some other useful information - like absolute U or V polarity???<br />
 <br />
 Here's the videotaped source reference image:-<br />
-<!-- ws:start:WikiTextLocalImageRule:22:&lt;img src=&quot;/file/view/COLREF_totp_sd_31.jpg/33654351/COLREF_totp_sd_31.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/COLREF_totp_sd_31.jpg/33654351/COLREF_totp_sd_31.jpg" alt="COLREF_totp_sd_31.jpg" title="COLREF_totp_sd_31.jpg" /><!-- ws:end:WikiTextLocalImageRule:22 --><br />
+<!-- ws:start:WikiTextLocalImageRule:22:&lt;img src=&quot;../files/COLREF_totp_sd_31.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/COLREF_totp_sd_31.jpg" alt="COLREF_totp_sd_31.jpg" title="COLREF_totp_sd_31.jpg" /><!-- ws:end:WikiTextLocalImageRule:22 --><br />
 <br />
 <br />
 <br />
@@ -878,13 +878,13 @@ If the fields are very different brightnesses then you might expect a larger (an
 I wonder what happens if there is a very slight horizontal registration-error between the two fields, whether that would upset the U/V ratios when doing the crude cross-field decoding we're doing. Coming off a mechanical VTR, I imagine an offset of say 1/4 of a PAL cycle (0.05us) may not be surprising...? Coupled with the imbalence in field brightness, might this be the answer we're looking for..?<br />
 <br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:23:&lt;img src=&quot;/file/view/chromagreyX3.jpg/33665795/chromagreyX3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/chromagreyX3.jpg/33665795/chromagreyX3.jpg" alt="chromagreyX3.jpg" title="chromagreyX3.jpg" /><!-- ws:end:WikiTextLocalImageRule:23 --><br />
+<!-- ws:start:WikiTextLocalImageRule:23:&lt;img src=&quot;../files/chromagreyX3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/chromagreyX3.jpg" alt="chromagreyX3.jpg" title="chromagreyX3.jpg" /><!-- ws:end:WikiTextLocalImageRule:23 --><br />
 Interesting: comparing the notch-filtered (and horiz-blurred) image alongside the original HD filmscan, it transpires that the <em>highest-contrast chroma</em> lines correspond with the overall slightly <em>darker</em> scanlines.<br />
 <br />
 <br />
 Did another test, subtracting two images from each other. Result appears to indicate very good geometry stability - bodes well for largely-automatic whole-programme decoding without &quot;isolated chroma island&quot; U/V polarity uncertainty. Need to try it for real of course, but looks very hopeful for now.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:24:&lt;img src=&quot;/file/view/difference.jpg/33666057/difference.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/difference.jpg/33666057/difference.jpg" alt="difference.jpg" title="difference.jpg" /><!-- ws:end:WikiTextLocalImageRule:24 --><br />
+<!-- ws:start:WikiTextLocalImageRule:24:&lt;img src=&quot;../files/difference.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/difference.jpg" alt="difference.jpg" title="difference.jpg" /><!-- ws:end:WikiTextLocalImageRule:24 --><br />
 Difference-image showing good consistancy of image-geometry.<br />
 <br />
 That's all for tonight.<br />

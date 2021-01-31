@@ -706,13 +706,13 @@ Fortunately there is a way.  Referring back to my <a class="wiki_link" href="/Ri
 <br />
 So it ought to be possible to determine whether the fields differ significantly by measuring the ratio of these two components.  For a demonstration that there is promise in such a method consider frame 332 of the 'Magenta Key' sequence:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;/file/view/mag332.jpg/34479159/mag332.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/mag332.jpg/34479159/mag332.jpg" alt="mag332.jpg" title="mag332.jpg" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
+<!-- ws:start:WikiTextLocalImageRule:8:&lt;img src=&quot;../files/mag332.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/mag332.jpg" alt="mag332.jpg" title="mag332.jpg" /><!-- ws:end:WikiTextLocalImageRule:8 --><br />
 <br />
 Here you can see that on the left of the image there is fast vertical movement, where the two overlapping regions correspond to the two different fields.  Where they overlap the content of the two fields is similar; where they don't, only one field contains chrominance (note that this image demonstrates, contrary to some claims, that the two fields are reasonably equally represented in the Film Recorded frame).<br />
 <br />
 This false colour image shows the ratio between the 72 c/aph and 216 c/aph spectral components:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;/file/view/mag332df.jpg/34479161/mag332df.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/mag332df.jpg/34479161/mag332df.jpg" alt="mag332df.jpg" title="mag332df.jpg" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
+<!-- ws:start:WikiTextLocalImageRule:9:&lt;img src=&quot;../files/mag332df.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/mag332df.jpg" alt="mag332df.jpg" title="mag332df.jpg" /><!-- ws:end:WikiTextLocalImageRule:9 --><br />
 <br />
 You can see that the regions where the fields are very different are picked out in magenta and grey, whereas the regions where the fields are similar are mostly green, cyan and blue.<br />
 <br />
@@ -740,7 +740,7 @@ I intend to do no more work on my process until some more material becomes avail
 <br />
 I've been hunting around for an ideal test image, both to demonstrate my Full Gamut Colour Recovery process, and as a useful 'artificial' source image for anybody else working on their own method.  I think I've found it in the <strong>Boy with Toys</strong> test slide; it contains a good selection of saturated colours and some more subtle tones in the background.  Here are both the original and the colour-recovered version:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;/file/view/boytoys.jpg/34593367/boytoys.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/boytoys.jpg/34593367/boytoys.jpg" alt="boytoys.jpg" title="boytoys.jpg" /><!-- ws:end:WikiTextLocalImageRule:10 --> <!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;/file/view/boytoys_rtr.jpg/34593431/boytoys_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/boytoys_rtr.jpg/34593431/boytoys_rtr.jpg" alt="boytoys_rtr.jpg" title="boytoys_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
+<!-- ws:start:WikiTextLocalImageRule:10:&lt;img src=&quot;../files/boytoys.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/boytoys.jpg" alt="boytoys.jpg" title="boytoys.jpg" /><!-- ws:end:WikiTextLocalImageRule:10 --> <!-- ws:start:WikiTextLocalImageRule:11:&lt;img src=&quot;../files/boytoys_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/boytoys_rtr.jpg" alt="boytoys_rtr.jpg" title="boytoys_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:11 --><br />
 <br />
 I've uploaded the 'artificial film recorded' (PAL coded) version <a class="wiki_link_ext" href="http://www.rtr.myzen.co.uk/boytoys.zip" rel="nofollow">here</a> so that anybody who has downloaded my Colour Recovery program can confirm the above result at full size, and anybody working on their own method can see how it compares.  The file format is raw, headerless, 8-bit luminance only (2,073,600 bytes).<br />
 <br />
@@ -770,11 +770,11 @@ Although, by eye, there is obviously chroma patterning in this frame it appears 
 <br />
 Here you can see for yourself the nature of the problem.  Firstly here is an X-displacement 'contour map' for one of the Top of the Pops frames (frame 763 of the Magenta Key sequence):<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;/file/view/mag763dx.jpg/34423803/mag763dx.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/mag763dx.jpg/34423803/mag763dx.jpg" alt="mag763dx.jpg" title="mag763dx.jpg" /><!-- ws:end:WikiTextLocalImageRule:12 --><br />
+<!-- ws:start:WikiTextLocalImageRule:12:&lt;img src=&quot;../files/mag763dx.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/mag763dx.jpg" alt="mag763dx.jpg" title="mag763dx.jpg" /><!-- ws:end:WikiTextLocalImageRule:12 --><br />
 <br />
 Each coloured band corresponds to a distortion in the horizontal direction amounting to one (HD) pixel.  Here is the equivalent map for the second Doctor Who frame:<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;/file/view/drwhodx.jpg/34680091/drwhodx.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/drwhodx.jpg/34680091/drwhodx.jpg" alt="drwhodx.jpg" title="drwhodx.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --><br />
+<!-- ws:start:WikiTextLocalImageRule:13:&lt;img src=&quot;../files/drwhodx.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/drwhodx.jpg" alt="drwhodx.jpg" title="drwhodx.jpg" /><!-- ws:end:WikiTextLocalImageRule:13 --><br />
 <br />
 There is scant evidence of <strong>any</strong> contours at all, and my process simply gives up.  The contour map is generated by means of a 2D cross-correlation between the residual chroma in the frame and a distorted (but otherwise 'perfect') subcarrier reference.  The absence of any structure in the Doctor Who version indicates that the subcarrier patterning bears little resemblance to what it ought to be.<br />
 <br />
@@ -800,7 +800,7 @@ It remains to be seen whether the degraded performance is good enough for the re
 <br />
 Here is an image which originated as a 1920 x 1080 scan of the full film width (therefore including both picture and optical soundtrack).  The active picture, with a width of about 1408 pixels, has been extracted and stretched to fill the full frame, as required by my process.  The residual chroma was in any case relatively poor, and won't have been improved by the additional re-sizing step.<br />
 <br />
-<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;/file/view/temple_rtr.jpg/34708927/temple_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/temple_rtr.jpg/34708927/temple_rtr.jpg" alt="temple_rtr.jpg" title="temple_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
+<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;../files/temple_rtr.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="../files/temple_rtr.jpg" alt="temple_rtr.jpg" title="temple_rtr.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
 <br />
 This frame has admittedly been carefully chosen as one of the better ones, but it does show what my Colour Recovery process can achieve even when the source is of marginal quality.<br />
 <br />
