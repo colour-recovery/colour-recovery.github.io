@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Wikispaces (colour-recovery)</ShortName>
+<Description>Search Wikispaces Site or Wiki</Description>
+<LongName>Search Wikispaces - Colour Recovery Working Group wiki</LongName>
+<Contact>help@wikispaces.com</Contact>
+
+<InputEncoding>UTF-8</InputEncoding>
+<OutputEncoding>UTF-8</OutputEncoding>
+<SyndicationRight>open</SyndicationRight>
+<Image width="16" height="16">data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQsSmCsME5y3DRSg1Q4Vpf8OFqnNDherqQsUqxUAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAELEpjbDBOc/w0UoP8OFaX/Dhap/w4Xq/8LFKtnAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAELEZUNCxKYyQwTm/8NFJ7/DhWk/w4Wqf8OF6v/CxSrowAAAAEAAAABAAAAAQAAAAEAAAABAAAAAS0tMwctLTMFEhZ4NwoQjP8KEI//CxGS/wwSmf8ME5//DRWl/wsTp+EtLTMDAAAAAQAAAAEAAAABAAAAAS0tMwUAAAABAAAAARIVZmEIDHr/CA2A/wwRi/8OE5P/DhSZ/woRlv8JEaD/EheHKwAAAAEAAAABAAAAAQAAAAEtLTMFAAAAASwsNRsRFG9zFBmB9RcelP8bI6X/HSe1/x4pwv8dKcr/DxrB7wgRrHkAAAABAAAAAQAAAAEAAAABLS0zBQAAAAEaHFk7DRR//wcNf/8EC4D7AQd1/wAHdf8ACnz/BA2J+QYSpP8BDsTPAAAAAQAAAAEAAAABAAAAAS0tMwMAAAABDRR6NQIGav8AAFn/AAhf/wAYcf8BInr/ABdv/wAJWf8AAEz/AAuJ1wAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEFD4dTAwl3vQIHbtsBGXjxAUac/wAZePEACHLFAAuAnwATqRMAAAABAAAAAQAAAAEAAAABAAAAAQB+AA0AfwDlAHkRxQBuEasBaEdRAU6lzQFNpa8AAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAfwATAH8A1QBfAP8AfwD/AWYZgQFVrbkBTKtBAAAAAQAAAAEAaQAlAGgAXQBnAA8AAAABAAAAAQAAAAEAAAABAAAAAQB/ABkAfwBnAH8AKwJaszkBWrXPAVW0vwBSsncAY099AGIA6wBYAP8AYQD3AGcASQAAAAEAAAABAAAAAQBqAEkAawR5AGMJlwFaXpMBYTO3AGkB0wBnAGEAahlTAGwA/wBaAP8ASgD/AFgA/wBoAPEAZwADAAAAAQBqAAcAbADxAG0A/wBbAP8ASwD/AFoA/wBrAP8AaAD5AGoAXwBtAP8AZQD/AFsA/wBjAP8AaQCdAAAAAQAAAAEAawADAG0AxwBuAP8AZwD/AF0A/wBlAP8AbAD/AGkAyQBnABUAbABLAG0AjQBsAJ0AawBdAGkADQAAAAEAAAABAAAAAQBtAAMAbgBFAG4AYQBuAI0AbQCXAGsAPwAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w==</Image>
+<Url type="text/html" method="GET" template="http://colour-recovery.wikispaces.com/search/view/{searchTerms}">
+  <Param name="a" value="0"/>
+</Url>
+<Url type="application/rss+xml" method="GET" template="http://colour-recovery.wikispaces.com/search/view/{searchTerms}">
+  <Param name="a" value="0"/>
+  <Param name="v" value="rss_2_0"/>
+</Url>
+<Url type="application/atom+xml" method="GET" template="http://colour-recovery.wikispaces.com/search/view/{searchTerms}">
+  <Param name="a" value="0"/>
+  <Param name="v" value="atom_1_0"/>
+</Url>
+<moz:SearchForm>http://colour-recovery.wikispaces.com/</moz:SearchForm>
+</OpenSearchDescription>

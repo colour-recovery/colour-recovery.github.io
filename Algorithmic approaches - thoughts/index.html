@@ -1,0 +1,1345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="search" href="https://colour-recovery.github.io/space/opensearch" type="application/opensearchdescription+xml" title="Wikispaces Search (Colour Recovery Working Group Wiki)" />
+<link rel="alternate" type="application/x-wiki" title="Edit This Page" href="/page/edit/Algorithmic+approaches+-+thoughts" />
+<link rel="alternate" title="Colour Recovery Working Group - All Changes" href="https://colour-recovery.github.io/wiki/xmla?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="colour-recovery : Algorithmic approaches - thoughts - Discussion" href="https://colour-recovery.github.io/message/xml/Algorithmic+approaches+-+thoughts?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="colour-recovery : Algorithmic approaches - thoughts - Edits" href="https://colour-recovery.github.io/page/xml/Algorithmic+approaches+-+thoughts?v=rss_2_0" type="application/rss+xml" />
+<link rel="microsummary" href="/page/microsummary/Algorithmic+approaches+-+thoughts/edits"/>
+<link rel="microsummary" href="/page/microsummary/Algorithmic+approaches+-+thoughts/messages"/>
+<script type="text/javascript">
+  
+if (typeof ws === 'undefined') ws = {};
+ws.context = {
+  instance: {
+    id: '1',
+    url: 'wikispaces.com',
+    isMain: true,
+    supportsGoogleDocs: false,
+    isTesClassroom: false,
+  },
+  user: {
+    id: '',
+    username: '',
+    status: '',
+    locale: 'en',
+    imageUrlPrefix: '../ssl.wikicdn.com/i/user_none_',
+    isTeacher: false,
+    canAdministerWiki: false,
+  },
+  wiki: {
+    id: '110862',
+    name: 'colour-recovery',
+    text: 'Colour Recovery Working Group',
+    module: 'B',
+    isClassroom: false,
+    isTesClassroom: false
+    ,defaultSpaceId: 110862
+    ,isWwwWiki: false
+  },
+  project: {
+    id: '110862',
+    name: ''
+  },
+  space: {
+    id: '110862',
+    name: 'colour-recovery',
+    isDefaultSpace: true,
+    isDefaultTemplate: false
+  },
+
+  environment_name: 'prod',
+
+  path: {
+    object: 'page',
+    method: 'view',
+    page: 'Algorithmic approaches - thoughts',
+    id: ''
+  },
+
+  settings: {
+    main_domain: 'wikispaces.com',
+    session_url: 'https://session.wikispaces.com/1/',
+    asset_url_prefix: '../ssl.wikicdn.com',
+    beta_features: false,
+    isMobileSite: false,
+    isUploadCapable: true,
+    can_discuss: false,
+    has_gdocs: false,
+    isDialog: false,
+    pwin: ''
+  },
+  clockSkewMillis: 1528197344471 - ((window.performance && window.performance.timing.responseStart > 0) ? window.performance.timing.responseStart : (new Date()).getTime())
+}
+
+
+// legacy javascript API variables, use the above instead
+var wikispaces_isUserLoggedIn = !!ws.context.user.id;
+var wikispaces_isMain = ws.context.instance.isMain;
+var wikispaces_username = ws.context.user.username;
+var wikispaces_spaceName = ws.context.space.name;
+var wikispaces_projectName = ws.context.project.name;
+var wikispaces_wikiName = ws.context.wiki.name;
+var wikispaces_wikiText = ws.context.wiki.text;
+var wikispaces_isDefaultSpace = ws.context.space.isDefaultSpace;
+var wikispaces_method = ws.context.path.method;
+var wikispaces_object = ws.context.path.object;
+var wikispaces_page = ws.context.path.page;
+var wikispaces_id = ws.context.path.id;
+var wikispaces_domain = ws.context.instance.url;
+var wikispaces_isUserOrganizer = false;
+var wikispaces_main_domain = ws.context.settings.asset_url_prefix;
+var wikispaces_asset_url_prefix = ws.context.settings.asset_url_prefix;
+var wikispaces_beta_features = ws.context.settings.beta_features;
+var wikispaces_isMobileSite = ws.context.settings.isMobileSite;
+var wikispaces_isUploadCapable = ws.context.settings.isUploadCapable;
+var wikispaces_can_discuss = ws.context.settings.can_discuss;
+var wikispaces_has_gdocs = ws.context.settings.has_gdocs;
+
+</script><title>Colour Recovery Working Group - Algorithmic approaches - thoughts</title>
+<meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="144x144" href="../ssl.wikicdn.com/_/z6371z4x/i/logo-144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="../ssl.wikicdn.com/_/j5j77xz3/i/logo-114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="../ssl.wikicdn.com/_/vq8j5432/i/logo-72.png" />
+<link rel="apple-touch-icon" href="../ssl.wikicdn.com/_/38515190/i/logo-57.png" />
+<link rel="shortcut icon" href="../ssl.wikicdn.com/_/55v9k02z/i/logo-16.png" />
+<style type="text/css">
+/*
+Based on: AquaFluid, http://wpthemepark.com/
+Description: WP Theme AquaFluid by Sadish
+Version: 1.0
+Author: Sadish Balasubramanian
+*/
+
+/* Standard theme styles */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+.ws-theme-header-inner,
+.ws-theme-body-inner,
+.ws-theme-footer-inner,
+.ws-theme-content-inner,
+.ws-theme-sidebar-inner {
+  position: relative;
+}
+.ws-theme-header-inner:after,
+.ws-theme-body-inner:after,
+.ws-theme-footer-inner:after,
+.ws-theme-content-inner:after,
+.ws-theme-sidebar-inner:after,
+.ws-theme-menu-inner:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.ws-theme-content, .ws-theme-sidebar {
+  overflow-x: auto;
+}
+.ws-theme-footer {
+  text-align: right;
+}
+.ws-theme-footer a, .ws-theme-footer a:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .ws-theme-container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ws-theme-content {
+    width: 550px;
+    min-height: 384px;
+    float: right;
+  }
+  .ws-theme-sidebar {
+    width: 200px;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .ws-theme-container {
+    width: 970px;
+  }
+  .ws-theme-content {
+    width: 770px;
+    min-height: 496px;
+  }
+}
+@media (min-width: 1200px) {
+  .ws-theme-container {
+    width: 1170px;
+  }
+  .ws-theme-content {
+    width: 970px;
+    min-height: 600px;
+  }
+}
+/* End standard theme styles */
+</style>
+<style type="text/css">
+/* Theme-specific styles */
+body {
+  background-color: #CDE;
+}
+
+.ws-theme-container {
+  margin: 0 5px;
+}
+
+.ws-theme-header .WikiSearch .WikiSearchInput,
+.ws-theme-sidebar .WikiSearch .WikiSearchInput,
+.ws-theme-footer .WikiSearch .WikiSearchInput {
+  width: 100%;
+}
+
+.ws-theme-header,
+.ws-theme-sidebar,
+.ws-theme-footer {
+  color: #000000;
+}
+.ws-theme-header a,
+.ws-theme-sidebar a,
+.ws-theme-footer a {
+  color: #0000FF;
+  text-decoration: none;
+}
+.ws-theme-header a:hover,
+.ws-theme-sidebar a:hover,
+.ws-theme-footer a:hover {
+  text-decoration: underline;
+}
+.ws-theme-header img,
+.ws-theme-sidebar img,
+.ws-theme-footer img {
+  border: none;
+}
+
+.ws-theme-header-inner,
+.ws-theme-body-inner,
+.ws-theme-footer-inner {
+  border: #CCC 1px solid;
+}
+
+.ws-theme-header,
+.ws-theme-sidebar {
+  display: none;
+}
+
+.ws-theme-body {
+  padding-top: 8px;
+}
+.ws-theme-body-inner {
+  border-bottom: none;
+  background-color: #FFF;
+}
+
+.ws-theme-content {
+  overflow-x: visible;
+}
+.ws-theme-content-inner {
+  padding: 13px 15px 26px;
+}
+
+.ws-theme-footer {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.ws-theme-footer-inner {
+  padding: 10px 15px;
+  background: #FFF;
+  border-top-color: #000;
+}
+.ws-theme-footer .WikiLicense img {
+  vertical-align: text-bottom;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #FAFBFC url(../ssl.wikicdn.com/_/68jv1944/i/theme_aqua_blue.jpg) repeat-x top fixed;
+  }
+
+  .ws-theme-container {
+    width: auto;
+    margin: 0 8px;
+  }
+
+  .ws-theme-header,
+  .ws-theme-sidebar {
+    display: block;
+  }
+
+  .ws-theme-header {
+    display: block;
+    padding-top: 20px;
+  }
+  .ws-theme-header-inner {
+    height: 125px;
+    padding: 25px 20px;
+    background: #483d8b url(../ssl.wikicdn.com/_/xq2j142v/i/theme_aqua_header.jpg) repeat-x bottom;
+    border-bottom: none;
+  }
+  .ws-theme-header .ws-theme-logo {
+    float: right;
+  }
+
+  .ws-theme-body {
+    padding-top: 0;
+  }
+  .ws-theme-body-inner {
+    border-top: none;
+    background-color: #EEE;
+  }
+  .ws-theme-body-inner:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 200px;
+    background-color: #FFF;
+    border-left: 1px solid #CCC;
+  }
+
+  .ws-theme-content {
+    width: auto;
+    margin-left: 200px;
+    float: none;
+  }
+  .ws-theme-content-inner {
+    float: left;
+    width: 100%;
+    padding: 13px 15px 26px;
+  }
+
+  .ws-theme-sidebar-inner {
+    padding: 0 10px;
+  }
+  .ws-theme-sidebar .WikiActions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .ws-theme-sidebar .WikiActions > li {
+    padding: 2px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol {
+    padding-left: 16px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol.includePageList {
+    padding-left: 0;
+  }
+  .ws-theme-sidebar .WikispacesNavbar {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit {
+    color: #666;
+    text-align: center;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit a {
+    color: inherit;
+  }
+
+  .ws-theme-footer-inner {
+    border-top-color: #CCC;
+    background: #FFF url(../ssl.wikicdn.com/_/2z687q19/i/theme_aqua_top.gif) repeat-x top;
+  }
+}
+
+/* End theme-specific styles */
+</style>
+<link rel="stylesheet" href="../www.wikispaces.com/stylesheet/viewi/217420326D.css" type="text/css" />
+<link rel="stylesheet" href="../ssl.wikicdn.com/s/nogz/9jvvjv40-internal-bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="../ssl.wikicdn.com/s/nogz/vz033906-internal.css" type="text/css" />
+<script src="../ssl.wikicdn.com/s/nogz/84014v41-top.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  var wsGoogleAccount = 'UA-80504-1';
+  _gaq.push(['_setAccount', wsGoogleAccount]);
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_setDomainName', 'wikispaces.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar', 2, 'Authenticated', 'Guest', 2]);
+  _gaq.push(['_trackPageview']);
+</script></head>
+<body><a href="#WikiContent" class="hidden sr-only sr-only-focusable">Skip to main content</a><div id="js-fixed-header-holder" class="fixed"><div class="WikispacesContent WikispacesBs3" role="banner">
+      
+    <div class="ws-main-top-nav visible-xs">
+    <div class="navbar navbar-static-top" style="margin-bottom: 0;">
+      <div class="container">
+                <div class="navbar-header">
+          <div class="visible-xs pull-left">
+            <a href="/space/menu" class="WikispacesDialogLink btn navbar-btn">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="visible-xs pull-right js-globalnav-popover-container">
+                        <a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts%3FresponseToken%3D671d9b122ec000d3f556fd5fc2278f5c" class="btn navbar-btn ws-mobile-guest-username js-globalnav-popover-trigger">
+              guest
+            </a>
+                        <div class="hidden js-globalnav-popover-content">
+              <div class="WikispacesContent WikispacesBs3">
+                <div class="WikiInternalHeaderNav noHide">
+  <div class="WikiInternalHeaderNavMenu">
+                          
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/user/join?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Join</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://helpcenter.wikispaces.com/">Help</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts%3FresponseToken%3D671d9b122ec000d3f556fd5fc2278f5c" rel="nofollow" class="WikispacesXDomainDialogLink">Sign In</a></span>
+      </div>
+</div>              </div>
+            </div>
+          </div>
+          <div class="ws-navbar-middle-xs">
+            <div class="navbar-brand" role="navigation">
+              <a href="../www.wikispaces.com/" class="ws-logo"></a>
+              <i class="fa fa-angle-right"></i>
+              <a href="https://colour-recovery.github.io/">Colour Recovery Working Group</a>
+                              <i class="fa fa-angle-right"></i> <a href="https://colour-recovery.github.io/home">Home</a>
+              
+            </div>
+          </div>
+                    <form action="/search/view" method="post" class="navbar-form ws-include-xs pull-left ws-navbar-search hidden-xs" role="search"><input type="hidden" name="wikispacesFormToken" value="3c161cd8d9c92f8cbbd121ae0f1131ab0ed14ae0"/><input type="text" class="form-control search-query" name="q" value="" placeholder="Search" /> </form>
+                  </div>
+      </div>
+    </div>
+  </div>
+      <div class="hidden-xs"><div class="WikiInternalHeaderNav WikiElement floating">
+  <div class="WikiInternalHeaderNavMenu">
+                                    <span class="WikiInternalHeaderNavMenuArea guestUserName">guest</span><span class="slideMarker divider">|</span>
+        
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/user/join?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Join</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://helpcenter.wikispaces.com/">Help</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts%3FresponseToken%3D671d9b122ec000d3f556fd5fc2278f5c" rel="nofollow" class="WikispacesXDomainDialogLink">Sign In</a></span>
+      </div>
+</div></div>
+  </div></div><div id="js-fixed-header-offset">
+<header class="ws-theme-header" role="banner">
+  <div class="ws-theme-container">
+    <div class="ws-theme-header-inner">
+      <div class="ws-theme-logo">
+        <a href="https://colour-recovery.github.io/" class="WikiLogo WikiElement"><img src="../logo.jpg" alt="Colour Recovery Working Group" /></a>      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ws-theme-body">
+  <div class="ws-theme-container">
+    <div class="ws-theme-body-inner">
+      <nav class="ws-theme-sidebar" role="navigation">
+        <div class="ws-theme-sidebar-inner">
+          <div class="ws-theme-menu">
+            <div class="ws-theme-menu-inner">
+              <ul class="WikiActions WikiElement WikiControls">
+    <li id="WikiActionHome"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="https://colour-recovery.github.io/"><i class="fa fa-home fa-fw"></i></a><a href="https://colour-recovery.github.io/">Wiki Home</a></div></li>
+    <li id="WikiActionChanges"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="/wiki/changes"><i class="fa fa-clock-o fa-fw"></i></a><a href="/wiki/changes">Recent Changes</a></div></li>
+    <li id="WikiActionPagesAndFiles"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="/space/content"><i class="fa fa-file-text-o fa-fw"></i></a><a href="/space/content">Pages and Files</a></div></li>
+    <li id="WikiActionMembers"><div class="js-member-link"><span class="WikiActionSupplemental" style="float: right;"></span><a href="/wiki/members"><i class="fa fa-user fa-fw"></i></a><a href="/wiki/members">Members</a></div></li>
+</ul>
+              <form action="/search/view" method="post" class="WikiSearch WikiElement" role="search"><input type="text" class="form-control WikiSearchInput" name="q" value="" placeholder="Search" /> </form>              <div class="WikiCustomNav WikiElement wiki"><ul><li><h3><a class="wiki_link" href="/Home">Home</a></h3>
+</li><li><a class="wiki_link_ext" href="http://colour-recovery.github.io/message/list/home" rel="nofollow">General Announcements</a></li><li><a class="wiki_link" href="/Members">Members</a></li><li><a class="wiki_link" href="/An%20examination%20of%20source%20material">An examination of source material</a></li><li><a class="wiki_link" href="/Background%20information">Background information</a></li><li><a class="wiki_link" href="/Tutorials">Tutorials</a></li><li><a class="wiki_link" href="/Utilities">Utilities</a></li><li><a class="wiki_link" href="/Previous%20work">Previous work</a></li><li><a class="wiki_link" href="/Current%20work">Current work</a></li><li><a class="wiki_link" href="/Future%20work">Future work</a></li></ul></div>              <div class="ws-theme-nav-edit">
+                              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="ws-theme-content" role="main">
+        <div class="ws-theme-content-inner">
+          <div class="contentBox"><div class="innerContentBox" id="WikiContent">
+
+<script type="text/template" id="comment-footer-template">
+
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</script>
+
+<script type="text/template" id="comment-content-template">
+<div class="ws-box commentView">
+  <div class="comment-close">
+    <button type="button" class="closeme close" aria-hidden="true"><i class="fa fa-times"></i></button>
+  </div>
+  <div class="commentHeader">
+    <p class="ws-stream-meta command-context">
+      <a class="userLink userLinkPicture" href="<%= userCreated.url %>"><img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16"></a>
+      <a href="<%= userCreated.url %>"><%= userCreated.username %></a>
+      <% if (smartDate == '__live__') { %>
+      <abbr class="timeago" title="<%= (new Date(parseInt(dateCreated, 10) * 1000)).toISOString() %>">
+        <%= dateCreated %>
+      </abbr>
+      <% } else { %>
+        <%- smartDate %>
+      <% } %>
+      <% if (ws.context.user.canAdministerWiki && ws.comments.Manager.readOnly) { %>
+        <i class="fa fa-trash-o contextual-command delete ws-tip" title="Delete Comment"></i>
+      <% } %>
+    </p>
+  </div>
+
+  <div class="commentBody">
+    <div class="commentContent">
+      <%= description %>
+    </div>
+
+      <% for(i = 0; i < replyPages.length; i++) { %>
+        <% for(var j = 0; j < replyPages[i].digests.length; j++) { %>
+      <div class="commentReply" data-id="<%= replyPages[i].digests[j].id %>">
+        <p class="ws-stream-meta command-context">
+          <a class="userLink userLinkPicture" href="<%= replyPages[i].digests[j].userCreated.url %>"><img class="userPicture" src="<%= replyPages[i].digests[j].userCreated.imageUrl %>" width="16" height="16"></a>
+          <a href="<%= replyPages[i].digests[j].userCreated.url %>"><%= replyPages[i].digests[j].userCreated.username %></a>
+          <% if (smartDate == '__live__') { %>
+          <abbr class="timeago" title="<%= (new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000)).toISOString() %>">
+            <%= new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000).toLocaleString() %>
+          </abbr>
+          <% } else { %>
+            <%- smartDate %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+          <i class="fa fa-trash-o contextual-command delete-reply ws-tip" title="Delete Reply"></i>
+          <% } %>
+          </p>
+        <div class="commentContent"><%= replyPages[i].digests[j].body %></div>
+      </div>
+        <% } %>
+      <% } %>
+
+      <form class="reply commentReply">
+        <div class="form-group">
+          <textarea name="reply" placeholder="Reply" class="form-control" /></textarea>
+        </div>
+        <div class="btn-toolbar">
+          <button type="submit" class="btn btn-primary btn-sm" name="go" value="1">Post</button>
+
+          <% if (ws.context.user.id) { %>
+            <% if (monitored) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip active" title="You are monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip" title="You are not monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+            <% if (locked) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip active" title="Replies are not allowed."><i class="fa fa-lock"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip" title="Replies are allowed."><i class="fa fa-lock"></i></button>
+            <% } %>
+          <% } %>
+
+          <i class="fa fa-spinner fa-spin spinner pull-right hidden"></i>
+        </div>
+      </form>
+   </div>
+
+   
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-composer-template">
+<div class="ws-box commentView">
+  <div class="commentComposer">
+    <div class="comment-close">
+      &nbsp;<button type="button" class="close closeme" aria-hidden="true"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="commentHeader">
+      <p class="ws-stream-meta command-context">
+        <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+        <a href="#" onclick="return false;"><%= userCreated.username %></a>
+      </p>
+    </div>
+    <div class="commentBody">
+      <textarea name="comment" class="compose form-control" placeholder="Comment"/></textarea><br/>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-default btn-sm monitored active pull-right" style="margin-left: 6px" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-default btn-sm locked btn-toggle pull-right" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-lock"></i></button>
+        <button type="button" class="btn btn-primary btn-sm closeme">Save</button>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-proxy-template">
+<div class="comment-proxy">
+  <span class="commentUser">
+  <% if (userCreated) { %>
+    <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+  <% } else { %>
+    <img class="userPicture" src="<%= ws.context.user.imageUrlPrefix %>sm.jpg" width="16" height="16">
+  <% } %>
+  </span>
+  <span class="commentReplies"><%= 1 + _(replyPages).reduce(function(memo, page){ return memo + page.digests.length; }, 0) %></span>
+</div>
+</script>
+
+<div class="ws-menu-bar WikiControls WikispacesContent WikispacesBs3">
+  
+    <h1 class="pageTitle"><a href="/Algorithmic+approaches+-+thoughts">Algorithmic approaches - thoughts</a></h1>
+      <div class="btn-group pull-right">
+          <span class="btn btn-default disabled tipme" title="you do not have permission to edit this page"><i class="fa fa-pencil fa-fw"></i> Edit</span>          <a class="btn btn-default tipme" title="view 9 discussion posts" href="/Algorithmic+approaches+-+thoughts#discussion"><i class="fa fa-comments fa-fw"></i> 9</a>          <a class="btn btn-default tipme" title="view 57 revisions" href="/page/history/Algorithmic+approaches+-+thoughts"><i class="fa fa-clock-o fa-fw"></i> 57</a>          <a class="btn btn-default ws-btn-more dropdown-toggle tipme" title="more options" href="/page/menu/Algorithmic+approaches+-+thoughts"><i class="icon-height-only fa-fw"></i>&hellip;</a>        <ul class="ws-more-menu dropdown-menu dropdown-menu-right">
+              <li class=" dropdown"><a class=" ws-tag-dropdown-toggle" href="/page/tags/Algorithmic+approaches+-+thoughts"><span class="pull-right">0</span> <i class="fa fa-tag fa-fw"></i> Tags</a>
+          <div class="dropdown-menu dropdown-menu-right ws-tag-dropdown-menu">
+          
+
+
+
+<form action="#" name="WikiTagForm" class="WikiTagForm"><input type="hidden" name="wikispacesFormToken" value="9c33c6e54a1d24ae8a22aa1952ea5f6513cdce48"/><input type="hidden" name="wikispacesFormToken" value="9c33c6e54a1d24ae8a22aa1952ea5f6513cdce48"/>
+  <div class="WikiTagList">
+    <i class="fa fa-tag ws-action"></i>
+        <ul class="list-unstyled">
+          <li>No tags</li>
+        </ul>
+      </div>
+  </form>      </div>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class=" WikispacesDialogLink" href="https://colour-recovery.github.io/wiki/addmonitor?monitorLink=page%3AAlgorithmic%20approaches%20-%20thoughts"><i class="fa fa-eye fa-fw"></i> Notify</a>
+    </li>
+        <li class=""><a class=" WikispacesDialogLink" href="/page/rss/Algorithmic+approaches+-+thoughts"><i class="fa fa-rss fa-fw"></i> RSS</a>
+    </li>
+        <li class=""><a class="" href="/page/links/Algorithmic+approaches+-+thoughts"><i class="fa fa-link fa-fw"></i> Backlinks</a>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class="" href="/page/code/Algorithmic+approaches+-+thoughts"><i class="fa fa-code fa-fw"></i> Source</a>
+    </li>
+        <li class=""><a class="" href="/Algorithmic+approaches+-+thoughts?f=print"><i class="fa fa-print fa-fw"></i> Print</a>
+    </li>
+        <li class=""><a class="" href="/page/pdf/Algorithmic+approaches+-+thoughts"><i class="fa fa-cloud-download fa-fw"></i> Export (PDF)</a>
+    </li>
+      </ul>  </div>
+  </div>
+
+
+
+
+  <textarea class="form-control" id="autosaveContent" style="display:none;" rows="1" cols="1"></textarea>
+  <div id="autosavePrompt" style="display:none;"></div>
+
+<div class="commentContainer">
+  <div class="commentSubject">
+  <div class="wiki wikiPage" id="content_view">
+  Andrew Steer - 6 April 2008<br />
+<br />
+<br />
+Ok, it's about 8-9 years since I wrote my own <a class="wiki_link_ext" href="http://www.techmind.org/vd/paldec.html" rel="nofollow">software PAL colour decoder</a>. I'm a little rusty on it now.<br />
+<br />
+I've just met up with James, and had a chat about where the group has got to. James has supplied me with two 1080 (HD telecine film-scans) frames of the Jimmy Saville image, and two of much the same image without Jimmy.<br />
+It is unfortunate that there is so much black in these frames, but I guess we have to live with that for now!<br />
+<br />
+The PAL chroma signal in these scans definitely looks quite strong, and I'd say it's very reasonable to say that it should be possible to decode the colour. The question, of course, is <em>how</em>.<br />
+<br />
+I still maintain that the ideal way to do it would be to recover the original line structure and precise image geometry (using the embedded PAL signal at 4.43MHz as a guide). I can see that this may be tricky in practice, not least because a 1080 line scan still only barely resolves the original line structure. It would be interesting to see a very high resolution scan of the film to see just what is there... but while possible for single frames, I've no idea whether this would be practical for whole programmes anyway. James says there's some moves afoot on getting a &quot;2K&quot; test-scan made...? But I thought &quot;2K&quot; was only (2048 x 1080) anyway? Recovering the line structure would also have the advantage of recovering 50Hz fields properly, without having to use VidFIRE - which should reduce motion-blur. If there's any chance of doing this, I still think this should be a goal. With a restored image, you've essentially regenerated the original raw PAL signal, so a conventional (software) PAL decoder can bring back the colour.<br />
+<br />
+It also occurs to me that it should be possible to locally detect the &quot;comb&quot; effect you get from motion on merged interlaced fields, and use this as a strong hint for VidFIRE-like processes.<br />
+<br />
+I hear the other Andrew (Andrew Browne) has been working on a &quot;local colour decoding&quot; approach. I know no more about this than is mentioned on the pages here, i.e. not a lot. From my past knowledge of PAL I know that while single lines are coded with varying amplitudes of quadrature &quot;U&quot; and &quot;V&quot; phase subcarrier (and need a phase-locked reference -the colour burst- to make sense of), because of the subtle phase-relationships between lines, looking across several lines, colours make recognisable 2D patterns.<br />
+As I wrote, on my own <a class="wiki_link_ext" href="http://www.techmind.org/vd/paldec.html" rel="nofollow">webpage</a> years ago, &quot;Of note, U-axis colours (pure yellows or blues) appear as diagonal stripes \ \ \, while V-axis colours (pure reds or greens) appear as diagonals <em>/ / /.</em> Mixture colours, such as orange (red+yellow) give rise to a superposition of the two, ie cross-hatching.&quot;<br />
+Now, in the absence of a phase reference, you still know that \ \ \ stripes are either yellows OR blues, and / / / are red OR green. There's a 180-degree phase ambiguity. Right now, I'm not sure whether there's any way to resolve this. It may be possible to get some hints from the inter-line or inter-frame comparisons - maybe from mixed U+V colours? Even if it does have to be manually determined, it should only be necessary to do once per shot, because algorithms could follow through from one frame to the next. If a poor quality home VHS recording existed, then this would be sufficient to determine the phase too. It might also be possible to do statistically, eg because flesh tones are more probable than the complementary desaturated ugly green colour.<br />
+<br />
+When I first heard about &quot;local colour decoding&quot; (ie in the absence of external phase reference, owing to absence of burst and image distortion), I was concerned that if you had small areas of colour, or coloured patterns, you might run into great difficulty. I now suspect it might be possible to establish a local phase-lock from the dominant colour, which would then be the reference which enabled nearby smaller patches of colour to be decoded.<br />
+<br />
+I hope it might be possible to locally-recover the horizontal, U, and V slope-angles and use these as a guide to geometrically correcting the image. This will be very difficult with large picture-areas without chroma.<br />
+<br />
+If you can't (or don't) geometrically correct the image, you want to try (&quot;local&quot;) decoding on the HD scan at its native resolution. What you could do is to locally regenerate a (2D ???) U/V phase reference - <em>phase-locked to the image</em> where-possible. You'd then use digital &quot;product demodulation&quot; to recover the U,V, and luminance signals cleanly. *<br />
+<br />
+Now, when I did PAL before, I was only considering single-fields. In this problem, we have the two fields interleaved (and not easily fully separable). I need to re-discover my copy of &quot;Broadcast Television Fundamentals&quot; by Micheal Tancock - excellent guide for the &quot;analog&quot; background to this project, and familiarise myself with the expected patterns and relations for interleaved fields. Alternatively I can dig out my copy of RT Russells program and generate some references that way.<br />
+<br />
+<br />
+When I first saw the full res scans, I thought that this might be harder than I thought - that I thought maybe I'd &quot;bitten off more than I could chew&quot;. But having written this page, especially the paragraph above marked * I'm getting quite excited about it.<br />
+<br />
+<br />
+And now to bed...<br />
+<br />
+<br />
+Andrew Steer - 7 April 2008<br />
+<br />
+<strong>Further facts and observations</strong><br />
+<br />
+A) Local recovery of the (2D) U and V axis will yeild diagonal stripe patterns, further:<br />
+1) At the nominal vertical positions of the scan-lines, these will be in quadrature (90 degree phase offset) when resolved horizontally<br />
+2) In practice owing to the line-doubling from the two interleaved fields, the actual scan-lines will be a half-line above and below the &quot;fit&quot; nominal-position<br />
+3) (In areas with mixed U/V colour, this may help with resolving the scanlines)<br />
+<br />
+B) Vertical wandering of the original scan-line structure relative to the HD film-scan would result in (90-degree) &quot;phase-shifts&quot; of the horizontal Fsc, if analysed naively in 1D<br />
+C) It is intriguing to note that in the non-chroma (white/grey) figures in the right of the picture alternate scan-lines (ie fields) appear to have a different brightness. It would be interesting to do a simple 1D chroma notch filter over the rest of the image and see if this luminance differential is visible over the whole picture. This may be another &quot;clue&quot; to scan-line recovery.<br />
+<br />
+D) Overall, I'm thinking that full/complete scan-line recovery would be nice, but I'm having doubts that it would ever be robust enough. If we relied on it, and it failed (mis-aligned), it would cause a lot of problems. Conversely, &quot;in-situ&quot; (ie native at HD resolution) colour-decoding using 2D filters might sacrifice a little vertical resolution, but should be far more robust.<br />
+<br />
+E) I do think there would be merit in &quot;local&quot; scan-line recovery (or at least scan-line awareness), and that this could significantly improve the signal-to-noise ratio of decoded colour when compared to a more general (scan-line oblivious) 2D chroma/comb filter. It should also improve the filtering out of the colour signal from the target luminance signal while maintaining maximum horizontal luminance resolution (bandwidth). This scan-line awareness might be derived from comparison of a simple 1D horizontal chroma filter of adjacent lines to see which match and which don't and/or by trial-and-error matching of discrete (scan-line) staggered 2D chroma-filters rather than smooth diagonal filters and/or see point (C) above.<br />
+<br />
+Yesterday I was afraid that although &quot;local colour decoding&quot; would get some initial results fast, it might prove to be an evolutionary dead end. I've now come around to the position that &quot;local colour decoding&quot; (as I envisage it in my head - I am unaware of the details of Andrew Browne's approach) is the way forward.<br />
+<br />
+I need to start coding soon, because until I have something to show, all these ideas are merely &quot;talk&quot;!<br />
+&quot;The proof of the pudding is in the eating!&quot;<br />
+<br />
+...<br />
+<br />
+Just had a further close look at the source-images (HD scans).<br />
+The subcarrier has a typical pitch of around 8.0 to 8.1 pixels. (This makes the scan roughly equivalent to a 35.7MHz horizontal sampling frequency.) Seemingly the pitched is stretched to as much as 9.0 pixels in the extreme top left of the image though. This gives an impression of the worst-case geometric distortion!<br />
+<br />
+Looking to see what happens at the edges of the scans, I tried applying a gamma 1.5 &quot;correction&quot; to brighten the low-greys. I then noticed that even the 6MB &quot;.BMP&quot; images have still previously undergone a block-transform (JPEG-like) coding at some stage. The compression was evidently very mild, but blocking artifacts are evident in the low greylevels if you look for them. This shouldn't be a problem for now, and for proof-of-concept, but it would be good to have truly &quot;clean&quot; images for serious processing if this Colour Recovery really takes off in future!<br />
+<br />
+<br />
+Andrew Steer 8th April 2008<br />
+<br />
+<strong>First software trials</strong><br />
+<br />
+I have got a head-start here, as I'm working by hacking an old version of my PALcolour program.<br />
+The downside is that soon I'll probably realise I can't remember what half of it does, or will find one change causes unforeseen side-effects - the eternal problem of tinkering with old code!<br />
+<br />
+Anyway first result:<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:14:&lt;img src=&quot;/file/view/totp_hd_36_4M43notched.jpg/33591669/totp_hd_36_4M43notched.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/totp_hd_36_4M43notched.jpg/33591669/totp_hd_36_4M43notched.jpg" alt="totp_hd_36_4M43notched.jpg" title="totp_hd_36_4M43notched.jpg" /><!-- ws:end:WikiTextLocalImageRule:14 --><br />
+©BBC - Simple 1D horizontal 4.43MHz notch-filtered section of the HD-scanned sample film image (1:1 pixels)<br />
+[Edit to add: owing to a historical coding oversight this turned out to be a 2MHz bandwidth notch rather than the standard 1.1MHz - the resulting image is softer than it needs to be.]<br />
+<br />
+Note how the line-structure has become more easily perceived.<br />
+Clearly the alternate field is slightly weaker in brightness.<br />
+I've noticed the little black pixels in the (orange) block to the left. I'm not sure exactly where they've come from in my processing (shouldn't really be happening) -- but they're not a major issue at this stage anyway.<br />
+<br />
+I wish I could find my photocopy of Tancock (&quot;Fundamentals of Broadcast Television&quot;) - I could do with the interleaved field PAL phasing reference-images! It gets complicated to work out owing to the half-line field-offset. There's a second-hand copy on Amazon for £23...<br />
+Instead I'll try and work it out from my copy of Rec.470.<br />
+Or just hack something quickly - trial-and-error in the first instance!<br />
+<br />
+Because it was designed for scan-line accurate encoded source images, my existing code makes hardwired assumptions about interline phase offsets if 2D filtering is used (even basic &quot;delay-line PAL&quot; uses 2-line averaging). That'll have to go - or be seriously rehashed.<br />
+<br />
+I'm trying to get my program to do basic 1D PAL decoding (i.e. no interline averaging or anything) with a fake &quot;burst&quot; stuck on the left hand edge. I was hoping to get &quot;rainbow&quot; colours - i.e. all wrong (not properly phase- or frequency-locked), but showing saturation loosely proportional to that intended, and changing hue abruptly where the original colours change. Instead I'm getting very little colour, even with the saturation at &quot;200%&quot;.<br />
+Something has gone wrong, so I probably need to take a few steps back...<br />
+<br />
+That's it for tonight.<br />
+<br />
+Goodnight!<br />
+<br />
+<br />
+Andrew Steer 10th April 2008<br />
+<br />
+<strong>Further quick software hacks</strong><br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:15:&lt;img src=&quot;/file/view/crudemess400pc.jpg/33631469/crudemess400pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/crudemess400pc.jpg/33631469/crudemess400pc.jpg" alt="crudemess400pc.jpg" title="crudemess400pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:15 --><br />
+©BBC<br />
+<br />
+Taking the film image, appending an (incorrect) burst sequence, and whacking the contrast control in my PALcolour up to 400% ... !<br />
+[This is a hacked version of PALcolour doing just a 1D decode.]<br />
+<br />
+I know that my burst-sequence is wrong, and that with the geometric distortions the phase won't be preserved, so the rainbow mess is not unexpected ;-)<br />
+Not much practical use, I know, but roughly what I was expecting - so good in that sense.<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:16:&lt;img src=&quot;/file/view/crudemess300pc.jpg/33632319/crudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/crudemess300pc.jpg/33632319/crudemess300pc.jpg" alt="crudemess300pc.jpg" title="crudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:16 --><br />
+©BBC - This version with a hard-coded fixed phase reference (rather than relying on a cut-n-pasted graphic burst)<br />
+This is giving a bit more saturation &quot;out of the box&quot;.<br />
+<br />
+Next step is to apply my phase-locking ideas... this will begin to get us towards &quot;true&quot; colours.<br />
+<br />
+...another day!<br />
+<br />
+<br />
+Andrew Steer 11th April 2008<br />
+<br />
+<strong>U/V isolation<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:17:&lt;img src=&quot;/file/view/lesscrudemess300pc.jpg/33649745/lesscrudemess300pc.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrudemess300pc.jpg/33649745/lesscrudemess300pc.jpg" alt="lesscrudemess300pc.jpg" title="lesscrudemess300pc.jpg" /><!-- ws:end:WikiTextLocalImageRule:17 --></strong><br />
+<br />
+It's still fairly crude, but I've now introduced a simple 2D filter which separates U and V, preventing them mixing. Naturally enough it also much suppresses horizontal colour-banding.<br />
+The phasing is still not locked, which means that you can get inverse colours (probably U and V can invert independently) and a loss of saturation.<br />
+You will however note that some of the colours are now getting closer... in some areas there's more reasonable flesh-tones, and the olive-green of the jacket is trying to show through. The (what should be) orangey background to the big square with the &quot;1&quot; is still some way off.<br />
+<br />
+There's still worse cross-colour (ie coloured stripes on luminance edges) than there should be because I'm not using the filtering properly and am instead relying merely on the stronger (brighter) field dominating the weaker one and then cranking up the saturation. This also leads to worse colour SNR than should be possible.<br />
+My aim at this stage is proof-of-principle - i.e. can we get the <em><strong>correct colours</strong></em>, not perfection in terms of optimal image-quality!<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:18:&lt;img src=&quot;/file/view/lesscrudemess330pc_1g3.jpg/33649999/lesscrudemess330pc_1g3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrudemess330pc_1g3.jpg/33649999/lesscrudemess330pc_1g3.jpg" alt="lesscrudemess330pc_1g3.jpg" title="lesscrudemess330pc_1g3.jpg" /><!-- ws:end:WikiTextLocalImageRule:18 --><br />
+As above, but applying a gamma-1.3 &quot;correction&quot; to the black-and-white source before colour-recovery.<br />
+I might have slightly over-done it, but I think it looks a bit more &quot;TV&quot; and a bit less &quot;film&quot; that way.<br />
+<br />
+That's it for tonight.<br />
+<br />
+<br />
+Andrew Steer 12th April 2008<br />
+<br />
+<strong>A further quick hack... as an example, ditch the phase-information</strong><br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:19:&lt;img src=&quot;/file/view/lesscrude_posVnegU.jpg/33652211/lesscrude_posVnegU.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrude_posVnegU.jpg/33652211/lesscrude_posVnegU.jpg" alt="lesscrude_posVnegU.jpg" title="lesscrude_posVnegU.jpg" /><!-- ws:end:WikiTextLocalImageRule:19 --><br />
+In this case, I've forced +V and -U phase throughout. This is a trick that Andrew Browne has also used with this series of images - successful in this instance, but of course only gives access to one quarter of the total colour palette(!). It is proof however that if we could get phase-locking then there is good hope for colour recovery.<br />
+To clarify - this result is from <strong>decoding a single frame in isolation</strong>.<br />
+<br />
+I think it probably is still possible to make further progress with phase-locking (and not constraining the sign of U and V) using more &quot;empirical fudges&quot; ... but you would want to employ more detailed unpicking of the line structure to do it properly (I have several ideas on how to do that too).<br />
+<br />
+As on the previous images, cross-colour (luminance edges being interpreted as colour) such as the red halo on Jimmy's right sleeve, is far worse than it need be owing to a large number of shortcuts I've taken. Tricks to improve this (and generally reduce the chroma noise) would involve -at least partial- awareness of the line-structure.<br />
+<br />
+[ For reference, a colour videotape original of this frame can be found on this page of the wiki <a class="wiki_link" href="/Experiments%20in%20recreation%20of%20line-structure%20through%20%20block-matching">Experiments in recreation of line-structure through block-matching</a> ]<br />
+<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:20:&lt;img src=&quot;/file/view/scratch_nUpV.jpg/33652717/scratch_nUpV.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/scratch_nUpV.jpg/33652717/scratch_nUpV.jpg" alt="scratch_nUpV.jpg" title="scratch_nUpV.jpg" /><!-- ws:end:WikiTextLocalImageRule:20 --><br />
+1:1 pixel sample of image above<br />
+<br />
+My present routine is essentially a single-pass local-decoder, and for decoding the chroma of any one pixel within the image considers nothing more than the data within a surrounding block of 8 lines high by 33 pixels wide (HD-scan lines/pixels). It rides roughshod over the interleaved fields, and probably only works because one field is stronger than the other. For extracting the luminance, at the moment it is using a simple 1D horizontal 4.43MHz notch filter (with 2MHz bandwidth - it should be 1MHz bw, so throwing away sharpness unnecessarily!).<br />
+<br />
+Implementation of chroma &quot;phase(polarity) locking&quot; is going to require analysis of the image on a larger scale, and probably a multi-pass algorithm. I expect this will entail some significant architecture-changes to the program (but hopefully I can also instigate some major speedups (efficiency improvements) in the process, which will be no bad thing).<br />
+I really haven't got the time to work on such changes in the next few days.<br />
+<br />
+<br />
+<strong>The bigger picture</strong><br />
+<br />
+What have I learned, what does this tell us about the prospects for largely-automatic colourisation of programs in future?<br />
+<ol><li>While higher resolution scans might be nice (and certainly for &quot;research&quot; purposes), I reckon the 1080-line scans are &quot;good enough&quot;. Improved line-structure-aware algorithms could still go a lot further than I've demonstrated so far, with the source-images we have.</li><li>Unless there's something clever we can pull out of the interlace and V-switch (doubtful), I don't think we can determine the (frame-global) polarity of U and V algorithmically. A human operator would probably need to select this manually (easy - 1-2 pushbuttons). Provided there are no bad edits in the film (or source video) the U and V phase should propagate predictably through the footage.</li><li>For images with a good wash of chroma, the colour can probably be (phase)polarity-locked within a frame.</li><li>For images with distant isolated islands of chroma (especially if separated by black with precious-little line structure) then it may prove difficult to reliably polarity-lock the chroma within a frame. Colours could decode with the correct U and V polarity in some parts of the frame, but inverted in other areas.</li><li>The problem of (4) can be overcome by using geometry-distortion information from other frames <em>provided</em> the global distortions are reasonably stable (or can be tracked, or are very predictable based on average luminance for example) from shot to shot. We would need to be able to predict horizontal position to within a quarter of a 4.43MHz cycle, and vertical position to +/-1 original-video scan-lines. Scan-line locking would help, and this would be simplified if one field does prove to be <em>consistently</em> darker than the other.</li><li>Software could (in theory) know where it has &quot;islands&quot; of chroma-polarity uncertainty, and prompt an operator to mouse-click on them to cycle through the four possible U/V polarity-combinations until it looks right. In most cases you would expect these to be reasonably-large islands, and the operator would only have to intervene once per shot. If the scene cuts back and forth between two camera angles, it ought to be possible to reference older shots (maybe even automatically). Although requiring intervention, this would be vastly less labour-intensive than conventional colourisation.</li></ol><br />
+- Andrew 12/4/2008<br />
+<br />
+<br />
+<strong>We have ways of making U and V talk</strong>(!)<br />
+<br />
+In discussions with Andrew Browne, I noticed that both our images have extra-saturated reds and skin-tones when the saturation on the olive-green jacket was about right.<br />
+I hypothesised that the V signal is being accentuated relative to the U. Tried knocking back the V-gain, and the result is a big improvement... making the skin less saturated and the &quot;orange&quot; square a bit more orangey.<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:21:&lt;img src=&quot;/file/view/lesscrude_pos0p50VnegU300_L.jpg/33654273/lesscrude_pos0p50VnegU300_L.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/lesscrude_pos0p50VnegU300_L.jpg/33654273/lesscrude_pos0p50VnegU300_L.jpg" alt="lesscrude_pos0p50VnegU300_L.jpg" title="lesscrude_pos0p50VnegU300_L.jpg" /><!-- ws:end:WikiTextLocalImageRule:21 --><br />
+<strong>Yes, this colour <em>really is</em> obtained from the film-scan!</strong> <strong>:-)</strong><br />
+<br />
+[In this version I also tried a 1MHz notch for the luminance - has given greater sharpness, but predicatably in the top-left of the image where the geometric distortion is worse this has also coupled more residual subcarrier into the luminance.]<br />
+<br />
+The question remains of <em>why</em> the V-gain is higher than U. (My basic decoder is based upon all the normal standards and matrixes).<br />
+<br />
+It could be due to something like mild diagonal film-blur or an oval spot or something on the telerecorder (certainly the image is blurred that way in the top-left corner)... or perhaps more-likely may be an artifact of &quot;riding roughshod&quot; over the two interleaved video fields in the processing if something else has introduced an asymmetry of some sort. If the latter, I wonder if this can lead us to some other useful information - like absolute U or V polarity???<br />
+<br />
+Here's the videotaped source reference image:-<br />
+<!-- ws:start:WikiTextLocalImageRule:22:&lt;img src=&quot;/file/view/COLREF_totp_sd_31.jpg/33654351/COLREF_totp_sd_31.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/COLREF_totp_sd_31.jpg/33654351/COLREF_totp_sd_31.jpg" alt="COLREF_totp_sd_31.jpg" title="COLREF_totp_sd_31.jpg" /><!-- ws:end:WikiTextLocalImageRule:22 --><br />
+<br />
+<br />
+<br />
+Andrew Steer - 13 April 2008<br />
+<br />
+<strong>Further thoughts...</strong><br />
+<br />
+I still haven't quite worked out why U should be getting artificially suppressed relative to V.<br />
+There was talk that some telerecording equipment managed to merge the fields by scanning one at high brightness so that it remained by phosphor persistance to merge with the second field scanned during the film exposure. If this is the case for these scans, it has some interesting consequences...<br />
+If the two fields (at vastly different brightnesses) remain in register, then that may indicate that the overall EHT regulation and image geometry is very stable... which will be very advantageous. On the other hand, it might just mean the regulation is very good at 25Hz (and not necessarily so at low frequencies).<br />
+If the fields are very different brightnesses then you might expect a larger (and blurrier) raster spot for the earlier bright field.<br />
+I wonder what happens if there is a very slight horizontal registration-error between the two fields, whether that would upset the U/V ratios when doing the crude cross-field decoding we're doing. Coming off a mechanical VTR, I imagine an offset of say 1/4 of a PAL cycle (0.05us) may not be surprising...? Coupled with the imbalence in field brightness, might this be the answer we're looking for..?<br />
+<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:23:&lt;img src=&quot;/file/view/chromagreyX3.jpg/33665795/chromagreyX3.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/chromagreyX3.jpg/33665795/chromagreyX3.jpg" alt="chromagreyX3.jpg" title="chromagreyX3.jpg" /><!-- ws:end:WikiTextLocalImageRule:23 --><br />
+Interesting: comparing the notch-filtered (and horiz-blurred) image alongside the original HD filmscan, it transpires that the <em>highest-contrast chroma</em> lines correspond with the overall slightly <em>darker</em> scanlines.<br />
+<br />
+<br />
+Did another test, subtracting two images from each other. Result appears to indicate very good geometry stability - bodes well for largely-automatic whole-programme decoding without &quot;isolated chroma island&quot; U/V polarity uncertainty. Need to try it for real of course, but looks very hopeful for now.<br />
+<br />
+<!-- ws:start:WikiTextLocalImageRule:24:&lt;img src=&quot;/file/view/difference.jpg/33666057/difference.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="/file/view/difference.jpg/33666057/difference.jpg" alt="difference.jpg" title="difference.jpg" /><!-- ws:end:WikiTextLocalImageRule:24 --><br />
+Difference-image showing good consistancy of image-geometry.<br />
+<br />
+That's all for tonight.<br />
+<br />
+<br />
+15 April 2008 - Andrew Steer<br />
+<br />
+It doesn't matter, but having read this page <!-- ws:start:WikiTextUrlRule:243:http://archive.whoniversity.co.uk/tech/film.htm --><a class="wiki_link_ext" href="http://archive.whoniversity.co.uk/tech/film.htm" rel="nofollow">http://archive.whoniversity.co.uk/tech/film.htm</a><!-- ws:end:WikiTextUrlRule:243 --> I'm doubtful that our example recordings were made using stored field techniques. Not only does this page imply that stored field was an early technique and soon superceeded, I am also sceptical as to whether stored field would produce the mostly very good quality we have in these film recordings. Surely stored field would need quite a long persistance phosphor, and we're not seeing other evidence of that. I also suspect the registration of the fields would be worse with stored field.<br />
+Obviously I will stand corrected by anyone who knows for sure what equipment would have been used at the time.<br />
+<br />
+<br />
+Andrew's colour-recovery progress-blog continues at <a class="wiki_link" href="/Single-frame%20decoding%20continued">Single-frame decoding continued</a>...
+  </div>
+
+<div id="pageEditor" class="editorWrapper editorLayer">
+  <iframe id="target_editor" name="target_editor" src="/s/blank.html" style="width:0px;height:0px;border:0"></iframe>
+    <form action="/page/edit/Algorithmic+approaches+-+thoughts" method="post" class="editorForm" id="editorForm"><input type="hidden" name="wikispacesFormToken" value="50204464d31f384beda79a8b60fd08bde780eae0"/><div class="mimw"><input type="text" class="form-control" name="wikispaces_user_id" value="user-1528197344"/></div><div class="mimw"><input type="text" class="form-control" name="goto" autocomplete = "off"/></div><div class="movkp"><input type="text" class="form-control" name="mode" autocomplete = "off"/></div><div class="jovise"><input type="text" class="form-control" name="version" autocomplete = "off"/></div><div class="jovise"><input type="text" class="form-control" name="pageComments" autocomplete = "off"/></div><div class="jowic"><input type="text" class="form-control" name="saveAndContinue" autocomplete = "off"/></div><div class="jowic"><input type="text" class="form-control" name="comment" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="commentsDisabled" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="contentPresent" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="editorCleanup" autocomplete = "off"/></div><div class="jovise"><input type="text" class="form-control" name="WikispacesEditorContent" autocomplete = "off"/></div><input type="hidden" name="wikispacesASFormToken" value="a1a75a01666356fb6013822c2d984df1fc04db34"/>
+    <input type="hidden" title="goto" name="7b6f288b5ec9b409903320741d815c627c17de1e" value=""/>
+    <input type="hidden" title="mode" name="49c4452fe9eefbc8a0c7acf7bc9201bcdd14b63e" autocomplete="off" value="visual"/>
+    <input type="hidden" title="version" name="b9060b3d8bbd79f037f793e300f34128e2a1e954" autocomplete="off" value="22207811"/>
+    <input type="hidden" title="pageComments" name="69354ad5d4d283a79032bc970b31e83ce7ee1445" autocomplete="off" value=""/>
+    <input type="hidden" title="saveAndContinue" name="8a38ac2a2f76e9778f2659274f9eb9bab78d1902" value="0"/>
+    <input type="hidden" title="comment" name="c3c46ab8b5cb715a193d6053cd744ae495da8803" value=""/>
+    <input type="hidden" title="commentsDisabled" name="a619ab26e1f0e3f5d9c1700b2bf6e5234909adc3" autocomplete="off" value=""/>
+    <input type="hidden" title="contentPresent" name="39ccf58d5f6bbcdc7ad98525569b89babd6e501f" autocomplete="off" value=""/>
+    <input type="hidden" title="editorCleanup" name="7e0d7302dd6a1e25528b28b802a0f407afc44570" autocomplete="off" value=""/>
+
+    <textarea id="wsMainEditor" title="content" class="noContentHide" name="874253e88f7ede8916faadf4e9c05d6ffe31804b" style="width: 100%; position: absolute; top: -50000px; left: -50000px;" autocomplete="off"></textarea>
+
+  <noscript>
+    <h2>Javascript Required</h2>
+    <p>You need to enable Javascript in your browser to edit pages.</p>
+  </noscript>
+
+  </form>
+  
+  
+  <div id="plainTextEditor" style="position:relative;display:none" class="editorLayer" >
+    <textarea id="textEditor" class="autogrow"></textarea>
+    <p style="clear:both;" align="right"><a href="http://helpcenter.wikispaces.com/customer/portal/articles/1959131-wikitext">help on how to format text</a></p>
+  </div>
+</div>
+
+
+
+
+  </div>
+  <div class="commentColumn WikispacesStream"><div class="WikispacesContent WikispacesBs3"><div class="commentList"></div></div></div>
+</div>
+
+  
+
+
+
+
+<script type="text/template" id="js-event-template">
+  <small>
+    <%- startDateShortFormat %>
+    <a href="<%- ws.common.pathFor('event', 'view', id) %>" class="WikispacesDialogLink">
+      <%- ws.common.truncate(title, 15) %>
+    </a>
+  </small>
+</script>
+
+<script type="text/template" id="js-reply-template">
+  <div class="tc-timeline-comment media">
+
+    <a class="pull-left userLink" href="<%- userCreated.url %>">
+      <img src="<%- userCreated.imageUrl %>" width="30" height="30" class="author-avatar" alt="" />
+    </a>
+    <div class="media-body" data-id="<%= id %>">
+      <% if (ws.context.user.canAdministerWiki) { %>
+        <i class="tc-delete-comment fa fa-trash-o contextual-command destroy-message ws-tip" title="Delete reply"></i>
+      <% } %>
+      <div class="tc-box-name-date">
+        <span class="tc-commenter"><a href="<%- userCreated.url %>"><%- userCreated.username %></a></span>
+        <% if (smartDate == '__live__') { %>
+        <abbr style="border-bottom-style: none;" class="timeago tc-comment-date" title="<%- (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+          <%- (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+        </abbr>
+        <% } else { %>
+          <abbr style="border-bottom-style: none;" class="tc-comment-date"><%- smartDate %></abbr>
+        <% } %>
+      </div>
+      <% if (body) { %>
+      <p>
+        <%= body %>
+      </p>
+      <% } %>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-share-template">
+  <div class="tc-timeline-block tc-<%= ws.stream.typeToBlockType(sharedType) %>-block" <%= (ws.stream.hideTimeline ? 'style="padding-left: 0px;"' : '') %>>
+
+    <% if (!ws.stream.hideTimeline) { %>
+      <div class="tc-timeline-icon">
+        <i class="fa fa-<%= ws.stream.typeToIcon(sharedType) %>"></i>
+      </div>
+      <div class="tc-timeline-triangle-man"></div>
+    <% } %>
+
+    <div class="tc-timeline-box" data-id="<%= id %>">
+      <div class="media">
+        <a class="pull-left userLink" href="<%- userCreated.url %>">
+          <img src="<%- userCreated.imageUrl %>" width="48" height="48" class="author-avatar media-object" alt="" />
+        </a>
+
+        <div class="media-body">
+
+          <div class="tc-stream-dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <% if (ws.context.user.id) { %>
+              <li>
+                <a class="js-toggle-monitor" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-eye"></i>
+                  <span><%= monitored ? 'Start Monitoring' : 'Stop Monitoring' %></span>
+                </a>
+              </li>
+              <% } %>
+
+              <% if (ws.context.user.canAdministerWiki) { %>
+              <li>
+                <a class="js-toggle-lock" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-lock"></i>
+                  <span><%= locked ? 'Unlock Replies' : 'Lock Replies' %></span>
+                </a>
+              </li>
+              <% if (sharedType == 'discussion' || sharedType == 'comment' || sharedType == 'event') { %>
+              <li>
+                <a class="js-destroy-share" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-trash-o"></i>
+                  Delete <%= ws.stream.typeToName(sharedType) %>
+                </a>
+              </li>
+              <% } %>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="tc-timeline-box-header ws-reveal media-heading">
+              <h3 class="tc-box-title">
+              <% if (typeof adminLink !== 'undefined' && adminLink && ws.context.user.canAdministerWiki) { %>
+                <a href="<%- adminLink %>"><%- title %></a>
+              <% } else { %>
+                <%- title %>
+              <% } %>
+              <% if (typeof startDate !== 'undefined' && startDate) { %> - <%= startDateShortFormat %> <%= ws.stream.getYearFromStartDate(startDate) %><% } %>
+              </h3>
+              <div class="tc-box-name-date">
+                <% if (ws.context.instance.isTesClassroom) { %>
+                  <%- userCreated.username %>
+                <% } else { %>
+                  <a class="author-name" href="<%- userCreated.url %>"><%- userCreated.username %></a>
+                <% } %>
+                <% if (typeof recipients !== 'undefined' && recipients) { %>
+                  <i class="fa fa-angle-right"></i>
+                  <% if (typeof recipientsLink !== 'undefined') { %>
+                    <a href="<%- recipientsLink %>"><%- recipients %></a>
+                  <% } else { %>
+                    <span class="recipients"><%- recipients %></span>
+                  <% } %>
+                <% } %>
+                <% if (smartDate == '__live__') { %>
+                  <abbr style="border-bottom-style: none;" class="timeago tc-block-date" title="<%= (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+                    <%= (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+                  </abbr>
+                <% } else { %>
+                  <abbr style="border-bottom-style: none;" class="tc-block-date"><%- smartDate %></abbr>
+                <% } %>
+              </div>
+          </div>
+
+          <div class="<%= sharedType == 'comment' && !orphaned && !ws.stream.noCollapse ? 'hidden ' : '' %>tc-block-content">
+            <div class="clearfix">
+              <% if (typeof rangeActions !== 'undefined') { %>
+                <div class="tc-range-actions">
+                  <% for(var i = 0; i < rangeActions.length; i++) { %>
+                  <%= ws.stream.rangeActionTemplate(rangeActions[i]) %>
+                  <% } %>
+                </div>
+              <% } %>
+              <% if (description) { %>
+                <p><%= description %></p>
+              <% } %>
+            </div>
+          </div>
+
+          <% if (replyPages.length > 0 && !(replyPages.length === 1 && replyPages[0].digests.length === 0)) { %>
+            <div class="tc-timeline-comments">
+            <% for (var i = 0; i < replyPages.length; i++) { %>
+              <% if (i == 0 && replyPages[i].more) { %>
+                <a href="#" class="tc-show-more" onclick="ws.stream.pageReplies(<%= id %>, <%= replyPages[i].page + 1 %>); return false">Show more replies (<%= replyPages[i].more %> hidden) </a>
+              <% } else { %>
+                <div></div>
+              <% } %>
+              <% for (var j = 0; j < replyPages[i].digests.length; j++) { %>
+                <%= ws.stream.replyTemplate(replyPages[i].digests[j]) %>
+              <% } %>
+            <% } %>
+            </div>
+          <% } %>
+
+          <% if ((ws.stream.userCanPostMessage && !locked) || ws.context.user.canAdministerWiki) { %>
+          <div class="tc-add-comment media <%= ws.stream.noCollapse ? 'add-active' : ''%>">
+            <img src="<%- ws.context.user.imageUrlPrefix %>lg.jpg" width="30" height="30" class="pull-left author-avatar" alt="" />
+            <div class="media-body">
+              <textarea name="reply" placeholder="Comment" class="form-control form-control-tc ws-reveal <%= !ws.stream.noCollapse ? 'ws-unrevealed' : ''%> reply" /></textarea>
+              <button type="button" class="btn-tc btn-info-tc btn-sm-tc add-reply">Post</button>
+            </div>
+          </div>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-range-action-template">
+  <div>
+    <strong><%- name %></strong>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      <a href="<%- diffUrl %>">
+    <% } %>
+    <%= new Date(dateCreated * 1000).toLocaleString() %>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      </a>
+    <% } %>
+    <% if (typeof(rangeText) !== 'undefined') { %>
+      <div>
+        <span class="commentExtent">
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          <a href="<%- diffUrl %>">
+        <% } %>
+        <%= rangeText %>
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          </a>
+        <% } %>
+        </span>
+      </div>
+    <% } %>
+  </div>
+</script>
+
+<script type="text/template" id="js-stream-end-template">
+  <div class="tc-timeline-block tc-end-block">
+    <div class="tc-timeline-icon" style="margin-top: -10px;" />
+    <div class="tc-timeline-box" style="visibility: hidden;">
+      <p class="tc-box-title"></p>
+    </div>
+  </div>
+</script>
+
+<a name="discussion"></a>
+<div class="timeline WikispacesBs3 tc-timeline-embedded show-border">
+  <div class="timeline-line"></div>
+    <div id="js-share-list">
+    <div class="spinner hidden"><i class="fa fa-spinner fa-spin"></i></div>
+  </div>
+</div></div></div><div id="sentinel" style="clear:both"></div>        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<footer class="ws-theme-footer" role="contentinfo">
+  <div class="ws-theme-container">
+    <div class="ws-theme-footer-inner">
+      <div class="WikiFooterNav WikiElement">
+<a href="http://helpcenter.wikispaces.com/" rel="nofollow" class="js-help-trigger">Help</a> &middot;
+<a href="../www.wikispaces.com/about">About</a> &middot;
+<a href="../www.wikispaces.com/content/pricing" rel="nofollow">Pricing</a> &middot;
+<a href="../www.wikispaces.com/privacy" rel="nofollow">Privacy</a> &middot;
+<a href="../www.wikispaces.com/terms" rel="nofollow">Terms</a> &middot;
+<a href="../www.wikispaces.com/site/help?url=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts%3FresponseToken%3D671d9b122ec000d3f556fd5fc2278f5c" rel="nofollow"><strong>Support</strong></a> &middot;
+<a href="/space/subscribe/upgrade"><strong>Upgrade</strong></a>
+</div>      <div class="WikiLicense WikiElement">Contributions to https://colour-recovery.github.io/ are licensed under a <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/2.5">Creative Commons Attribution Share-Alike 2.5 License</a>. <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/2.5"><img src="../ssl.wikicdn.com/i/creativecommons/by-sa_2.5_80x15.png" width="85" height="15" alt="Creative Commons Attribution Share-Alike 2.5 License"/></a><br />Portions not contributed by visitors are Copyright 2018 Tangient LLC<br /><a href="https://www.tes.com/us/?utm_source=wikispaces&utm_medium=link&utm_campaign=US-52-footer">TES: The largest network of teachers in the world</a></div>    </div>
+  </div>
+</footer>
+
+
+<script type="text/template" id="dialog-template">
+<div class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title"><%= header %></h4>
+      </div>
+      <div class="modal-body">
+        <%= body %>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+
+<div id="js-help-template" class="hidden">
+  <div class="ws-help">
+    <div class="js-help-controls WikispacesContent WikispacesBs3">
+      <a href="../www.wikispaces.com/site/gettingstarted/off" class="btn btn-default hidden js-getting-started-off pull-right">Turn off "Getting Started"</a>
+      <ol class="breadcrumb">
+        <li class="js-special-breadcrumb active">
+          <a href="http://helpcenter.wikispaces.com/" data-breadcrumb="0">Home</a>
+        </li>
+        <li class="js-ellipsis hidden js-special-breadcrumb">
+          ...
+        </li>
+        <li class="js-spinner hidden js-special-breadcrumb"><i class="fa fa-spinner fa-spin"></i></li>
+      </ol>
+    </div>
+    <div class="ws-help-content wiki">Loading...</div>
+  </div>
+</div>
+</div>
+<script src="../ssl.wikicdn.com/s/nogz/6q86j8zz-common.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/70163536-editorc.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/85k7018k-stream.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/91k8z207-contentbar.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/395j1vq7-component.stream-vo.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+ws.namespace('ws.attributes');
+ws.namespace('ws.stream');
+ws.attributes.DISCUSSION_COUNT = 9;
+ws.attributes.pageId = 3878043;
+ws.attributes.version = 22207811;
+ws.attributes.showEditor = true;
+ws.attributes.editUrl = "https:\/\/colour-recovery.wikispaces.com\/page\/edit\/Algorithmic+approaches+-+thoughts?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts";
+ws.attributes.userCanEdit = false;
+ws.stream.userCanPostMessage = false;
+ws.stream.hideTimeline = true;
+ws.stream.shareSource = "https:\/\/colour-recovery.wikispaces.com\/page\/shares\/Algorithmic+approaches+-+thoughts";
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+jQuery(document).ready(function() {
+  ws.common.addJsonNotices({"warning":[],"error":[],"info":[],"success":[]});
+});
+
+jQuery(document).ready(function() {
+  ws.common.addNotice("<script type=\"text\/javascript\">function wsDismissBanner() { ws.common.removeNotice();  ws.cookie.set(\"wsFirstPartShutdown\", 1, {expires: 365 * 86400, domain: \".wikispaces.com\"}); return false;}$(\".ui-pnotify-closer\").remove();<\/script><i class=\"fa fa-times fa-fw ws-close\" onclick=\"wsDismissBanner();\"><\/i>It\u2019s time for us to say farewell\u2026 Classroom and Free Wikis are closing Soon!<br\/>Find out more about the full Wikispaces Site Closure <a href='http:\/\/blog.wikispaces.com' target='_top'>HERE<a\/>", "warning");
+});
+
+jQuery(document).ready(function($) {
+  
+  function tipPlacement() {
+    return this.$element.closest('.ws-menu-bar .btn-group').is('.open') ? 'top' : 'bottom';
+  }
+
+  
+
+  $('.ws-menu-bar').each(function() {
+    var $menuBar = $(this);
+    var $tagDropdown = $menuBar.find('.ws-tag-dropdown-menu');
+    $menuBar.find('.tipme').tooltip({placement: tipPlacement, container: '.ws-menu-bar'});
+
+    
+    $menuBar.find('.ws-btn-more').click(ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .btn-group').is('.open')) {
+        ws.common.hideMorePageBar();
+      } else {
+        ws.common.showMorePageBar();
+      }
+    }));
+
+    $menuBar.on('click', '.ws-tag-dropdown-toggle', ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .dropdown').is('.open')) {
+        ws.common.hideTagDropdown();
+      } else {
+        ws.common.showTagDropdown();
+      }
+    }));
+
+    $(document.body).click(function(e) {
+      var $target = $(e.target);
+      if (!$target.closest('.ws-more-menu').closest('.ws-menu-bar').is($menuBar)
+          || $target.closest('a').is('.WikispacesDialogLink')) {
+        ws.common.hideMorePageBar();
+      }
+      if ($tagDropdown.length && !$target.closest('.ws-tag-dropdown-menu').is($tagDropdown)) {
+        ws.common.hideTagDropdown();
+      }
+    });
+    
+  });
+});
+
+
+jQuery(document).ready(function($) {
+  $('.ws-more-menu').on('click', 'a', function(e) {
+    if ($(this).is('.disabled')) {
+      e.preventDefault();
+    }
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.canEdit = false;
+  var editUrl = 'https://colour-recovery.github.io/page/edit/Algorithmic+approaches+-+thoughts?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FAlgorithmic%2520approaches%2520-%2520thoughts';
+
+  jQuery('#js-edit-from-template').change(function() {
+    window.location = ws.common.addUriParams(editUrl, [['template', jQuery(this).val()]]);
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.loadEditorLibs('../www.wikispaces.com/site/editorlibs/en/11kk95v9.js');
+});
+
+
+ws.editor.startEditor = function (moreCoreOptions, moreMainOptions) {
+  ws.editor.canEdit = true;
+
+  var coreOptions = {
+    'content_css': ['../www.wikispaces.com/stylesheet/editori/217420326D.css']
+  };
+
+  // The stylesheet is passed in as a string, turn it into an array
+  // Add bootstrap styles to the editor, if we are in a theme that has full screen bootstrap
+  if (jQuery('body').is('.WikispacesBs3')) {
+    coreOptions.content_css.push('../www.wikispaces.com//s/internal-bootstrap-body.css');
+  }
+
+  var mainOptions = {
+    'wssave_cancel_url': '/Algorithmic+approaches+-+thoughts',
+    'wsimage_upload_url': 'https://colour-recovery.github.io/file/multiupload',
+    'wsimage_max_file_size_mb': '50',
+    'wsimage_page_view_group': ''
+  };
+
+  ws.editor.loadEditor(jQuery.extend(coreOptions, moreCoreOptions), jQuery.extend(mainOptions, moreMainOptions));
+};
+
+  var wikispaces_page_version = '22207811';
+
+  jQuery(document).ready(function() {
+    ws.editor.enableButtons();
+  });
+
+
+
+--></script><!-- w22 191 wki:65:66(3) tot:191:191(1) dql:8:34(17) mem:2:25(68) mog:4:4(1) -->
+
+</body>
+</html>

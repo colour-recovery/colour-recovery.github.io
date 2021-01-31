@@ -1,0 +1,2 @@
+/\/web\/[0-9]{14}im_\//g
+/http:\/\/web\.archive\.org\/web\/[0-9]{14}\//g

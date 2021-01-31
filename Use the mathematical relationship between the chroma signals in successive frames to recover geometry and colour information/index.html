@@ -1,0 +1,1418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="search" href="https://colour-recovery.github.io/space/opensearch" type="application/opensearchdescription+xml" title="Wikispaces Search (Colour Recovery Working Group Wiki)" />
+<link rel="alternate" type="application/x-wiki" title="Edit This Page" href="/page/edit/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information" />
+<link rel="alternate" title="Colour Recovery Working Group - All Changes" href="https://colour-recovery.github.io/wiki/xmla?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="colour-recovery : Use the mathematical relationship between the chroma signals in successive frames to recover geometry and colour information - Discussion" href="https://colour-recovery.github.io/message/xml/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="colour-recovery : Use the mathematical relationship between the chroma signals in successive frames to recover geometry and colour information - Edits" href="https://colour-recovery.github.io/page/xml/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information?v=rss_2_0" type="application/rss+xml" />
+<link rel="microsummary" href="/page/microsummary/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information/edits"/>
+<link rel="microsummary" href="/page/microsummary/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information/messages"/>
+<script type="text/javascript">
+  
+if (typeof ws === 'undefined') ws = {};
+ws.context = {
+  instance: {
+    id: '1',
+    url: 'wikispaces.com',
+    isMain: true,
+    supportsGoogleDocs: false,
+    isTesClassroom: false,
+  },
+  user: {
+    id: '',
+    username: '',
+    status: '',
+    locale: 'en',
+    imageUrlPrefix: '../ssl.wikicdn.com/i/user_none_',
+    isTeacher: false,
+    canAdministerWiki: false,
+  },
+  wiki: {
+    id: '110862',
+    name: 'colour-recovery',
+    text: 'Colour Recovery Working Group',
+    module: 'B',
+    isClassroom: false,
+    isTesClassroom: false
+    ,defaultSpaceId: 110862
+    ,isWwwWiki: false
+  },
+  project: {
+    id: '110862',
+    name: ''
+  },
+  space: {
+    id: '110862',
+    name: 'colour-recovery',
+    isDefaultSpace: true,
+    isDefaultTemplate: false
+  },
+
+  environment_name: 'prod',
+
+  path: {
+    object: 'page',
+    method: 'view',
+    page: 'Use the mathematical relationship between the chroma signals in successive frames to recover geometry and colour information',
+    id: ''
+  },
+
+  settings: {
+    main_domain: 'wikispaces.com',
+    session_url: 'https://session.wikispaces.com/1/',
+    asset_url_prefix: '../ssl.wikicdn.com',
+    beta_features: false,
+    isMobileSite: false,
+    isUploadCapable: true,
+    can_discuss: false,
+    has_gdocs: false,
+    isDialog: false,
+    pwin: ''
+  },
+  clockSkewMillis: 1528198275453 - ((window.performance && window.performance.timing.responseStart > 0) ? window.performance.timing.responseStart : (new Date()).getTime())
+}
+
+
+// legacy javascript API variables, use the above instead
+var wikispaces_isUserLoggedIn = !!ws.context.user.id;
+var wikispaces_isMain = ws.context.instance.isMain;
+var wikispaces_username = ws.context.user.username;
+var wikispaces_spaceName = ws.context.space.name;
+var wikispaces_projectName = ws.context.project.name;
+var wikispaces_wikiName = ws.context.wiki.name;
+var wikispaces_wikiText = ws.context.wiki.text;
+var wikispaces_isDefaultSpace = ws.context.space.isDefaultSpace;
+var wikispaces_method = ws.context.path.method;
+var wikispaces_object = ws.context.path.object;
+var wikispaces_page = ws.context.path.page;
+var wikispaces_id = ws.context.path.id;
+var wikispaces_domain = ws.context.instance.url;
+var wikispaces_isUserOrganizer = false;
+var wikispaces_main_domain = ws.context.settings.asset_url_prefix;
+var wikispaces_asset_url_prefix = ws.context.settings.asset_url_prefix;
+var wikispaces_beta_features = ws.context.settings.beta_features;
+var wikispaces_isMobileSite = ws.context.settings.isMobileSite;
+var wikispaces_isUploadCapable = ws.context.settings.isUploadCapable;
+var wikispaces_can_discuss = ws.context.settings.can_discuss;
+var wikispaces_has_gdocs = ws.context.settings.has_gdocs;
+
+</script><title>Colour Recovery Working Group - Use the mathematical relationship between the chroma signals in successive frames to recover geometry and colour information</title>
+<meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="144x144" href="../ssl.wikicdn.com/_/z6371z4x/i/logo-144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="../ssl.wikicdn.com/_/j5j77xz3/i/logo-114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="../ssl.wikicdn.com/_/vq8j5432/i/logo-72.png" />
+<link rel="apple-touch-icon" href="../ssl.wikicdn.com/_/38515190/i/logo-57.png" />
+<link rel="shortcut icon" href="../ssl.wikicdn.com/_/55v9k02z/i/logo-16.png" />
+<style type="text/css">
+/*
+Based on: AquaFluid, http://wpthemepark.com/
+Description: WP Theme AquaFluid by Sadish
+Version: 1.0
+Author: Sadish Balasubramanian
+*/
+
+/* Standard theme styles */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+.ws-theme-header-inner,
+.ws-theme-body-inner,
+.ws-theme-footer-inner,
+.ws-theme-content-inner,
+.ws-theme-sidebar-inner {
+  position: relative;
+}
+.ws-theme-header-inner:after,
+.ws-theme-body-inner:after,
+.ws-theme-footer-inner:after,
+.ws-theme-content-inner:after,
+.ws-theme-sidebar-inner:after,
+.ws-theme-menu-inner:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.ws-theme-content, .ws-theme-sidebar {
+  overflow-x: auto;
+}
+.ws-theme-footer {
+  text-align: right;
+}
+.ws-theme-footer a, .ws-theme-footer a:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .ws-theme-container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ws-theme-content {
+    width: 550px;
+    min-height: 384px;
+    float: right;
+  }
+  .ws-theme-sidebar {
+    width: 200px;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .ws-theme-container {
+    width: 970px;
+  }
+  .ws-theme-content {
+    width: 770px;
+    min-height: 496px;
+  }
+}
+@media (min-width: 1200px) {
+  .ws-theme-container {
+    width: 1170px;
+  }
+  .ws-theme-content {
+    width: 970px;
+    min-height: 600px;
+  }
+}
+/* End standard theme styles */
+</style>
+<style type="text/css">
+/* Theme-specific styles */
+body {
+  background-color: #CDE;
+}
+
+.ws-theme-container {
+  margin: 0 5px;
+}
+
+.ws-theme-header .WikiSearch .WikiSearchInput,
+.ws-theme-sidebar .WikiSearch .WikiSearchInput,
+.ws-theme-footer .WikiSearch .WikiSearchInput {
+  width: 100%;
+}
+
+.ws-theme-header,
+.ws-theme-sidebar,
+.ws-theme-footer {
+  color: #000000;
+}
+.ws-theme-header a,
+.ws-theme-sidebar a,
+.ws-theme-footer a {
+  color: #0000FF;
+  text-decoration: none;
+}
+.ws-theme-header a:hover,
+.ws-theme-sidebar a:hover,
+.ws-theme-footer a:hover {
+  text-decoration: underline;
+}
+.ws-theme-header img,
+.ws-theme-sidebar img,
+.ws-theme-footer img {
+  border: none;
+}
+
+.ws-theme-header-inner,
+.ws-theme-body-inner,
+.ws-theme-footer-inner {
+  border: #CCC 1px solid;
+}
+
+.ws-theme-header,
+.ws-theme-sidebar {
+  display: none;
+}
+
+.ws-theme-body {
+  padding-top: 8px;
+}
+.ws-theme-body-inner {
+  border-bottom: none;
+  background-color: #FFF;
+}
+
+.ws-theme-content {
+  overflow-x: visible;
+}
+.ws-theme-content-inner {
+  padding: 13px 15px 26px;
+}
+
+.ws-theme-footer {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.ws-theme-footer-inner {
+  padding: 10px 15px;
+  background: #FFF;
+  border-top-color: #000;
+}
+.ws-theme-footer .WikiLicense img {
+  vertical-align: text-bottom;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #FAFBFC url(../ssl.wikicdn.com/_/68jv1944/i/theme_aqua_blue.jpg) repeat-x top fixed;
+  }
+
+  .ws-theme-container {
+    width: auto;
+    margin: 0 8px;
+  }
+
+  .ws-theme-header,
+  .ws-theme-sidebar {
+    display: block;
+  }
+
+  .ws-theme-header {
+    display: block;
+    padding-top: 20px;
+  }
+  .ws-theme-header-inner {
+    height: 125px;
+    padding: 25px 20px;
+    background: #483d8b url(../ssl.wikicdn.com/_/xq2j142v/i/theme_aqua_header.jpg) repeat-x bottom;
+    border-bottom: none;
+  }
+  .ws-theme-header .ws-theme-logo {
+    float: right;
+  }
+
+  .ws-theme-body {
+    padding-top: 0;
+  }
+  .ws-theme-body-inner {
+    border-top: none;
+    background-color: #EEE;
+  }
+  .ws-theme-body-inner:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 200px;
+    background-color: #FFF;
+    border-left: 1px solid #CCC;
+  }
+
+  .ws-theme-content {
+    width: auto;
+    margin-left: 200px;
+    float: none;
+  }
+  .ws-theme-content-inner {
+    float: left;
+    width: 100%;
+    padding: 13px 15px 26px;
+  }
+
+  .ws-theme-sidebar-inner {
+    padding: 0 10px;
+  }
+  .ws-theme-sidebar .WikiActions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .ws-theme-sidebar .WikiActions > li {
+    padding: 2px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol {
+    padding-left: 16px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol.includePageList {
+    padding-left: 0;
+  }
+  .ws-theme-sidebar .WikispacesNavbar {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit {
+    color: #666;
+    text-align: center;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit a {
+    color: inherit;
+  }
+
+  .ws-theme-footer-inner {
+    border-top-color: #CCC;
+    background: #FFF url(../ssl.wikicdn.com/_/2z687q19/i/theme_aqua_top.gif) repeat-x top;
+  }
+}
+
+/* End theme-specific styles */
+</style>
+<link rel="stylesheet" href="../www.wikispaces.com/stylesheet/viewi/217420326D.css" type="text/css" />
+<link rel="stylesheet" href="../ssl.wikicdn.com/s/nogz/9jvvjv40-internal-bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="../ssl.wikicdn.com/s/nogz/vz033906-internal.css" type="text/css" />
+<script src="../ssl.wikicdn.com/s/nogz/84014v41-top.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  var wsGoogleAccount = 'UA-80504-1';
+  _gaq.push(['_setAccount', wsGoogleAccount]);
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_setDomainName', 'wikispaces.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar', 2, 'Authenticated', 'Guest', 2]);
+  _gaq.push(['_trackPageview']);
+</script></head>
+<body><a href="#WikiContent" class="hidden sr-only sr-only-focusable">Skip to main content</a><div id="js-fixed-header-holder" class="fixed"><div class="WikispacesContent WikispacesBs3" role="banner">
+      
+    <div class="ws-main-top-nav visible-xs">
+    <div class="navbar navbar-static-top" style="margin-bottom: 0;">
+      <div class="container">
+                <div class="navbar-header">
+          <div class="visible-xs pull-left">
+            <a href="/space/menu" class="WikispacesDialogLink btn navbar-btn">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="visible-xs pull-right js-globalnav-popover-container">
+                        <a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information%3FresponseToken%3D01d9307c714d19352c36f096b948cce4" class="btn navbar-btn ws-mobile-guest-username js-globalnav-popover-trigger">
+              guest
+            </a>
+                        <div class="hidden js-globalnav-popover-content">
+              <div class="WikispacesContent WikispacesBs3">
+                <div class="WikiInternalHeaderNav noHide">
+  <div class="WikiInternalHeaderNavMenu">
+                          
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/user/join?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Join</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://helpcenter.wikispaces.com/">Help</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information%3FresponseToken%3D01d9307c714d19352c36f096b948cce4" rel="nofollow" class="WikispacesXDomainDialogLink">Sign In</a></span>
+      </div>
+</div>              </div>
+            </div>
+          </div>
+          <div class="ws-navbar-middle-xs">
+            <div class="navbar-brand" role="navigation">
+              <a href="../www.wikispaces.com/" class="ws-logo"></a>
+              <i class="fa fa-angle-right"></i>
+              <a href="https://colour-recovery.github.io/">Colour Recovery Working Group</a>
+                              <i class="fa fa-angle-right"></i> <a href="https://colour-recovery.github.io/home">Home</a>
+              
+            </div>
+          </div>
+                    <form action="/search/view" method="post" class="navbar-form ws-include-xs pull-left ws-navbar-search hidden-xs" role="search"><input type="hidden" name="wikispacesFormToken" value="be973b4a4bb3812b2f222f3ad4cb6e93ee9ffe4b"/><input type="text" class="form-control search-query" name="q" value="" placeholder="Search" /> </form>
+                  </div>
+      </div>
+    </div>
+  </div>
+      <div class="hidden-xs"><div class="WikiInternalHeaderNav WikiElement floating">
+  <div class="WikiInternalHeaderNavMenu">
+                                    <span class="WikiInternalHeaderNavMenuArea guestUserName">guest</span><span class="slideMarker divider">|</span>
+        
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/user/join?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Join</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://helpcenter.wikispaces.com/">Help</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="../www.wikispaces.com/site/signin?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information%3FresponseToken%3D01d9307c714d19352c36f096b948cce4" rel="nofollow" class="WikispacesXDomainDialogLink">Sign In</a></span>
+      </div>
+</div></div>
+  </div></div><div id="js-fixed-header-offset">
+<header class="ws-theme-header" role="banner">
+  <div class="ws-theme-container">
+    <div class="ws-theme-header-inner">
+      <div class="ws-theme-logo">
+        <a href="https://colour-recovery.github.io/" class="WikiLogo WikiElement"><img src="../logo.jpg" alt="Colour Recovery Working Group" /></a>      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ws-theme-body">
+  <div class="ws-theme-container">
+    <div class="ws-theme-body-inner">
+      <nav class="ws-theme-sidebar" role="navigation">
+        <div class="ws-theme-sidebar-inner">
+          <div class="ws-theme-menu">
+            <div class="ws-theme-menu-inner">
+              <ul class="WikiActions WikiElement WikiControls">
+    <li id="WikiActionHome"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="https://colour-recovery.github.io/"><i class="fa fa-home fa-fw"></i></a><a href="https://colour-recovery.github.io/">Wiki Home</a></div></li>
+    <li id="WikiActionChanges"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="/wiki/changes"><i class="fa fa-clock-o fa-fw"></i></a><a href="/wiki/changes">Recent Changes</a></div></li>
+    <li id="WikiActionPagesAndFiles"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="/space/content"><i class="fa fa-file-text-o fa-fw"></i></a><a href="/space/content">Pages and Files</a></div></li>
+    <li id="WikiActionMembers"><div class="js-member-link"><span class="WikiActionSupplemental" style="float: right;"></span><a href="/wiki/members"><i class="fa fa-user fa-fw"></i></a><a href="/wiki/members">Members</a></div></li>
+</ul>
+              <form action="/search/view" method="post" class="WikiSearch WikiElement" role="search"><input type="text" class="form-control WikiSearchInput" name="q" value="" placeholder="Search" /> </form>              <div class="WikiCustomNav WikiElement wiki"><ul><li><h3><a class="wiki_link" href="/Home">Home</a></h3>
+</li><li><a class="wiki_link_ext" href="http://colour-recovery.github.io/message/list/home" rel="nofollow">General Announcements</a></li><li><a class="wiki_link" href="/Members">Members</a></li><li><a class="wiki_link" href="/An%20examination%20of%20source%20material">An examination of source material</a></li><li><a class="wiki_link" href="/Background%20information">Background information</a></li><li><a class="wiki_link" href="/Tutorials">Tutorials</a></li><li><a class="wiki_link" href="/Utilities">Utilities</a></li><li><a class="wiki_link" href="/Previous%20work">Previous work</a></li><li><a class="wiki_link" href="/Current%20work">Current work</a></li><li><a class="wiki_link" href="/Future%20work">Future work</a></li></ul></div>              <div class="ws-theme-nav-edit">
+                              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="ws-theme-content" role="main">
+        <div class="ws-theme-content-inner">
+          <div class="contentBox"><div class="innerContentBox" id="WikiContent">
+
+<script type="text/template" id="comment-footer-template">
+
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</script>
+
+<script type="text/template" id="comment-content-template">
+<div class="ws-box commentView">
+  <div class="comment-close">
+    <button type="button" class="closeme close" aria-hidden="true"><i class="fa fa-times"></i></button>
+  </div>
+  <div class="commentHeader">
+    <p class="ws-stream-meta command-context">
+      <a class="userLink userLinkPicture" href="<%= userCreated.url %>"><img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16"></a>
+      <a href="<%= userCreated.url %>"><%= userCreated.username %></a>
+      <% if (smartDate == '__live__') { %>
+      <abbr class="timeago" title="<%= (new Date(parseInt(dateCreated, 10) * 1000)).toISOString() %>">
+        <%= dateCreated %>
+      </abbr>
+      <% } else { %>
+        <%- smartDate %>
+      <% } %>
+      <% if (ws.context.user.canAdministerWiki && ws.comments.Manager.readOnly) { %>
+        <i class="fa fa-trash-o contextual-command delete ws-tip" title="Delete Comment"></i>
+      <% } %>
+    </p>
+  </div>
+
+  <div class="commentBody">
+    <div class="commentContent">
+      <%= description %>
+    </div>
+
+      <% for(i = 0; i < replyPages.length; i++) { %>
+        <% for(var j = 0; j < replyPages[i].digests.length; j++) { %>
+      <div class="commentReply" data-id="<%= replyPages[i].digests[j].id %>">
+        <p class="ws-stream-meta command-context">
+          <a class="userLink userLinkPicture" href="<%= replyPages[i].digests[j].userCreated.url %>"><img class="userPicture" src="<%= replyPages[i].digests[j].userCreated.imageUrl %>" width="16" height="16"></a>
+          <a href="<%= replyPages[i].digests[j].userCreated.url %>"><%= replyPages[i].digests[j].userCreated.username %></a>
+          <% if (smartDate == '__live__') { %>
+          <abbr class="timeago" title="<%= (new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000)).toISOString() %>">
+            <%= new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000).toLocaleString() %>
+          </abbr>
+          <% } else { %>
+            <%- smartDate %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+          <i class="fa fa-trash-o contextual-command delete-reply ws-tip" title="Delete Reply"></i>
+          <% } %>
+          </p>
+        <div class="commentContent"><%= replyPages[i].digests[j].body %></div>
+      </div>
+        <% } %>
+      <% } %>
+
+      <form class="reply commentReply">
+        <div class="form-group">
+          <textarea name="reply" placeholder="Reply" class="form-control" /></textarea>
+        </div>
+        <div class="btn-toolbar">
+          <button type="submit" class="btn btn-primary btn-sm" name="go" value="1">Post</button>
+
+          <% if (ws.context.user.id) { %>
+            <% if (monitored) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip active" title="You are monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip" title="You are not monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+            <% if (locked) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip active" title="Replies are not allowed."><i class="fa fa-lock"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip" title="Replies are allowed."><i class="fa fa-lock"></i></button>
+            <% } %>
+          <% } %>
+
+          <i class="fa fa-spinner fa-spin spinner pull-right hidden"></i>
+        </div>
+      </form>
+   </div>
+
+   
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-composer-template">
+<div class="ws-box commentView">
+  <div class="commentComposer">
+    <div class="comment-close">
+      &nbsp;<button type="button" class="close closeme" aria-hidden="true"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="commentHeader">
+      <p class="ws-stream-meta command-context">
+        <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+        <a href="#" onclick="return false;"><%= userCreated.username %></a>
+      </p>
+    </div>
+    <div class="commentBody">
+      <textarea name="comment" class="compose form-control" placeholder="Comment"/></textarea><br/>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-default btn-sm monitored active pull-right" style="margin-left: 6px" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-default btn-sm locked btn-toggle pull-right" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-lock"></i></button>
+        <button type="button" class="btn btn-primary btn-sm closeme">Save</button>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-proxy-template">
+<div class="comment-proxy">
+  <span class="commentUser">
+  <% if (userCreated) { %>
+    <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+  <% } else { %>
+    <img class="userPicture" src="<%= ws.context.user.imageUrlPrefix %>sm.jpg" width="16" height="16">
+  <% } %>
+  </span>
+  <span class="commentReplies"><%= 1 + _(replyPages).reduce(function(memo, page){ return memo + page.digests.length; }, 0) %></span>
+</div>
+</script>
+
+<div class="ws-menu-bar WikiControls WikispacesContent WikispacesBs3">
+  
+    <h1 class="pageTitle"><a href="/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information">Use the mathematical relationship between the chroma signals in successive frames to recover geometry and colour information</a></h1>
+      <div class="btn-group pull-right">
+          <span class="btn btn-default disabled tipme" title="you do not have permission to edit this page"><i class="fa fa-pencil fa-fw"></i> Edit</span>          <a class="btn btn-default tipme" title="no discussion posts" href="/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information#discussion"><i class="fa fa-comments fa-fw"></i> 0</a>          <a class="btn btn-default tipme" title="view 11 revisions" href="/page/history/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="fa fa-clock-o fa-fw"></i> 11</a>          <a class="btn btn-default ws-btn-more dropdown-toggle tipme" title="more options" href="/page/menu/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="icon-height-only fa-fw"></i>&hellip;</a>        <ul class="ws-more-menu dropdown-menu dropdown-menu-right">
+              <li class=" dropdown"><a class=" ws-tag-dropdown-toggle" href="/page/tags/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><span class="pull-right">0</span> <i class="fa fa-tag fa-fw"></i> Tags</a>
+          <div class="dropdown-menu dropdown-menu-right ws-tag-dropdown-menu">
+          
+
+
+
+<form action="#" name="WikiTagForm" class="WikiTagForm"><input type="hidden" name="wikispacesFormToken" value="e22321feeaecc7b73d60b12e58b8cb3476faa49e"/><input type="hidden" name="wikispacesFormToken" value="e22321feeaecc7b73d60b12e58b8cb3476faa49e"/>
+  <div class="WikiTagList">
+    <i class="fa fa-tag ws-action"></i>
+        <ul class="list-unstyled">
+          <li>No tags</li>
+        </ul>
+      </div>
+  </form>      </div>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class=" WikispacesDialogLink" href="https://colour-recovery.github.io/wiki/addmonitor?monitorLink=page%3AUse%20the%20mathematical%20relationship%20between%20the%20chroma%20signals%20in%20successive%20frames%20to%20recover%20geometry%20and%20colour%20information"><i class="fa fa-eye fa-fw"></i> Notify</a>
+    </li>
+        <li class=""><a class=" WikispacesDialogLink" href="/page/rss/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="fa fa-rss fa-fw"></i> RSS</a>
+    </li>
+        <li class=""><a class="" href="/page/links/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="fa fa-link fa-fw"></i> Backlinks</a>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class="" href="/page/code/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="fa fa-code fa-fw"></i> Source</a>
+    </li>
+        <li class=""><a class="" href="/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information?f=print"><i class="fa fa-print fa-fw"></i> Print</a>
+    </li>
+        <li class=""><a class="" href="/page/pdf/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information"><i class="fa fa-cloud-download fa-fw"></i> Export (PDF)</a>
+    </li>
+      </ul>  </div>
+  </div>
+
+
+
+
+  <textarea class="form-control" id="autosaveContent" style="display:none;" rows="1" cols="1"></textarea>
+  <div id="autosavePrompt" style="display:none;"></div>
+
+<div class="commentContainer">
+  <div class="commentSubject">
+  <div class="wiki wikiPage" id="content_view">
+  <!-- ws:start:WikiTextHeadingRule:35:&lt;h3&gt; --><h3 id="toc0"><a name="x--Introduction"></a><!-- ws:end:WikiTextHeadingRule:35 -->Introduction</h3>
+ <br />
+This is a revised, corrected and expanded description of a proposed method for colour recovery utilising the PAL four frame sequence. Essentially the idea is that the difference in the chroma signal in parts of successive frames where the image is static (no motion or change in colour or brightness) allows us to identify points in the signal from which colour values can be inferred.<br />
+<br />
+A crude experimental implementation of the ideas outlined here has led to some qualified success in recovering some colour from a sample film recording. A description of these results, including some of the practical obstacles, together with a sample image appears <a class="wiki_link" href="/Experiment%20in%20utilising%20the%20four%20frame%20sequence">here</a> in the <a class="wiki_link" href="/Current%20work">Current Work</a> section.<br />
+<br />
+The account begins with a description of my understanding of PAL and the mathematics of the four frame sequence. I am not an expert on this subject and I would be glad to know of any errors or inaccuracies in this. I've also tried to keep it simple and strictly relevant to the colour recovery problem, but I apologise if, despite this, my explanations are still hard to follow!<br />
+<br />
+<!-- ws:start:WikiTextHeadingRule:37:&lt;h3&gt; --><h3 id="toc1"><a name="x--My (simplified) understanding of PAL"></a><!-- ws:end:WikiTextHeadingRule:37 -->My (simplified) understanding of PAL</h3>
+ <br />
+The PAL colour system is designed to be backwardly compatible with monochrome television transmission, so that a monochrome receiver can still display a black and white picture from a colour PAL signal.<br />
+<br />
+A monochrome television signal is an amplitude modulated signal where the amplitude of the signal determines the luminance (brightness) of each point in the picture. Each full frame of the picture is built up from a series of horizontal lines. The lines for each frame are transmitted in a sequence of two <em>fields</em>, where a field consists of all the odd, or all the even, lines of a frame. In the British TV system a frame consists of 625 lines, not all of which are actually displayed, and 25 frames (i.e. 50 fields) are displayed each second.<br />
+<br />
+In the PAL colour system the chroma (colour) signal is the sum of two amplitude modulated signals of equal frequency but with a quarter cycle phase difference between them. This signal is in turn added to the luminance signal causing small variations in its amplitude. On a monochrome receiver this results in the small variations in the brightness of the picture which we refer to as the “chroma dot” pattern. A colour receiver, on the other hand, separates out the chroma signal from the underlying luminance using a filter. The values carried in the chroma signal can be retrieved, for example by sampling it at the precise times when the quarter cycle phase difference in the two signals it is comprised of means that one of the signals has a zero value and the other is at maximum or vice-versa. For such decoding of the colour signal to be successful the receiver must have information about the precise phase of its two component signals. This phase information is conveyed by means of a reference “colour burst” sent during part of the transmitted signal that does not contain visible picture information.<br />
+<br />
+The value carried by the luminance signal is referred to as Y. The values carried by two components of the chroma signal are referred to as U and V. In colour television luminance is a sum of weighted values of red, green and blue (R, G and B.) The U and V values are colour difference values based on B - Y and R - Y respectively. From the Y, U and V values a colour receiver can derive the values of red green and blue that make up the displayed picture.<br />
+<br />
+To help compensate for possible phase errors in the transmission of the chroma signal, the PAL system introduces a phase inversion (half cycle phase difference) in the V component (only) of the chroma signal with each line that is transmitted. So for each line of a field the V phase is inverted with respect to the previous line.<br />
+<br />
+<!-- ws:start:WikiTextHeadingRule:39:&lt;h3&gt; --><h3 id="toc2"><a name="x--My understanding of the mathematics of PAL and the four frame sequence"></a><!-- ws:end:WikiTextHeadingRule:39 -->My understanding of the mathematics of PAL and the four frame sequence</h3>
+ <br />
+Simple amplitude modulation of a carrier signal c by a modulating signal m results in a signal whose equation is the product:-<br />
+<br />
+<!-- ws:start:WikiTextMathRule:0:
+[[math]]&lt;br/&gt;
+y = c(A + m)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y = c(A + m)</script><!-- ws:end:WikiTextMathRule:0 --><br />
+<br />
+where A is a constant. If A has the value 1 the carrier signal is fully present in the resulting signal. If A has the value 0 the carrier is said to be suppressed.<br />
+<br />
+In the case of the amplitude modulated U and V signals which together form the chroma signal, their carrier, which contains no useful information, is suppressed prior to addition to the luminance signal. On a monochrome receiver this effectively reduces the degree to which the picture is affected by variations in luminance due to the chroma signal modulating the luminance signal. In other words it reduces the severity of the “chroma dot” pattern.<br />
+<br />
+If the signal which carries the U colour difference information has an equation like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:1:
+[[math]]&lt;br/&gt;
+u = U \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">u = U \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:1 --><br />
+<br />
+where u denotes the value of the signal at time t, and ω is the angular frequency, then the quarter cycle phase difference in the signal which carries the V colour difference information means that it will have an equation like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:2:
+[[math]]&lt;br/&gt;
+v = V \sin(\omega t - \frac {\pi}{2})&lt;br/&gt;[[math]]
+ --><script type="math/tex">v = V \sin(\omega t - \frac {\pi}{2})</script><!-- ws:end:WikiTextMathRule:2 --><br />
+<br />
+which is equivalent to<br />
+<br />
+<!-- ws:start:WikiTextMathRule:3:
+[[math]]&lt;br/&gt;
+v = -V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">v = -V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:3 --><br />
+<br />
+The chroma signal is the sum of the U and V signals. Adding the chroma signal to the underlying Y luminance value gives an equation for the value of luminance y actually transmitted (and displayed on a monochrome receiver as the chroma dot pattern) that looks like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:4:
+[[math]]&lt;br/&gt;
+y = Y + U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y = Y + U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:4 --><br />
+<br />
+However since in PAL the phase of the V signal is inverted on alternate lines, for those lines the equation will look like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:5:
+[[math]]&lt;br/&gt;
+y = Y + U \sin(\omega t) + V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y = Y + U \sin(\omega t) + V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:5 --><br />
+<br />
+The angular frequency ω is the frequency fc of the chroma signal multiplied by 2π. For PAL fc is defined by the equation<br />
+<br />
+<!-- ws:start:WikiTextMathRule:6:
+[[math]]&lt;br/&gt;
+fc = \frac {1135 \times fl}{4} + fr&lt;br/&gt;[[math]]
+ --><script type="math/tex">fc = \frac {1135 \times fl}{4} + fr</script><!-- ws:end:WikiTextMathRule:6 --><br />
+<br />
+where fl is the line frequency which is 625 * 25 = 15625 lines per second<br />
+and fr is the frame frequency which is 25 frames per second.<br />
+<br />
+This gives fc a value of 4433618.75 cycles per second.<br />
+<br />
+Now if we take any point in a displayed frame, the equivalent point in the subsequent frame is going to be displayed 1/25 of a second later. During that 1/25 of a second the chroma signal will have gone through fc/25 = 177344.75 cycles, so there will be a quarter cycle phase difference between the U signal at any point in the second frame and the U signal at the equivalent point in the first frame.<br />
+<br />
+So if we use t to denote the time elapsed since the start of a frame’s transmission (so that t has the same value for points at equivalent positions in each frame) then if the value for the U signal in the first frame is given by<br />
+<br />
+<!-- ws:start:WikiTextMathRule:7:
+[[math]]&lt;br/&gt;
+u = U \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">u = U \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:7 --><br />
+<br />
+the value in the second frame will be given by<br />
+<br />
+<!-- ws:start:WikiTextMathRule:8:
+[[math]]&lt;br/&gt;
+u = U \sin(\omega t - \frac {\pi}{2}) = -U \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">u = U \sin(\omega t - \frac {\pi}{2}) = -U \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:8 --><br />
+<br />
+There will also be a phase difference in the V signal, but due to the fact that there is an odd number (625) of lines in each frame and PAL inverts the phase of the V signal on every alternate transmitted line, any point in the second frame will additionally have a V phase inversion applied to it relative to its equivalent point in the first frame. So if in the first frame<br />
+<br />
+<!-- ws:start:WikiTextMathRule:9:
+[[math]]&lt;br/&gt;
+v = -V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">v = -V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:9 --><br />
+<br />
+in the second frame<br />
+<br />
+<!-- ws:start:WikiTextMathRule:10:
+[[math]]&lt;br/&gt;
+v = V \cos(\omega t - \frac {\pi}{2}) = V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">v = V \cos(\omega t - \frac {\pi}{2}) = V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:10 --><br />
+<br />
+Putting this together, it follows that when the equation for value of luminance y1 in the first frame at a time t relative to the beginning of that frame’s transmission looks like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:11:
+[[math]]&lt;br/&gt;
+y1 = Y + U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 = Y + U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:11 --><br />
+<br />
+the equation for value of luminance y2 in the second frame at time t relative to the beginning of its transmission will look like this<br />
+<br />
+<!-- ws:start:WikiTextMathRule:12:
+[[math]]&lt;br/&gt;
+y2 = Y - U \cos(\omega t) + V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 = Y - U \cos(\omega t) + V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:12 --><br />
+<br />
+We can derive similar equations for the third and fourth frame, after which the sequence repeats itself.<br />
+<br />
+The equations are<br />
+<br />
+<!-- ws:start:WikiTextMathRule:13:
+[[math]]&lt;br/&gt;
+y1 = Y + U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 = Y + U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:13 --><br />
+<!-- ws:start:WikiTextMathRule:14:
+[[math]]&lt;br/&gt;
+y2 = Y - U \cos(\omega t) + V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 = Y - U \cos(\omega t) + V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:14 --><br />
+<!-- ws:start:WikiTextMathRule:15:
+[[math]]&lt;br/&gt;
+y3 = Y - U \sin(\omega t) + V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y3 = Y - U \sin(\omega t) + V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:15 --><br />
+<!-- ws:start:WikiTextMathRule:16:
+[[math]]&lt;br/&gt;
+y4 = Y + U \cos(\omega t) - V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y4 = Y + U \cos(\omega t) - V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:16 --><br />
+<br />
+For alternate lines the equations will have the form<br />
+<br />
+<!-- ws:start:WikiTextMathRule:17:
+[[math]]&lt;br/&gt;
+y1 = Y + U \sin(\omega t) + V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 = Y + U \sin(\omega t) + V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:17 --><br />
+<!-- ws:start:WikiTextMathRule:18:
+[[math]]&lt;br/&gt;
+y2 = Y - U \cos(\omega t) - V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 = Y - U \cos(\omega t) - V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:18 --><br />
+<!-- ws:start:WikiTextMathRule:19:
+[[math]]&lt;br/&gt;
+y3 = Y - U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y3 = Y - U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:19 --><br />
+<!-- ws:start:WikiTextMathRule:20:
+[[math]]&lt;br/&gt;
+y4 = Y + U \cos(\omega t) + V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y4 = Y + U \cos(\omega t) + V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:20 --><br />
+<br />
+<!-- ws:start:WikiTextHeadingRule:41:&lt;h3&gt; --><h3 id="toc3"><a name="x--Using the four frame sequence to recover information from film telerecordings"></a><!-- ws:end:WikiTextHeadingRule:41 -->Using the four frame sequence to recover information from film telerecordings</h3>
+ <br />
+A film telerecording of a television programme captures each frame of the television picture on to a separate frame of film and will capture the chroma dot pattern if it is present. Recovering colour information from the chroma dot pattern is difficult because the telerecording process introduces geometric distortions to the picture, and hence to the time critical chroma signal. Additionally the phase information contained in the reference colour burst is not present.<br />
+<br />
+If the mathematics of the four frame sequence as outlined above is essentially correct then it might be possible to make use of it to recover at least partial geometry, phase and colour information from the picture.<br />
+<br />
+For the method outlined here to be usable, it will firstly be essential that it is possible to track the line structure of the recorded picture. (If this is possible then some of the picture geometry could also presumably be corrected from the line structure, but distortions that stretch and squeeze the chroma signal, and hence affect its timing, would remain.)<br />
+<br />
+Secondly, in general, there would have to be no significant changes in the geometrical distortion taking place over sequences of four frames.<br />
+<br />
+Thirdly the resolution and degree of accuracy with which the luminance of the chroma signal is present in the original picture, captured by the film recording, and sampled by any subsequent digitization must be sufficiently high (or there must be methods that can be used to compensate for this if it isn’t.)<br />
+<br />
+Assuming all the above, the first thing to notice from the equations describing the four frame sequence is that for any point in the original picture that is unchanged (i.e. has the same colour values) in one frame and the next frame but one, the value of Y for that point will be the average of its chroma dot luminance values in those two frames.<br />
+<br />
+For example<br />
+<br />
+<!-- ws:start:WikiTextMathRule:21:
+[[math]]&lt;br/&gt;
+Y = \frac {y1 + y3}{2}&lt;br/&gt;[[math]]
+ --><script type="math/tex">Y = \frac {y1 + y3}{2}</script><!-- ws:end:WikiTextMathRule:21 --><br />
+<br />
+Using this could give us a way of identifying, with reasonable confidence, parts of the original picture that do not change over a four frame sequence because for those parts the following equation holds<br />
+<br />
+<!-- ws:start:WikiTextMathRule:22:
+[[math]]&lt;br/&gt;
+\frac {y1 + y3}{2} = \frac {y2 + y4}{2}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\frac {y1 + y3}{2} = \frac {y2 + y4}{2}</script><!-- ws:end:WikiTextMathRule:22 --><br />
+<br />
+This would also give us the values of Y for those parts of the picture and hence give us separation of the chroma signal from the luminance signal in those areas.<br />
+<br />
+If we can use this method to identify parts of the picture that don’t change over four frames then the second thing to notice is that the absolute value of the chroma signal will be the same for these areas across all four frames at precisely the points where the absolute values of sin(ωt) and cos(ωt) are equal. These are the points where<br />
+<br />
+<!-- ws:start:WikiTextMathRule:23:
+[[math]]&lt;br/&gt;
+\omega t = \frac {(2n + 1) \pi}{4}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\omega t = \frac {(2n + 1) \pi}{4}</script><!-- ws:end:WikiTextMathRule:23 --><br />
+<br />
+(where n is an integer)<br />
+<br />
+So at these points the following equation holds<br />
+<br />
+<!-- ws:start:WikiTextMathRule:24:
+[[math]]&lt;br/&gt;
+|y1 - Y| = |y2 - Y| = |y3 - Y| = |y4 - Y| = (\pm U \pm V)\sin\frac{\pi}{4}&lt;br/&gt;[[math]]
+ --><script type="math/tex">|y1 - Y| = |y2 - Y| = |y3 - Y| = |y4 - Y| = (\pm U \pm V)\sin\frac{\pi}{4}</script><!-- ws:end:WikiTextMathRule:24 --><br />
+<br />
+So if we can identify, with sufficient precision, the points within those areas where these absolute values are the same (and non-zero) then we will have recovered potentially useful information about the original geometry of the picture and the phase of the chroma signal. From this we should then be able to recover U and V values for those parts of the picture. (For example, without geometric distortion, at points on each line lying exactly half way between the points identified as above, the absolute value of the chroma signal will be equal to the absolute value of either U or V.)<br />
+<br />
+An example may help to clarify this. Suppose we have two consecutive frames from a sequence and we have separated luminance and chroma for the parts of the original colour picture that are static across those two frames. So we know the values of Y for those parts of the original picture. Suppose we are tracking a line from the static part of the picture in each of those two frames. The equation that describes the line in the first frame may be any one of the eight equations detailed above, depending on whereabouts the line is in the frame and where the frame is within the four frame sequence. It does not actually matter which equation describes the line, as what is important is the relationship between the equations describing the same line in the two consecutive frames. Let’s assume that the equations are:-<br />
+<br />
+<!-- ws:start:WikiTextMathRule:25:
+[[math]]&lt;br/&gt;
+y1 = Y + U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 = Y + U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:25 --><br />
+<!-- ws:start:WikiTextMathRule:26:
+[[math]]&lt;br/&gt;
+y2 = Y - U \cos(\omega t) + V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 = Y - U \cos(\omega t) + V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:26 --><br />
+<br />
+or<br />
+<br />
+<!-- ws:start:WikiTextMathRule:27:
+[[math]]&lt;br/&gt;
+y1 - Y = U \sin(\omega t) - V \cos(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 - Y = U \sin(\omega t) - V \cos(\omega t)</script><!-- ws:end:WikiTextMathRule:27 --><br />
+<!-- ws:start:WikiTextMathRule:28:
+[[math]]&lt;br/&gt;
+y2 - Y = - U \cos(\omega t) + V \sin(\omega t)&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 - Y = - U \cos(\omega t) + V \sin(\omega t)</script><!-- ws:end:WikiTextMathRule:28 --><br />
+<br />
+The known Y term, as we have said, represents the luminance in the original colour picture, whereas y1 and y2 represent the luminance in the first and second frame monochrome respectively where the embedded chroma signal has caused variations in the luminance.<br />
+<br />
+Now consider what happens at the point where<br />
+<br />
+<!-- ws:start:WikiTextMathRule:29:
+[[math]]&lt;br/&gt;
+\omega t = \frac{\pi}{2}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\omega t = \frac{\pi}{2}</script><!-- ws:end:WikiTextMathRule:29 --><br />
+<br />
+At this point<br />
+<br />
+<!-- ws:start:WikiTextMathRule:30:
+[[math]]&lt;br/&gt;
+y1 - Y = U&lt;br/&gt;[[math]]
+ --><script type="math/tex">y1 - Y = U</script><!-- ws:end:WikiTextMathRule:30 --><br />
+<!-- ws:start:WikiTextMathRule:31:
+[[math]]&lt;br/&gt;
+y2 - Y = V&lt;br/&gt;[[math]]
+ --><script type="math/tex">y2 - Y = V</script><!-- ws:end:WikiTextMathRule:31 --><br />
+<br />
+and since we know Y, y1 and y2, if we could identify this point, we could infer the values of U and V and hence the colours at this position. There are four such points in each signal cycle. They are the points where<br />
+<br />
+<!-- ws:start:WikiTextMathRule:32:
+[[math]]&lt;br/&gt;
+\omega t = \frac {n \pi}{2}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\omega t = \frac {n \pi}{2}</script><!-- ws:end:WikiTextMathRule:32 --><br />
+<br />
+(where n is an integer.)<br />
+<br />
+Note that, depending on the value of n, the U value will either be obtainable from frame 1 and the V value from frame 2 or vice versa - in fact they alternate with each increment of n. Similarly, depending on the value of n, the values obtainable will either be +U or -U, and +V or -V.<br />
+<br />
+So, to achieve colour recovery, what we have to do is identify these points. As indicated above, we can do this by identifying the points where the absolute values of the chroma signals are the same in both frames, since the points we want lie exactly halfway between those points (assuming no geometrical distortion.)<br />
+<br />
+The absolute values of the chroma signals are the same when<br />
+<br />
+<!-- ws:start:WikiTextMathRule:33:
+[[math]]&lt;br/&gt;
+\omega t = \frac {(2n + 1) \pi}{4}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\omega t = \frac {(2n + 1) \pi}{4}</script><!-- ws:end:WikiTextMathRule:33 --><br />
+<br />
+If we identify a point where the chroma signals are equal in value but opposite in sign, for example, assuming our two line equations, the point where<br />
+<br />
+<!-- ws:start:WikiTextMathRule:34:
+[[math]]&lt;br/&gt;
+\omega t = \frac {\pi}{4}&lt;br/&gt;[[math]]
+ --><script type="math/tex">\omega t = \frac {\pi}{4}</script><!-- ws:end:WikiTextMathRule:34 --><br />
+<br />
+then at the point corresponding to the next value of n the signals will be equal in both value and sign. Exactly halfway between those two points the U value will be obtainable from the first frame and the V value from the second frame. (This is the case whichever pair of equations happen to describe our line in the two frames.) Conversely if our first identified point is a point where the signals are equal in value and sign, at the halfway point the V value will be obtainable from the first frame and the U value from the second frame.<br />
+<br />
+Unfortunately, although this method lets us obtain the absolute U and V values at the identified points there seems to be no obvious way to determine whether we are getting a +U or a -U (and a +V or a -V.) However the signs alternate in a predictable fashion so if we pick the initial polarities it should be possible to determine all subsequent polarities relative to that. Picking the initial polarities (out of the four possibilities) would then be a matter of trial and error, assuming that, on whatever film sequence we are trying to recover colour from there are clues (eg fleshtones, sky or whatever) to enable us to identify which is the right combination.<br />
+<br />
+To conclude, its worth reiterating that the method described here only describes colour recovery over static parts of a picture (across the frames being utilised) No consideration has been given to the possibility of extrapolating and interpolating this recovered geometry, phase and colour information to infer U and V values for those parts of the picture which do not remain unchanged across the frames in question<br />
+<br />
+-- Andrew Browne 11/06/2007, Revised 27/01/2008
+  </div>
+
+<div id="pageEditor" class="editorWrapper editorLayer">
+  <iframe id="target_editor" name="target_editor" src="/s/blank.html" style="width:0px;height:0px;border:0"></iframe>
+    <form action="/page/edit/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information" method="post" class="editorForm" id="editorForm"><input type="hidden" name="wikispacesFormToken" value="262434ae20a66ec8d282807b9264c2ede592814d"/><div class="movkp"><input type="text" class="form-control" name="wikispaces_user_id" value="user-1528198275"/></div><div class="jovise"><input type="text" class="form-control" name="goto" autocomplete = "off"/></div><div class="jovise"><input type="text" class="form-control" name="mode" autocomplete = "off"/></div><div class="mimw"><input type="text" class="form-control" name="version" autocomplete = "off"/></div><div class="movkp"><input type="text" class="form-control" name="pageComments" autocomplete = "off"/></div><div class="jowic"><input type="text" class="form-control" name="saveAndContinue" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="comment" autocomplete = "off"/></div><div class="mimw"><input type="text" class="form-control" name="commentsDisabled" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="contentPresent" autocomplete = "off"/></div><div class="wsh"><input type="text" class="form-control" name="editorCleanup" autocomplete = "off"/></div><div class="mimw"><input type="text" class="form-control" name="WikispacesEditorContent" autocomplete = "off"/></div><input type="hidden" name="wikispacesASFormToken" value="e52a475c065f3d24bdfac26ce6dbae63532ac798"/>
+    <input type="hidden" title="goto" name="a9ce36b1eebaadea2727a910abf35d3382a32107" value=""/>
+    <input type="hidden" title="mode" name="9a16cb674f5aea7044ca5a6f74cebfba4b34d68d" autocomplete="off" value="visual"/>
+    <input type="hidden" title="version" name="8a5f0ea2ff616d91e8dd6f187c8e88c43ba716a7" autocomplete="off" value="18143299"/>
+    <input type="hidden" title="pageComments" name="7e272f1e552f1225a544ea8ebe51adca38896621" autocomplete="off" value=""/>
+    <input type="hidden" title="saveAndContinue" name="f84bcfadfc4c5a2425199ca214f0e40317cc55ed" value="0"/>
+    <input type="hidden" title="comment" name="1cd8fe1fdf301b667560d95c6e70f9d79095f84d" value=""/>
+    <input type="hidden" title="commentsDisabled" name="a764da4fda9df690de9183eb183c346986a96d79" autocomplete="off" value=""/>
+    <input type="hidden" title="contentPresent" name="0d0a6bb3c07eeb404d6e6ca4fe9c960df3ecbe30" autocomplete="off" value=""/>
+    <input type="hidden" title="editorCleanup" name="d0ad6a0f67fe4dbeb10455dd5bd778ae6d4cb9b8" autocomplete="off" value=""/>
+
+    <textarea id="wsMainEditor" title="content" class="noContentHide" name="5b6e6ca9355102ce4fd887a521cf97929721d7b8" style="width: 100%; position: absolute; top: -50000px; left: -50000px;" autocomplete="off"></textarea>
+
+  <noscript>
+    <h2>Javascript Required</h2>
+    <p>You need to enable Javascript in your browser to edit pages.</p>
+  </noscript>
+
+  </form>
+  
+  
+  <div id="plainTextEditor" style="position:relative;display:none" class="editorLayer" >
+    <textarea id="textEditor" class="autogrow"></textarea>
+    <p style="clear:both;" align="right"><a href="http://helpcenter.wikispaces.com/customer/portal/articles/1959131-wikitext">help on how to format text</a></p>
+  </div>
+</div>
+
+
+
+
+  </div>
+  <div class="commentColumn WikispacesStream"><div class="WikispacesContent WikispacesBs3"><div class="commentList"></div></div></div>
+</div>
+
+  
+
+
+
+
+<script type="text/template" id="js-event-template">
+  <small>
+    <%- startDateShortFormat %>
+    <a href="<%- ws.common.pathFor('event', 'view', id) %>" class="WikispacesDialogLink">
+      <%- ws.common.truncate(title, 15) %>
+    </a>
+  </small>
+</script>
+
+<script type="text/template" id="js-reply-template">
+  <div class="tc-timeline-comment media">
+
+    <a class="pull-left userLink" href="<%- userCreated.url %>">
+      <img src="<%- userCreated.imageUrl %>" width="30" height="30" class="author-avatar" alt="" />
+    </a>
+    <div class="media-body" data-id="<%= id %>">
+      <% if (ws.context.user.canAdministerWiki) { %>
+        <i class="tc-delete-comment fa fa-trash-o contextual-command destroy-message ws-tip" title="Delete reply"></i>
+      <% } %>
+      <div class="tc-box-name-date">
+        <span class="tc-commenter"><a href="<%- userCreated.url %>"><%- userCreated.username %></a></span>
+        <% if (smartDate == '__live__') { %>
+        <abbr style="border-bottom-style: none;" class="timeago tc-comment-date" title="<%- (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+          <%- (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+        </abbr>
+        <% } else { %>
+          <abbr style="border-bottom-style: none;" class="tc-comment-date"><%- smartDate %></abbr>
+        <% } %>
+      </div>
+      <% if (body) { %>
+      <p>
+        <%= body %>
+      </p>
+      <% } %>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-share-template">
+  <div class="tc-timeline-block tc-<%= ws.stream.typeToBlockType(sharedType) %>-block" <%= (ws.stream.hideTimeline ? 'style="padding-left: 0px;"' : '') %>>
+
+    <% if (!ws.stream.hideTimeline) { %>
+      <div class="tc-timeline-icon">
+        <i class="fa fa-<%= ws.stream.typeToIcon(sharedType) %>"></i>
+      </div>
+      <div class="tc-timeline-triangle-man"></div>
+    <% } %>
+
+    <div class="tc-timeline-box" data-id="<%= id %>">
+      <div class="media">
+        <a class="pull-left userLink" href="<%- userCreated.url %>">
+          <img src="<%- userCreated.imageUrl %>" width="48" height="48" class="author-avatar media-object" alt="" />
+        </a>
+
+        <div class="media-body">
+
+          <div class="tc-stream-dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <% if (ws.context.user.id) { %>
+              <li>
+                <a class="js-toggle-monitor" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-eye"></i>
+                  <span><%= monitored ? 'Start Monitoring' : 'Stop Monitoring' %></span>
+                </a>
+              </li>
+              <% } %>
+
+              <% if (ws.context.user.canAdministerWiki) { %>
+              <li>
+                <a class="js-toggle-lock" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-lock"></i>
+                  <span><%= locked ? 'Unlock Replies' : 'Lock Replies' %></span>
+                </a>
+              </li>
+              <% if (sharedType == 'discussion' || sharedType == 'comment' || sharedType == 'event') { %>
+              <li>
+                <a class="js-destroy-share" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-trash-o"></i>
+                  Delete <%= ws.stream.typeToName(sharedType) %>
+                </a>
+              </li>
+              <% } %>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="tc-timeline-box-header ws-reveal media-heading">
+              <h3 class="tc-box-title">
+              <% if (typeof adminLink !== 'undefined' && adminLink && ws.context.user.canAdministerWiki) { %>
+                <a href="<%- adminLink %>"><%- title %></a>
+              <% } else { %>
+                <%- title %>
+              <% } %>
+              <% if (typeof startDate !== 'undefined' && startDate) { %> - <%= startDateShortFormat %> <%= ws.stream.getYearFromStartDate(startDate) %><% } %>
+              </h3>
+              <div class="tc-box-name-date">
+                <% if (ws.context.instance.isTesClassroom) { %>
+                  <%- userCreated.username %>
+                <% } else { %>
+                  <a class="author-name" href="<%- userCreated.url %>"><%- userCreated.username %></a>
+                <% } %>
+                <% if (typeof recipients !== 'undefined' && recipients) { %>
+                  <i class="fa fa-angle-right"></i>
+                  <% if (typeof recipientsLink !== 'undefined') { %>
+                    <a href="<%- recipientsLink %>"><%- recipients %></a>
+                  <% } else { %>
+                    <span class="recipients"><%- recipients %></span>
+                  <% } %>
+                <% } %>
+                <% if (smartDate == '__live__') { %>
+                  <abbr style="border-bottom-style: none;" class="timeago tc-block-date" title="<%= (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+                    <%= (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+                  </abbr>
+                <% } else { %>
+                  <abbr style="border-bottom-style: none;" class="tc-block-date"><%- smartDate %></abbr>
+                <% } %>
+              </div>
+          </div>
+
+          <div class="<%= sharedType == 'comment' && !orphaned && !ws.stream.noCollapse ? 'hidden ' : '' %>tc-block-content">
+            <div class="clearfix">
+              <% if (typeof rangeActions !== 'undefined') { %>
+                <div class="tc-range-actions">
+                  <% for(var i = 0; i < rangeActions.length; i++) { %>
+                  <%= ws.stream.rangeActionTemplate(rangeActions[i]) %>
+                  <% } %>
+                </div>
+              <% } %>
+              <% if (description) { %>
+                <p><%= description %></p>
+              <% } %>
+            </div>
+          </div>
+
+          <% if (replyPages.length > 0 && !(replyPages.length === 1 && replyPages[0].digests.length === 0)) { %>
+            <div class="tc-timeline-comments">
+            <% for (var i = 0; i < replyPages.length; i++) { %>
+              <% if (i == 0 && replyPages[i].more) { %>
+                <a href="#" class="tc-show-more" onclick="ws.stream.pageReplies(<%= id %>, <%= replyPages[i].page + 1 %>); return false">Show more replies (<%= replyPages[i].more %> hidden) </a>
+              <% } else { %>
+                <div></div>
+              <% } %>
+              <% for (var j = 0; j < replyPages[i].digests.length; j++) { %>
+                <%= ws.stream.replyTemplate(replyPages[i].digests[j]) %>
+              <% } %>
+            <% } %>
+            </div>
+          <% } %>
+
+          <% if ((ws.stream.userCanPostMessage && !locked) || ws.context.user.canAdministerWiki) { %>
+          <div class="tc-add-comment media <%= ws.stream.noCollapse ? 'add-active' : ''%>">
+            <img src="<%- ws.context.user.imageUrlPrefix %>lg.jpg" width="30" height="30" class="pull-left author-avatar" alt="" />
+            <div class="media-body">
+              <textarea name="reply" placeholder="Comment" class="form-control form-control-tc ws-reveal <%= !ws.stream.noCollapse ? 'ws-unrevealed' : ''%> reply" /></textarea>
+              <button type="button" class="btn-tc btn-info-tc btn-sm-tc add-reply">Post</button>
+            </div>
+          </div>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-range-action-template">
+  <div>
+    <strong><%- name %></strong>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      <a href="<%- diffUrl %>">
+    <% } %>
+    <%= new Date(dateCreated * 1000).toLocaleString() %>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      </a>
+    <% } %>
+    <% if (typeof(rangeText) !== 'undefined') { %>
+      <div>
+        <span class="commentExtent">
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          <a href="<%- diffUrl %>">
+        <% } %>
+        <%= rangeText %>
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          </a>
+        <% } %>
+        </span>
+      </div>
+    <% } %>
+  </div>
+</script>
+
+<script type="text/template" id="js-stream-end-template">
+  <div class="tc-timeline-block tc-end-block">
+    <div class="tc-timeline-icon" style="margin-top: -10px;" />
+    <div class="tc-timeline-box" style="visibility: hidden;">
+      <p class="tc-box-title"></p>
+    </div>
+  </div>
+</script>
+
+<a name="discussion"></a>
+<div class="timeline WikispacesBs3 tc-timeline-embedded show-border">
+  <div class="timeline-line"></div>
+    <div id="js-share-list">
+    <div class="spinner hidden"><i class="fa fa-spinner fa-spin"></i></div>
+  </div>
+</div></div></div><div id="sentinel" style="clear:both"></div>        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<footer class="ws-theme-footer" role="contentinfo">
+  <div class="ws-theme-container">
+    <div class="ws-theme-footer-inner">
+      <div class="WikiFooterNav WikiElement">
+<a href="http://helpcenter.wikispaces.com/" rel="nofollow" class="js-help-trigger">Help</a> &middot;
+<a href="../www.wikispaces.com/about">About</a> &middot;
+<a href="../www.wikispaces.com/content/pricing" rel="nofollow">Pricing</a> &middot;
+<a href="../www.wikispaces.com/privacy" rel="nofollow">Privacy</a> &middot;
+<a href="../www.wikispaces.com/terms" rel="nofollow">Terms</a> &middot;
+<a href="../www.wikispaces.com/site/help?url=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information%3FresponseToken%3D01d9307c714d19352c36f096b948cce4" rel="nofollow"><strong>Support</strong></a> &middot;
+<a href="/space/subscribe/upgrade"><strong>Upgrade</strong></a>
+</div>      <div class="WikiLicense WikiElement">Contributions to https://colour-recovery.github.io/ are licensed under a <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/2.5">Creative Commons Attribution Share-Alike 2.5 License</a>. <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/2.5"><img src="../ssl.wikicdn.com/i/creativecommons/by-sa_2.5_80x15.png" width="85" height="15" alt="Creative Commons Attribution Share-Alike 2.5 License"/></a><br />Portions not contributed by visitors are Copyright 2018 Tangient LLC<br /><a href="https://www.tes.com/us/?utm_source=wikispaces&utm_medium=link&utm_campaign=US-52-footer">TES: The largest network of teachers in the world</a></div>    </div>
+  </div>
+</footer>
+
+
+<script type="text/template" id="dialog-template">
+<div class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title"><%= header %></h4>
+      </div>
+      <div class="modal-body">
+        <%= body %>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+
+<div id="js-help-template" class="hidden">
+  <div class="ws-help">
+    <div class="js-help-controls WikispacesContent WikispacesBs3">
+      <a href="../www.wikispaces.com/site/gettingstarted/off" class="btn btn-default hidden js-getting-started-off pull-right">Turn off "Getting Started"</a>
+      <ol class="breadcrumb">
+        <li class="js-special-breadcrumb active">
+          <a href="http://helpcenter.wikispaces.com/" data-breadcrumb="0">Home</a>
+        </li>
+        <li class="js-ellipsis hidden js-special-breadcrumb">
+          ...
+        </li>
+        <li class="js-spinner hidden js-special-breadcrumb"><i class="fa fa-spinner fa-spin"></i></li>
+      </ol>
+    </div>
+    <div class="ws-help-content wiki">Loading...</div>
+  </div>
+</div>
+</div>
+<script src="../ssl.wikicdn.com/s/nogz/6q86j8zz-common.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/70163536-editorc.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/85k7018k-stream.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/91k8z207-contentbar.min.js" type="text/javascript"></script>
+<script src="../ssl.wikicdn.com/s/nogz/395j1vq7-component.stream-vo.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+ws.namespace('ws.attributes');
+ws.namespace('ws.stream');
+ws.attributes.DISCUSSION_COUNT = 0;
+ws.attributes.pageId = 990159;
+ws.attributes.version = 18143299;
+ws.attributes.showEditor = true;
+ws.attributes.editUrl = "https:\/\/colour-recovery.wikispaces.com\/page\/edit\/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information";
+ws.attributes.userCanEdit = false;
+ws.stream.userCanPostMessage = false;
+ws.stream.hideTimeline = true;
+ws.stream.shareSource = "https:\/\/colour-recovery.wikispaces.com\/page\/shares\/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information";
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+jQuery(document).ready(function() {
+  ws.common.addJsonNotices({"warning":[],"error":[],"info":[],"success":[]});
+});
+
+jQuery(document).ready(function() {
+  ws.common.addNotice("<script type=\"text\/javascript\">function wsDismissBanner() { ws.common.removeNotice();  ws.cookie.set(\"wsFirstPartShutdown\", 1, {expires: 365 * 86400, domain: \".wikispaces.com\"}); return false;}$(\".ui-pnotify-closer\").remove();<\/script><i class=\"fa fa-times fa-fw ws-close\" onclick=\"wsDismissBanner();\"><\/i>It\u2019s time for us to say farewell\u2026 Classroom and Free Wikis are closing Soon!<br\/>Find out more about the full Wikispaces Site Closure <a href='http:\/\/blog.wikispaces.com' target='_top'>HERE<a\/>", "warning");
+});
+
+jQuery(document).ready(function($) {
+  
+  function tipPlacement() {
+    return this.$element.closest('.ws-menu-bar .btn-group').is('.open') ? 'top' : 'bottom';
+  }
+
+  
+
+  $('.ws-menu-bar').each(function() {
+    var $menuBar = $(this);
+    var $tagDropdown = $menuBar.find('.ws-tag-dropdown-menu');
+    $menuBar.find('.tipme').tooltip({placement: tipPlacement, container: '.ws-menu-bar'});
+
+    
+    $menuBar.find('.ws-btn-more').click(ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .btn-group').is('.open')) {
+        ws.common.hideMorePageBar();
+      } else {
+        ws.common.showMorePageBar();
+      }
+    }));
+
+    $menuBar.on('click', '.ws-tag-dropdown-toggle', ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .dropdown').is('.open')) {
+        ws.common.hideTagDropdown();
+      } else {
+        ws.common.showTagDropdown();
+      }
+    }));
+
+    $(document.body).click(function(e) {
+      var $target = $(e.target);
+      if (!$target.closest('.ws-more-menu').closest('.ws-menu-bar').is($menuBar)
+          || $target.closest('a').is('.WikispacesDialogLink')) {
+        ws.common.hideMorePageBar();
+      }
+      if ($tagDropdown.length && !$target.closest('.ws-tag-dropdown-menu').is($tagDropdown)) {
+        ws.common.hideTagDropdown();
+      }
+    });
+    
+  });
+});
+
+
+jQuery(document).ready(function($) {
+  $('.ws-more-menu').on('click', 'a', function(e) {
+    if ($(this).is('.disabled')) {
+      e.preventDefault();
+    }
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.canEdit = false;
+  var editUrl = 'https://colour-recovery.github.io/page/edit/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information?goto=https%3A%2F%2Fcolour-recovery.wikispaces.com%2FUse%2520the%2520mathematical%2520relationship%2520between%2520the%2520chroma%2520signals%2520in%2520successive%2520frames%2520to%2520recover%2520geometry%2520and%2520colour%2520information';
+
+  jQuery('#js-edit-from-template').change(function() {
+    window.location = ws.common.addUriParams(editUrl, [['template', jQuery(this).val()]]);
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.loadEditorLibs('../www.wikispaces.com/site/editorlibs/en/11kk95v9.js');
+});
+
+
+ws.editor.startEditor = function (moreCoreOptions, moreMainOptions) {
+  ws.editor.canEdit = true;
+
+  var coreOptions = {
+    'content_css': ['../www.wikispaces.com/stylesheet/editori/217420326D.css']
+  };
+
+  // The stylesheet is passed in as a string, turn it into an array
+  // Add bootstrap styles to the editor, if we are in a theme that has full screen bootstrap
+  if (jQuery('body').is('.WikispacesBs3')) {
+    coreOptions.content_css.push('../www.wikispaces.com//s/internal-bootstrap-body.css');
+  }
+
+  var mainOptions = {
+    'wssave_cancel_url': '/Use+the+mathematical+relationship+between+the+chroma+signals+in+successive+frames+to+recover+geometry+and+colour+information',
+    'wsimage_upload_url': 'https://colour-recovery.github.io/file/multiupload',
+    'wsimage_max_file_size_mb': '50',
+    'wsimage_page_view_group': ''
+  };
+
+  ws.editor.loadEditor(jQuery.extend(coreOptions, moreCoreOptions), jQuery.extend(mainOptions, moreMainOptions));
+};
+
+  var wikispaces_page_version = '18143299';
+
+  jQuery(document).ready(function() {
+    ws.editor.enableButtons();
+  });
+
+
+
+--></script><!-- w23 142 wki:17:19(3) tot:142:142(1) mem:2:15(33) dql:2:9(6) mog:4:4(1) -->
+
+</body>
+</html>
